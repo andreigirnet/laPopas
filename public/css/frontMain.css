@@ -1,0 +1,413 @@
+*{
+    font-family: 'Museo Sans Rounded', sans-serif;
+}
+body{
+    background: #e4dfdb;
+}
+.upperNav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    align-items: center;
+}
+.upperNavWrapper{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftUpperNav{
+    display: flex;
+    column-gap: 50px;
+    color: #c1b5b4;
+    align-items: center;
+}
+.languages{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.social img{
+    width: 30px;
+    cursor: pointer;
+}
+.languageItem{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.upperMenuActive{
+    color: #533e34;
+}
+.languageItem:hover{
+    color: red;
+}
+.country{
+    font-size: 20px;
+}
+.login{
+    transition: 1s;
+    color: #533e34;
+}
+.login:hover{
+    color: red;
+}
+.smallCartText{
+    /*color: #533e34;*/
+}
+.rightUpperNav{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.smallCartUpper{
+    font-size: 16px;
+    color: #533e34;
+    display: flex;
+    align-items: center;
+    background: #ffd200;
+    padding: 5px 20px;
+    column-gap: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.smallCartUpper:hover{
+    color: red;
+}
+.cartUpper{
+    width: 25px;
+}
+.smallOrderAmount{
+    font-weight: bold;
+}
+.mainMenu{
+    width: 100%;
+    background: #584137;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.mainMenuWrapper{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.leftMainMenu{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+}
+.centerMainMenu{
+    display: flex;
+    justify-content: center;
+}
+.centerMainMenu img{
+    width: 55%;
+}
+.imgPhoneDial{
+    display: flex;
+    justify-content: center;
+}
+.imgPhoneDial img{
+    width: 60%;
+}
+.mainMenuContent{
+    display: flex;
+    flex-direction: column;
+}
+.rightMainMenu{
+    display: flex;
+}
+.upperMainMenuContent{
+    display: flex;
+    column-gap: 5px;
+}
+.time{
+    color: #d1aa2e;
+}
+.whiteText{
+    color: white;
+}
+.preNumber{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tel{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.lowerMainMenuContent{
+
+}
+.menuItem{
+    opacity: 0.7;
+    padding-top: 5px;
+}
+.menuItem:hover{
+    opacity: 1;
+    border-top: 2px solid yellow;
+}
+.subMenu{
+    position: absolute;
+    background: #57322a;
+    top: 40px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    width: 300px;
+    z-index: 10;
+}
+#menuDrop:hover .subMenu{
+    display: block;
+}
+.submenuItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    column-gap: 10px;
+}
+.rightArrowMenu{
+    width: 30px;
+}
+.subCategoryMenu{
+    line-height: 37px;
+}
+.sumbmenuItemKey{
+    transition: 0.5s;
+}
+.sumbmenuItemKey:hover{
+    color: #e66202;
+}
+.innerBanner{
+    display: flex;
+}
+.bannerWrapper{
+    width: 100%;
+
+}
+.bannerWrapper{
+    position: relative;
+    overflow: hidden;
+}
+.nextArrow{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 4;
+}
+.prevArrow{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 4;
+}
+.innerBanner{
+    position: relative;
+    transition: 1s;
+}
+.homeProductsSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.homeProductsWrapper{
+    display: flex;
+    column-gap: 30px;
+    width: 70%;
+}
+.homeCategoriesMenu{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 492px;
+    position: relative;
+    height: 100%;
+}
+.homeCategoriesMenuTitle{
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 50px;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.innerBanner img{
+    width: 100%;
+}
+.listCategories{
+    display: flex;
+    flex-direction: column;
+}
+.homeCategory{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.homeProductsItems{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fixedMenu{
+    background: #6d574d;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: fixed;
+    width: 270px;
+    height: 500px;
+}
+.logoCategory{
+    width: 40px;
+}
+.categoryWrap{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.fixedMenuItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.fixedMenuItem:hover{
+    background: #533e34;
+}
+.fixedMenuItem:hover .secondArrowMenu{
+    display: flex;
+}
+.secondArrowMenu{
+    display: none;
+}
+.homeProductsCategory{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.titleCategoryProducts{
+    font-weight: 700;
+    font-size: 30px;
+    color: #533e34;
+}
+.titleContent{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.productCard{
+    background: #fafafa;
+    padding: 7px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.productImg{
+    width: 100%;
+}
+.productState{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: #6d574d;
+}
+.productTitle{
+    padding: 15px;
+    color: #6d574d;
+    font-size: 20px;
+}
+.productLine{
+    height: 1px;
+    background: #6d574d;
+    opacity: 0.4;
+    padding: 0px 10px;
+    width: 90%;
+}
+.lineContainer{
+    display: flex;
+    justify-content: center;
+}
+.priceContainer{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.cartImgProduct{
+    width: 35px;
+}
+.price{
+    font-size: 20px;
+    color: #6d574d;
+}
+.cartAddProductContainer{
+    display: flex;
+    align-items: center;
+    color: #6d574d;
+    font-size: 20px;
+}
+.priceFull{
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+#fixedMenu{
+    position: relative;
+    transition: top 0.3s ease-in-out;
+}
+.fixed{
+    position: fixed;
+}
+.infoSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background: white;
+    margin-top: 100px;
+}
+.infoContainer{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerSection{
+    height: 200px;
+    background: #584137;
+}
