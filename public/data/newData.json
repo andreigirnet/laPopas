@@ -1,0 +1,188 @@
+{
+    "en": {
+        "upperMenu":{
+            "loginButton": "Login",
+            "orderWord": "Your Order:"
+        },
+        "navMenu": {
+            "items": ["Menu", "Services","About Us", "News"],
+            "aboutUs": ["Contacts", "Delivery"],
+            "fromTo": ["from", "to", "daily"]
+        },
+        "products":{
+            "Pies in the oven": {
+                "Pie with cheese and herbs":{
+                    "id": 1,
+                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                    "state" : "Frozen Product",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20.99",
+                    "Ingredients":"XY",
+                    "nutritiveValue":{
+                        "protein": "36",
+                        "fats": "200",
+                        "carboHydrates": "500"
+                    },
+                    "energyValue":{
+                        "kcal": "200",
+                        "kj": "200"
+                    }
+                },
+                "Pie with chicken meat":{
+                    "id": 2,
+                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                    "state" : "Frozen Product",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20.99",
+                    "Ingredients":"XY",
+                    "nutritiveValue":{
+                        "protein": "36",
+                        "fats": "200",
+                        "carboHydrates": "500"
+                    },
+                    "energyValue":{
+                        "kcal": "200",
+                        "kj": "200"
+                    }
+                },
+                "Pie with chicken beef":{
+                    "id": 3,
+                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                    "state" : "Frozen Product",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20.99",
+                    "Ingredients":"XY",
+                    "nutritiveValue":{
+                        "protein": "36",
+                        "fats": "200",
+                        "carboHydrates": "500"
+                    },
+                    "energyValue":{
+                        "kcal": "200",
+                        "kj": "200"
+                    }
+                },
+                "Pie with chicken Goose":{
+                    "id": 4,
+                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                    "state" : "Frozen Product",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20.99",
+                    "Ingredients":"XY",
+                    "nutritiveValue":{
+                        "protein": "36",
+                        "fats": "200",
+                        "carboHydrates": "500"
+                    },
+                    "energyValue":{
+                        "kcal": "200",
+                        "kj": "200"
+                    }
+                }
+            },
+            "Pankcakes": {
+                "pannes pies with cheese":{
+
+                }
+            },
+            "Buns": {
+                "Seasame buns":{
+
+                }
+            },
+            "Meatballs": {
+                "Home meatballs":{
+
+                }
+            },
+            "Meatballs-smaller": {
+                "Meatballs smaller with chicken":{
+
+                }
+            },
+            "Schnitzel":{
+                "Chicken-Schnitzel":{
+
+                }
+            },
+            "Pankakes":{
+                "Pankakes with cheese":{
+
+                }
+            },
+            "Cheese and Donuts":{
+                "Cheesecakes with sweet cheese":{
+
+                }
+            },
+            "Cheburecki":{
+                "Cheburecki":{
+                    "id": 4,
+                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                    "state" : "Frozen Product",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20.99",
+                    "Ingredients":"XY",
+                    "nutritiveValue":{
+                        "protein": "36",
+                        "fats": "200",
+                        "carboHydrates": "500"
+                    },
+                    "energyValue":{
+                        "kcal": "200",
+                        "kj": "200"
+                    }
+                }
+            }
+        }
+    },
+    "ro": {
+        "upperMenu":{
+            "loginButton": "Logare",
+            "orderWord": "Comanda:"
+        },
+        "navMenu": {
+            "items": ["Meniu", "Servicii","Despre Noi", "Știri"],
+            "aboutUs": ["Contacte", "Livrare"],
+            "fromTo":["De la", "Pînă la", "Zilnic"]
+        },
+        "products":{
+            "Cheburecki":{
+                "Cheburecki":{
+                    "id": 4,
+                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                    "state" : "Frozen Product",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20.99",
+                    "Ingredients":"XY",
+                    "nutritiveValue":{
+                        "protein": "36",
+                        "fats": "200",
+                        "carboHydrates": "500"
+                    },
+                    "energyValue":{
+                        "kcal": "200",
+                        "kj": "200"
+                    }
+                }
+            }
+        }
+    },
+    "ru": {
+        "upperMenu":{
+            "loginButton": "Логин",
+            "orderWord": "Заказ"
+        },
+        "navMenu": {
+            "items": ["Меню", "Услуги","О нас", "Новости"],
+            "aboutUs": ["контакты", "доставка"],
+            "fromTo":["от", "до", "ежедневно"]
+        }
+    }
+}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f1229d42341eadc7cf0c25314597563",
+    "content-hash": "3e9595d74f39f9e7605fac661bfca074",
     "packages": [
         {
             "name": "brick/math",
@@ -1879,6 +1879,75 @@
             "time": "2023-08-05T12:09:49+00:00"
         },
         {
+            "name": "mindscms/laravelshoppingcart",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mindscms/laravelshoppingcart.git",
+                "reference": "0ef2daf867c1699f23966f282db342630c3f9d00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mindscms/laravelshoppingcart/zipball/0ef2daf867c1699f23966f282db342630c3f9d00",
+                "reference": "0ef2daf867c1699f23966f282db342630c3f9d00",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/events": "^7|^8|^9|^10",
+                "illuminate/session": "^7|^8|^9|^10",
+                "illuminate/support": "^7|^8|^9|^10"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1",
+                "orchestra/testbench": "^7",
+                "phpunit/phpunit": "^10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
+                    ],
+                    "aliases": {
+                        "Cart": "Gloudemans\\Shoppingcart\\Facades\\Cart"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gloudemans\\Shoppingcart\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Gloudemans",
+                    "email": "info@robgloudemans.nl"
+                },
+                {
+                    "name": "Michael V.",
+                    "email": "michael@michaelbelgium.me"
+                },
+                {
+                    "name": "Sami Mansour",
+                    "email": "mindscms@gmail.com"
+                }
+            ],
+            "description": "Laravel Shopping cart",
+            "keywords": [
+                "laravel",
+                "shoppingcart"
+            ],
+            "support": {
+                "issues": "https://github.com/mindscms/laravelshoppingcart/issues",
+                "source": "https://github.com/mindscms/laravelshoppingcart/tree/v2.1.0"
+            },
+            "time": "2023-03-07T08:56:27+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.4.0",
             "source": {
@@ -3166,6 +3235,65 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v12.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "6b6f4a775ad46fee4b1df2df4fdfa574365b1621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/6b6f4a775ad46fee4b1df2df4fdfa574365b1621",
+                "reference": "6b6f4a775ad46fee4b1df2df4fdfa574365b1621",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "3.5.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "support": {
+                "issues": "https://github.com/stripe/stripe-php/issues",
+                "source": "https://github.com/stripe/stripe-php/tree/v12.8.0"
+            },
+            "time": "2023-10-16T18:04:12+00:00"
         },
         {
             "name": "symfony/console",

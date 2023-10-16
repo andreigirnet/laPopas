@@ -1,11 +1,9 @@
 // Reference to the fixed menu element
 const fixedMenu = document.querySelector("#fixedMenu"); // Replace with the appropriate selector
 
-
 // Function to handle scroll events
 function handleScroll() {
     const scrollPosition = window.scrollY;
-    console.log(scrollPosition)
     // Adjust this threshold value as needed based on your design
     const threshold = 800; // For example, 100 pixels from the top
     const bottom = 3700;
