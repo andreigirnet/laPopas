@@ -23,9 +23,12 @@ Route::get('/', function () {
 
 
 Route::get('/cart', [BasketController::class,'index'])->name('cart.index');
-Route::get('/cart/get', [App\Http\Controllers\BasketController::class,'getCartItems'])->name('basket.get');
+Route::get('/cartTotal', [BasketController::class,'cartTotal'])->name('cart.total');
 Route::post('/cart/add/', [App\Http\Controllers\BasketController::class,'store'])->name('basket.store');
 Route::delete('/cart/delete/{id}', [App\Http\Controllers\BasketController::class,'destroy'])->name('basket.delete');
+Route::put('/update-cart', [App\Http\Controllers\BasketController::class,'update'])->name('basket.update');
+Route::post('/discount', [App\Http\Controllers\BasketController::class,'applyDiscounts'])->name('basket.discount');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

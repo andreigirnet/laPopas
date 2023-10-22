@@ -2,12 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Gloudemans\Shoppingcart\CartItem;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 
 class BasketController extends Controller
 {
+    private $cart;
+
+    /**
+     * @return mixed
+     */
+    public function getCart()
+    {
+        return $this->cart;
+    }
+
+    /**
+     * @param mixed $cart
+     */
+    public function setCart($cart): void
+    {
+        $this->cart = $cart;
+    }
 
     /**
      * Display a listing of the resource.
@@ -15,6 +32,27 @@ class BasketController extends Controller
     public function index()
     {
         return view('front.cart');
+    }
+
+    public function cartTotal(){
+        $total = $this->discount();
+        return response()->json($total);
+    }
+
+    private function discount(){
+        $total = Cart::total();
+        if ($total >= 200){
+            $total = $total *  0.9;
+        } else if($total >= 100){
+            $total = $total *  0.95;
+        }
+        return number_format($total, 3);
+    }
+
+    public function applyDiscounts()
+    {
+        $total = $this->discount();
+        return redirect(route('checkout.index'));
     }
 
     /**
@@ -30,10 +68,9 @@ class BasketController extends Controller
      */
     public function store(Request $request)
     {
-
-        Cart::add($request->id, $request->name, 1, (float)$request->price, ['image' => $request->image]);
+        Cart::add($request->id, $request->name, 1, $request->price, ['image' => $request->image, 'discount' => 10]);
         return redirect(route('cart.index'))->with('success',"The course has been added to the cart");
-//        Cart::instance('default')->add($request->id, $request->name, $request->quantity, $request->price, ['currentLang' => $request->lang]);
+
     }
 
     /**
@@ -55,9 +92,9 @@ class BasketController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
-        //
+        Cart::update($request->rowId, intval($request->quantity));
     }
 
     /**

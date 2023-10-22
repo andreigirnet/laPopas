@@ -86,3 +86,33 @@ h1 {
     align-items: center;
     column-gap: 10px;
 }
+.cartEmptyContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 0px;
+}
+.cartEmpty{
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+}
+.homeButton {
+    background-color: #ffd200; /* Button background color */
+    color: #533e34; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 1s; /* Smooth color transition on hover */
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Add some hover effect */
+.homeButton:hover {
+     color: red /* Slightly darker color on hover */
+ }

@@ -1,0 +1,19 @@
+{
+    "en": {
+        "quantity": "Quantity:",
+        "checkout": "checkout",
+        "remove": "remove"
+    },
+
+    "ru": {
+        "quantity": "Kоличество:",
+        "checkout": "оформить заказ",
+        "remove": "удалить"
+    },
+
+    "ro": {
+        "quantity": "Cantitate:",
+        "checkout": "finalizare comandă",
+        "remove": "ștergere"
+    }
+}

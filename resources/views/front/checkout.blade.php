@@ -1,5 +1,6 @@
 @extends('welcome')
 @section('content')
+    <div x-text="cartTotal"></div>
     <div class="checkout-container">
         <h1>Checkout</h1>
         <form id="checkout-form" method="POST">

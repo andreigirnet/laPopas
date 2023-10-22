@@ -185,6 +185,10 @@ body{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     column-gap: 10px;
 }
+.submenuItem a{
+    color: white;
+    text-decoration: none;
+}
 .rightArrowMenu{
     width: 30px;
 }
@@ -281,7 +285,7 @@ body{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    position: fixed;
+    position: sticky;
     width: 270px;
     max-height: 560px;
 }
@@ -392,7 +396,7 @@ body{
     transition: top 0.3s ease-in-out;
 }
 .fixed{
-    position: fixed;
+    position: sticky;
 }
 .infoSection{
     width: 100%;
@@ -474,4 +478,12 @@ body{
 .swiper {
     width: 100%;
     height: 600px;
+}
+.cartAddProductContainer{
+    border: none;
+    cursor: pointer;
+    background: white;
+}
+.clearLink{
+    text-decoration: none;
 }

@@ -2,7 +2,9 @@
 function app() {
     return {
         data: null,
+        cartData: null,
         cart:{},
+        cartTotal: 0,
         quantity: 1,
         hoveredProduct: null,
         cartHovered: null,
@@ -12,6 +14,13 @@ function app() {
         async fetchData() {
             try {
                 let lang = this.currentLanguage;
+                let location = window.location.pathname;
+                let cartDataResponse;
+                if (location === '/cart'){
+                    cartDataResponse = await axios.get('data/cart.json');
+                    this.cartData = cartDataResponse.data[lang]
+                    console.log(this.cartData);
+                }
                 const response = await axios.get('data/data.json');
                 this.data = response.data[lang];
             } catch (error) {
@@ -21,17 +30,6 @@ function app() {
         chooseLanguage(string) {
             this.currentLanguage = string
             this.fetchData();
-        },
-        cartGetItems(){
-            axios.get('/cart/get').then(response => {
-                this.cart.cartcartTotal = response.data.total
-                this.cart.cartSubTotal = response.data.items_subtotal
-                this.cart.cartTotalQty = response.data.quantities_sum
-                this.cart.cartItems = response.data.items
-                console.log(response.data)
-            }).catch(error => {
-                console.error(error);
-            });
         },
         addToCart(item, key){
             axios.post('api/cart/add/', {
@@ -48,23 +46,39 @@ function app() {
                     console.log(error)
                 });
         },
-        updateQuantity(rowId, quantity) {
-        axios.post('/update-cart', {
-            rowId: rowId,
-            quantity: quantity
-        })
+        updateQuantity(rowId) {
+        let quantity = document.getElementById('quantity_' + rowId)
+            axios.put('/update-cart', {
+                rowId: rowId,
+                quantity: quantity.value
+            })
             .then(response => {
-                // Handle success, if needed.
+                this.getCartTotal()
             })
             .catch(error => {
                 // Handle errors, if needed.
             });
         },
+        applyDiscount(){
+            axios.post('/discount')
+                .then(response => {
+                    console.log('Discount applied')
+                })
+                .catch(error => {
+                    console.log(error)
+                });
+        },
+        getCartTotal() {
+            axios.get('/cartTotal')
+            .then(response =>{
+                this.cartTotal = response.data
+            })
+        },
 
         // Call fetchData when the component is initialized
          init() {
              this.fetchData();
-             this.cartGetItems()
+             this.getCartTotal()
         }
     }
 }

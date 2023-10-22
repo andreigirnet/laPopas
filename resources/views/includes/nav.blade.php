@@ -21,9 +21,9 @@
                 @if (Route::has('login'))
 
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="login">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="login clearLink">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="login" x-text="data.upperMenu.loginButton"></a>
+                        <a href="{{ route('login') }}" class="login clearLink" x-text="data.upperMenu.loginButton"></a>
                         {{--                                @if (Route::has('register'))--}}
                         {{--                                    <a href="{{ route('register') }}" class="login">Register</a>--}}
                         {{--                                @endif--}}
@@ -31,12 +31,14 @@
 
                 @endif
             </div>
-            <div class="smallCartUpper">
-                <img src="{{asset('images/cart/cart-header.png')}}" class="cartUpper" alt="">
-                <div class="smallCartText" x-text="data.upperMenu.orderWord">:</div>
-                <div class="smallOrderAmount">{{Cart::total()}}</div>
-                <div class="smallCartCurrency">euro</div>
-            </div>
+            <a href="/cart" class="clearLink">
+                <div class="smallCartUpper">
+                    <img src="{{asset('images/cart/cart-header.png')}}" class="cartUpper" alt="">
+                    <div class="smallCartText" x-text="data.upperMenu.orderWord">:</div>
+                    <div class="smallOrderAmount" x-text="cartTotal"></div>
+                    <div class="smallCartCurrency">euro</div>
+                </div>
+            </a>
         </div>
     </div>
 </section>
