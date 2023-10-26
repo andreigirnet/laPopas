@@ -42,6 +42,7 @@
                                             <form action="{{route('basket.store')}}" method="POST">
                                                 @csrf
                                                 <input type="hidden" name="name" :value="productKey">
+                                                <input type="hidden" name="russian" :value="allLangData.ru.products[key].find(item => product.id === id).name">
                                                 <input type="hidden" name="id" :value="product.id">
                                                 <input type="hidden" name="price" :value="product.price">
                                                 <input type="hidden" name="image" :value="product.images[0]">

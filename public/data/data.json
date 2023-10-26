@@ -13,6 +13,28 @@
                 "Pies in the oven": {
                     "Pie with cheese and herbs":{
                         "id": 1,
+                        "ro": "Cheburecki",
+                        "ru": "",
+                        "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                        "state" : "Frozen Product",
+                        "top": false,
+                        "cart": "In Cart",
+                        "price": "20.99",
+                        "Ingredients":"XY",
+                        "nutritiveValue":{
+                            "protein": "36",
+                            "fats": "200",
+                            "carboHydrates": "500"
+                        },
+                        "energyValue":{
+                            "kcal": "200",
+                            "kj": "200"
+                        }
+                    },
+                    "Pie with cheese and Onions":{
+                        "id": 2,
+                        "ro": "Cheburecki",
+                        "ru": "",
                         "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
                         "state" : "Frozen Product",
                         "top": false,
@@ -30,24 +52,6 @@
                         }
                     },
                     "Pie with chicken meat":{
-                        "id": 2,
-                        "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
-                        "state" : "Frozen Product",
-                        "top": false,
-                        "cart": "In Cart",
-                        "price": "20.99",
-                        "Ingredients":"XY",
-                        "nutritiveValue":{
-                            "protein": "36",
-                            "fats": "200",
-                            "carboHydrates": "500"
-                        },
-                        "energyValue":{
-                            "kcal": "200",
-                            "kj": "200"
-                        } 
-                    },
-                    "Pie with chicken beef":{
                         "id": 3,
                         "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
                         "state" : "Frozen Product",
@@ -63,9 +67,9 @@
                         "energyValue":{
                             "kcal": "200",
                             "kj": "200"
-                        } 
+                        }
                     },
-                    "Pie with chicken Goose":{
+                    "Pie with chicken beef":{
                         "id": 4,
                         "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
                         "state" : "Frozen Product",
@@ -81,7 +85,43 @@
                         "energyValue":{
                             "kcal": "200",
                             "kj": "200"
-                        } 
+                        }
+                    },
+                    "Pie with chicken Goose":{
+                        "id": 5,
+                        "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                        "state" : "Frozen Product",
+                        "top": false,
+                        "cart": "In Cart",
+                        "price": "20.99",
+                        "Ingredients":"XY",
+                        "nutritiveValue":{
+                            "protein": "36",
+                            "fats": "200",
+                            "carboHydrates": "500"
+                        },
+                        "energyValue":{
+                            "kcal": "200",
+                            "kj": "200"
+                        }
+                    },
+                    "Pie with chicken XyZ":{
+                        "id": 6,
+                        "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                        "state" : "Frozen Product",
+                        "top": false,
+                        "cart": "In Cart",
+                        "price": "20.99",
+                        "Ingredients":"XY",
+                        "nutritiveValue":{
+                            "protein": "36",
+                            "fats": "200",
+                            "carboHydrates": "500"
+                        },
+                        "energyValue":{
+                            "kcal": "200",
+                            "kj": "200"
+                        }
                     }
                 },
                 "Pankcakes": {
@@ -91,22 +131,22 @@
                 },
                 "Buns": {
                     "Seasame buns":{
-                        
+
                     }
                 },
                 "Meatballs": {
                     "Home meatballs":{
-                        
+
                     }
                 },
                 "Meatballs-smaller": {
                     "Meatballs smaller with chicken":{
-                        
+
                     }
                 },
                 "Schnitzel":{
                     "Chicken-Schnitzel":{
-                        
+
                     }
                 },
                 "Pankakes":{
@@ -136,7 +176,7 @@
                         "energyValue":{
                             "kcal": "200",
                             "kj": "200"
-                        } 
+                        }
                     }
                 }
         }
@@ -169,7 +209,7 @@
                     "energyValue":{
                         "kcal": "200",
                         "kj": "200"
-                    } 
+                    }
                 }
             }
         }
@@ -183,6 +223,28 @@
             "items": ["Меню", "Услуги","О нас", "Новости"],
             "aboutUs": ["контакты", "доставка"],
             "fromTo":["от", "до", "ежедневно"]
+        },
+        "products":{
+            "Cheburecki":{
+                "Cheburecki":{
+                    "id": 4,
+                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+                    "state" : "Frozen Product",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20.99",
+                    "Ingredients":"XY",
+                    "nutritiveValue":{
+                        "protein": "36",
+                        "fats": "200",
+                        "carboHydrates": "500"
+                    },
+                    "energyValue":{
+                        "kcal": "200",
+                        "kj": "200"
+                    }
+                }
+            }
         }
     }
 }

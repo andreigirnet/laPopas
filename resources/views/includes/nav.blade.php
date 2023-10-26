@@ -56,9 +56,9 @@
                     </template>
                 </div>
             </div>
-            <div x-text="data.navMenu.items[1]" class="menuItem"></div>
+            <a href="/service" class="clearLink" style="color: white"><div x-text="data.navMenu.items[1]" class="menuItem"></div></a>
             <div class="subCategoryMenu" id="menuDrop">
-                <div x-text="data.navMenu.items[2]" class="menuItem"></div>
+                <a href="/about" class="clearLink" style="color: white"><div x-text="data.navMenu.items[2]" class="menuItem"></div></a>
                 <div class="subMenu">
                     <div class="submenuItem">
                         <a x-text="data.navMenu.aboutUs[0]" href="/" class="sumbmenuItemKey"></a>
@@ -73,7 +73,7 @@
             <div x-text="data.navMenu.items[3]" class="menuItem"></div>
 
         </div>
-        <div class="centerMainMenu"><img src="{{asset('images/logo/Logo.png')}}" alt=""></div>
+        <a href="/"><div class="centerMainMenu"><img src="{{asset('images/logo/Logo.png')}}" alt=""></div></a>
         <div class="rightMainMenu">
             <div class="imgPhoneDial"><img src="{{asset('images/icons/Phone_Icon.png')}}" alt=""></div>
             <div class="mainMenuContent">

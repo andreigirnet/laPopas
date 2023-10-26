@@ -487,3 +487,64 @@ body{
 .clearLink{
     text-decoration: none;
 }
+
+@media (max-width: 480px) {
+    .upperNav {
+        display: block;
+    }
+
+    .upperNavWrapper {
+        width: 95%;
+    }
+
+    .leftUpperNav {
+        font-size: 14px;
+    }
+
+    /* Add more responsive styles as needed */
+}
+
+@media (max-width: 1200px) {
+    .infoSection{
+        height: auto;
+    }
+   .infoContainer{
+       width: 90%;
+       flex-direction: column;
+       align-items: center;
+       row-gap: 50px;
+       margin-bottom: 50px;
+   }
+   .hrDiv{
+       display: none;
+   }
+   .footerSection{
+       height: auto;
+       padding-top: 50px;
+       padding-bottom: 50px;
+   }
+    .footerContainer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .homeCategoriesMenu{
+        display: none;
+    }
+    .products{
+        grid-template-columns: 1fr;
+    }
+    .upperNav{
+        display: none;
+    }
+    .leftMainMenu{
+        display: none;
+    }
+    .rightMainMenu{
+        display: none;
+    }
+    .swiperMobileNone{
+        display: none;
+    }
+    /* Add more responsive styles here as needed */
+}

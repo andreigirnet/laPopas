@@ -2,26 +2,30 @@
 function app() {
     return {
         data: null,
+        allLangData: null,
         cartData: null,
         cart:{},
         cartTotal: 0,
+        cartTotalBefore: 0,
+        discount:'',
+        productCartName: '',
         quantity: 1,
         hoveredProduct: null,
         cartHovered: null,
         cartPath: ["/images/icons/grayCart.png","/images/icons/yellowCart.png"],
-        currentLanguage: "en",
+        currentLanguage: "",
         // Function to make the Axios request
         async fetchData() {
             try {
-                let lang = this.currentLanguage;
-                let location = window.location.pathname;
+                let lang = localStorage.getItem('lang');
+                this.currentLanguage = lang
                 let cartDataResponse;
-                if (location === '/cart'){
-                    cartDataResponse = await axios.get('data/cart.json');
-                    this.cartData = cartDataResponse.data[lang]
-                    console.log(this.cartData);
-                }
+
+                cartDataResponse = await axios.get('data/cart.json');
+                this.cartData = cartDataResponse.data[lang]
+
                 const response = await axios.get('data/data.json');
+                this.allLangData = response.data
                 this.data = response.data[lang];
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -29,6 +33,8 @@ function app() {
         },
         chooseLanguage(string) {
             this.currentLanguage = string
+            localStorage.setItem('lang',  string);
+            this.currentLanguage = localStorage.getItem('lang');
             this.fetchData();
         },
         addToCart(item, key){
@@ -68,17 +74,32 @@ function app() {
                     console.log(error)
                 });
         },
-        getCartTotal() {
+         getCartTotal() {
             axios.get('/cartTotal')
             .then(response =>{
-                this.cartTotal = response.data
+                console.log(response.data.original)
+                this.cartTotal = response.data.original.total
+                this.cartTotalBefore = response.data.original.totalBefore
+                this.setDiscount()
             })
         },
-
+         setDiscount(){
+            console.log(this.cartTotal)
+            if(this.cartTotalBefore > 100 && this.cartTotalBefore < 200){
+                this.discount = '5%'
+                console.log(this.discount)
+            }else if(this.cartTotalBefore > 200){
+                this.discount = '10%'
+                console.log(this.discount)
+            }else{
+                this.discount = ''
+                console.log(this.discount)
+            }
+        },
         // Call fetchData when the component is initialized
          init() {
              this.fetchData();
-             this.getCartTotal()
+             this.getCartTotal();
         }
     }
 }

@@ -1,22 +1,20 @@
-
 .checkout-container {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: 0 auto;
     padding: 20px;
     text-align: left;
-}
-
-form {
+    width: 40%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .form-group {
     margin-bottom: 15px;
+    width: 100%;
 }
 
 label {
@@ -29,7 +27,7 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -42,8 +40,73 @@ textarea {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    width: 150px;
 }
 
 .btn-submit:hover {
     background-color: #0056b3;
+}
+.checkoutContainer{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+#checkout-form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+}
+.basketContainer{
+    width: 40%;
+}
+#card-element {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.basketContainer {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: left;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    height: auto;
+}
+#checkoutBasketCart{
+    width: 100%;
+}
+.checkoutTotal{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+@media only screen and (max-width: 1200px){
+    .checkoutContainer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .basketContainer{
+        width: 90%;
+        border-radius: 0;
+    }
+    .checkout-container{
+        width: 90%;
+        border-radius: 0;
+    }
 }

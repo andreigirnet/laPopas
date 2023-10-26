@@ -48,7 +48,10 @@ h1 {
 }
 
 .cart-total {
-    text-align: right;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    row-gap: 5px;
     font-weight: bold;
     margin-top: 10px;
 }
@@ -116,3 +119,23 @@ h1 {
 .homeButton:hover {
      color: red /* Slightly darker color on hover */
  }
+.discountText{
+    display: flex;
+    column-gap: 5px;
+    justify-content: end;
+}
+.total, .percent, .amount{
+    display: flex;
+    justify-content: end;
+}
+.amountWrap{
+    display: flex;
+    column-gap: 5px;
+    justify-content: end;
+}
+@media only screen and (max-width: 1200px){
+   .cart{
+       margin: 40px auto;
+       border-radius: 0;
+   }
+}

@@ -11,6 +11,7 @@
 {{--    </div>--}}
 {{--</section>--}}
 <!-- Slider main container -->
+<div class="swiperMobileNone">
 <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
@@ -29,4 +30,5 @@
 
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
+</div>
 </div>

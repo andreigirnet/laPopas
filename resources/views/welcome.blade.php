@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/cart.css">
         <link href="https://fonts.cdnfonts.com/css/museo-sans-rounded" rel="stylesheet">
         <link rel="stylesheet" href="css/checkout.css">
+        <link rel="stylesheet" href="css/service.css">
         <link href="https://fonts.cdnfonts.com/css/noir" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -107,7 +108,7 @@
                //     el: '.swiper-scrollbar',
                // },
            });
-       </script>.
+       </script>
        <script src="https://js.stripe.com/v3/"></script>
        <script src="js/stripe.js"></script>
     </body>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Order;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 use Stripe\Stripe;
@@ -84,9 +85,11 @@ class CheckoutController extends Controller
         } else if ($intent->status == 'succeeded') {
             # The payment didn’t need any additional actions and completed!
             # Handle post-payment fulfillment
+            $productsArray = [];
+
             Order::create([
                 'user_id' => auth()->user()->id,
-                'product_name' => "Manual Handling",
+                'products' => "Manual Handling",
                 'quantity' => $this->cart->sumItemsQuantity(),
                 'paid' => $this->cart->getTotal(),
                 'charge_id' => $intent->id,
@@ -97,14 +100,6 @@ class CheckoutController extends Controller
                 'country' => $request->country,
                 'status' => 'paid',
             ]);
-
-            for ($i = 0; $i < $this->cart->sumItemsQuantity(); $i++) {
-                $package = new Package();
-                $package->user_id = auth()->user()->id;
-                $package->course_name = "Manual Handling";
-                $package->status = "purchased";
-                $package->save();
-            }
             Cart::destroy();
             $request->session()->flash('success', 'Payment has been received successfully');
             echo json_encode([

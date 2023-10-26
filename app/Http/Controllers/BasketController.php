@@ -34,19 +34,32 @@ class BasketController extends Controller
         return view('front.cart');
     }
 
+    public function cartTotalBefore(){
+        $total = Cart::total();
+        return response()->json($total);
+    }
+
     public function cartTotal(){
         $total = $this->discount();
         return response()->json($total);
     }
 
-    private function discount(){
+    private function discount() {
         $total = Cart::total();
-        if ($total >= 200){
-            $total = $total *  0.9;
-        } else if($total >= 100){
-            $total = $total *  0.95;
+        $totalBefore = Cart::total();
+
+        if ($total >= 200) {
+            $total = $total * 0.9;
+        } else if ($total >= 100) {
+            $total = $total * 0.95;
         }
-        return number_format($total, 3);
+
+        $result = [
+            'total' => number_format($total, 3),
+            'totalBefore' => number_format($totalBefore, 3)
+        ];
+
+        return response()->json($result);
     }
 
     public function applyDiscounts()
@@ -68,7 +81,7 @@ class BasketController extends Controller
      */
     public function store(Request $request)
     {
-        Cart::add($request->id, $request->name, 1, $request->price, ['image' => $request->image, 'discount' => 10]);
+        Cart::add($request->id, $request->name, 1, $request->price, ['image' => $request->image, 'key'=>$request->key]);
         return redirect(route('cart.index'))->with('success',"The course has been added to the cart");
 
     }

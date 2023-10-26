@@ -18,6 +18,7 @@
                         <p>{{$item->price}}</p>
                         <div class="qty">
                             <label for="quantity" class="labelQty" x-text="cartData.quantity"></label>
+                            <input type="hidden" id="total" value="{{Cart::Total()}}">
                             <input type="number" id="quantity_{{$item->rowId}}" value="{{$item->qty}}" name="quantity" class="nice-number-input" x-on:change="updateQuantity('{{$item->rowId}}')" min="1">
                         </div>
                     </div>
@@ -31,12 +32,21 @@
                 <!-- Add more items as needed -->
             </ul>
             <div class="cart-total">
-                <p x-text="cartTotal"></p>
+                <div class="total">Total</div>
+                <div class="discountText" x-show="discount">
+                    <div>Discount Applied:</div>
+                    <div class="percent" x-text="discount"></div>
+                </div>
+                <div class="amountWrap">
+                <p x-text="cartTotal" class="amount"></p>
+                    <p>euro</p>
+                </div>
             </div>
             <form action="{{route('basket.discount')}}" method="POST">
                 @csrf
                 <button class="checkout-button"  x-text="cartData.checkout.toUpperCase()">Checkout</button>
             </form>
+            <button class="checkout-button"  x-text="cartData.checkout.toUpperCase()" x-on:click="setName()">Checkout</button>
         </div>
         @endif
 @endsection

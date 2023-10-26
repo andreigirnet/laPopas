@@ -20,9 +20,15 @@ Route::get('/', function () {
     return view('front.main');
 })->name('main');
 
-
+Route::get('/service', function(){
+    return view('front.service');
+})->name('cart.index');
+Route::get('/about', function(){
+    return view('front.about');
+})->name('cart.index');
 
 Route::get('/cart', [BasketController::class,'index'])->name('cart.index');
+Route::get('/total', [BasketController::class,'cartTotalBefore'])->name('cart.totalForDisc');
 Route::get('/cartTotal', [BasketController::class,'cartTotal'])->name('cart.total');
 Route::post('/cart/add/', [App\Http\Controllers\BasketController::class,'store'])->name('basket.store');
 Route::delete('/cart/delete/{id}', [App\Http\Controllers\BasketController::class,'destroy'])->name('basket.delete');
