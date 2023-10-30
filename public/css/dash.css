@@ -1,0 +1,51 @@
+.dashboardContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.dashboardSection{
+    margin-top: 50px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 60%;
+    padding: 40px 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.side-menu {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 20px;
+    transition: transform 0.3s;
+    transform: translateX(0);
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.content {
+    flex: 11;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+

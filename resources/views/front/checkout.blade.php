@@ -38,6 +38,9 @@
             <h1>Checkout</h1>
             <form id="checkout-form" method="POST">
                 @csrf
+                <div id="link-authentication-element">
+                    <!--Stripe.js injects the Link Authentication Element-->
+                </div>
                 <input type="hidden" name="cartTotal" id="cartTotal" value="{{Cart::total()}}">
                 <input type="hidden" name="cartQty" id="qty" value="{{Cart::count()}}">
                 <div id="link-authentication-element">
@@ -53,7 +56,19 @@
                 </div>
                 <div class="form-group">
                     <label for="address">Shipping Address</label>
-                    <textarea id="address" name="address" rows="4" required></textarea>
+                    <input type="text"  id="address" name="address" rows="4" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="address">County</label>
+                    <input type="text" id="county" name="county" rows="4" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="address">City</label>
+                    <input type="text" id="city" name="city" rows="4" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="address">Country</label>
+                    <input type="text" id="country" name="country" rows="4" required></input>
                 </div>
                 <div id="card-element"></div>
                 <div id="card-errors" style="color: red" role="alert"></div>

@@ -13,8 +13,6 @@
                 "Pies in the oven": {
                     "Pie with cheese and herbs":{
                         "id": 1,
-                        "ro": "Cheburecki",
-                        "ru": "",
                         "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
                         "state" : "Frozen Product",
                         "top": false,
@@ -33,8 +31,6 @@
                     },
                     "Pie with cheese and Onions":{
                         "id": 2,
-                        "ro": "Cheburecki",
-                        "ru": "",
                         "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
                         "state" : "Frozen Product",
                         "top": false,
@@ -192,26 +188,51 @@
             "fromTo":["De la", "Pînă la", "Zilnic"]
         },
         "products":{
-            "Cheburecki":{
-                "Cheburecki":{
-                    "id": 4,
-                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
+            "Plăcinte la cuptor":{
+                "Plăcinte cu brînză şi verdeaţă":{
+                    "id": 1,
+                    "images":["/images/products/placintaBrinza.webp"],
                     "state" : "Frozen Product",
                     "top": false,
                     "cart": "In Cart",
-                    "price": "20.99",
-                    "Ingredients":"XY",
+                    "price": "6",
+                    "deposit": " 180 de zile. Temperatura -18C",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients":"Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă,Ingrediente umplutură: brînză de vacă de 5%, brînză Drochia de 8%,ouă de găină, mărar proaspăt,ceapă verde, crupă de griş, sare alimentară. Umplutură-60%",
                     "nutritiveValue":{
-                        "protein": "36",
-                        "fats": "200",
-                        "carboHydrates": "500"
+                        "protein": "13,83",
+                        "fats": "9,46",
+                        "carboHydrates": "19,47"
                     },
                     "energyValue":{
-                        "kcal": "200",
-                        "kj": "200"
-                    }
+                        "kcal": "218",
+                        "kj": "916"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu carne de pui":{
+                    "id": 2,
+                    "images":["/images/products/placintaCarnePuiPorc.webp"],
+                    "state" : "Frozen Product",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7",
+                    "ingredients":"Aluat: făină de grâu premium, apă de băut, ulei de floarea soarelui deodorizat rafinat, zahăr, sare de masă, oțet de masă, Umplutură: carne de porc, pui, ceapă, ulei de floarea soarelui deodorizat rafinat, sare de masă, piper negru măcinat. Umplere-60%",
+                    "nutritiveValue":{
+                        "protein": "10,42",
+                        "fats": "30,1",
+                        "carboHydrates": "24,42"
+                    },
+                    "energyValue":{
+                        "kcal": "411",
+                        "kj": "1705"
+                    },
+                    "weight": "500",
+                    "pieces": "4"
                 }
             }
+
         }
     },
     "ru": {

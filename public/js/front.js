@@ -4,7 +4,11 @@ function app() {
         data: null,
         allLangData: null,
         cartData: null,
+        singleProduct: null,
+        singlePageData:null,
         cart:{},
+        categoryIndex: null,
+        productIndex: null,
         cartTotal: 0,
         cartTotalBefore: 0,
         discount:'',
@@ -19,17 +23,52 @@ function app() {
             try {
                 let lang = localStorage.getItem('lang');
                 this.currentLanguage = lang
-                let cartDataResponse;
 
-                cartDataResponse = await axios.get('data/cart.json');
+                let cartDataResponse;
+                cartDataResponse = await axios.get('/data/cart.json');
                 this.cartData = cartDataResponse.data[lang]
 
-                const response = await axios.get('data/data.json');
+                let singlePageResponse = await axios.get('/data/single.json');
+                this.singlePageData = singlePageResponse.data[lang]
+
+                const response = await axios.get('/data/data.json');
                 this.allLangData = response.data
                 this.data = response.data[lang];
+
+                let currentPath = window.location.pathname;
+                this.singleItem(currentPath)
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
+        },
+        singleItem(path){
+            let newPath = this.decodePath(path)
+            let keys = newPath.split("/")
+            let slicedArray = keys.slice(2)
+            if (this.categoryIndex === null && this.productIndex === null) {
+                let categoryKeys = Object.keys(this.data.products)
+                let productsKeys = Object.keys(this.data.products[slicedArray[0]])
+                this.categoryIndex = categoryKeys.indexOf(slicedArray[0])
+                this.productIndex = productsKeys.indexOf(slicedArray[1])
+            }
+            console.log(this.categoryIndex, this.productIndex)
+            const productsKeys = Object.keys(this.data.products);
+            let keyToDisplay = productsKeys[this.categoryIndex]
+            const productsItems = Object.keys(this.data.products[keyToDisplay]);
+            let itemToDisplay = productsItems[this.productIndex]
+            this.singleProduct = this.data.products[keyToDisplay][itemToDisplay]
+            this.singleProduct['name'] = itemToDisplay
+        },
+        decodePath(encodedPath) {
+        try {
+            const parts = encodedPath.split('/').map(part => decodeURIComponent(part));
+            const decodedPath = parts.join('/');
+            return decodedPath;
+        } catch (error) {
+            // Handle any potential decoding errors
+            console.error("Error decoding path:", error);
+            return null;
+        }
         },
         chooseLanguage(string) {
             this.currentLanguage = string
@@ -77,14 +116,12 @@ function app() {
          getCartTotal() {
             axios.get('/cartTotal')
             .then(response =>{
-                console.log(response.data.original)
                 this.cartTotal = response.data.original.total
                 this.cartTotalBefore = response.data.original.totalBefore
                 this.setDiscount()
             })
         },
          setDiscount(){
-            console.log(this.cartTotal)
             if(this.cartTotalBefore > 100 && this.cartTotalBefore < 200){
                 this.discount = '5%'
                 console.log(this.discount)

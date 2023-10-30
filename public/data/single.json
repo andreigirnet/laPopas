@@ -1,0 +1,40 @@
+{
+    "en": {
+        "nutrition": "The Nutritional Value:",
+        "energy": "The Energy Value:",
+        "composition": "Composition",
+        "cooking": "Cooking Option",
+        "deliverySingle": "delivery",
+        "protein": "Protein",
+        "fats": "Fats",
+        "carbs": "Carbohydrates",
+        "grams": "grams",
+        "storage": "Storage:"
+    },
+
+    "ru": {
+        "nutrition": "Пищевая ценность:",
+        "energy": "Энергетическая ценность:",
+        "composition": "Состав:",
+        "cooking": "Способ приготовления:",
+        "deliverySingle": "доставка",
+        "protein": "Белки",
+        "fats": "Жиры",
+        "carbs": "Углеводы",
+        "grams": "граммы",
+        "storage": "Хранение:"
+    },
+
+    "ro": {
+        "nutrition": "Valoare Nutrițională:",
+        "energy": "Valoare Energetică:",
+        "composition": "Compoziție:",
+        "cooking": "Opțiuni de Gătit:",
+        "deliverySingle": "livrare",
+        "protein": "Proteine",
+        "fats": "Grăsimi",
+        "carbs": "Carbohidrați",
+        "grams": "grame",
+        "storage": "Stocare:"
+    }
+}

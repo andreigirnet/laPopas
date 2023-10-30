@@ -6,11 +6,13 @@
         <meta content="authenticity_token" name="csrf-param" />
         <meta content="{{@csrf_token()}}=" name="csrf-token" />
         <title>La Popas</title>
-        <link rel="stylesheet" href="css/frontMain.css">
-        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="{{asset('css/frontMain.css')}}">
+        <link rel="stylesheet" href="{{asset('css/cart.css')}}">
         <link href="https://fonts.cdnfonts.com/css/museo-sans-rounded" rel="stylesheet">
-        <link rel="stylesheet" href="css/checkout.css">
-        <link rel="stylesheet" href="css/service.css">
+        <link rel="stylesheet" href="{{asset('css/checkout.css')}}">
+        <link rel="stylesheet" href="{{asset('css/service.css')}}">
+        <link rel="stylesheet" href="{{asset('css/product.css')}}">
+        <link rel="stylesheet" href="{{asset('css/dash.css')}}">
         <link href="https://fonts.cdnfonts.com/css/noir" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -80,9 +82,9 @@
                 </div>
             </div>
         </section>
-        <script src="js/front.js"></script>
-        <script src="js/banner.js"></script>
-        <script src="js/scroll.js"></script>
+        <script src="{{asset('js/front.js')}}"></script>
+        <script src="{{asset('js/banner.js')}}"></script>
+{{--        <script src="{{asset('js/scroll.js')}}"></script>--}}
 {{--       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>--}}
        <script type="module">
            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
@@ -110,6 +112,6 @@
            });
        </script>
        <script src="https://js.stripe.com/v3/"></script>
-       <script src="js/stripe.js"></script>
+       <script src="{{asset('js/stripe.js')}}"></script>
     </body>
 </html>

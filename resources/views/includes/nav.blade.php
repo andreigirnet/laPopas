@@ -36,7 +36,7 @@
                     <img src="{{asset('images/cart/cart-header.png')}}" class="cartUpper" alt="">
                     <div class="smallCartText" x-text="data.upperMenu.orderWord">:</div>
                     <div class="smallOrderAmount" x-text="cartTotal"></div>
-                    <div class="smallCartCurrency">euro</div>
+                    <div class="smallCartCurrency">€</div>
                 </div>
             </a>
         </div>
@@ -70,7 +70,6 @@
                     </div>
                 </div>
             </div>
-            <div x-text="data.navMenu.items[3]" class="menuItem"></div>
 
         </div>
         <a href="/"><div class="centerMainMenu"><img src="{{asset('images/logo/Logo.png')}}" alt=""></div></a>

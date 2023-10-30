@@ -22,10 +22,13 @@ Route::get('/', function () {
 
 Route::get('/service', function(){
     return view('front.service');
-})->name('cart.index');
+})->name('service.index');
 Route::get('/about', function(){
     return view('front.about');
-})->name('cart.index');
+})->name('about.index');
+Route::get('/product/{key}/{product}', function($product){
+    return view('front.product');
+})->name('product');
 
 Route::get('/cart', [BasketController::class,'index'])->name('cart.index');
 Route::get('/total', [BasketController::class,'cartTotalBefore'])->name('cart.totalForDisc');
@@ -43,7 +46,7 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
 
     Route::get('/checkout', [CheckoutController::class,'index'])->name('checkout.index');
-    Route::post('/payment', [CheckoutController::class,'setPayment'])->name('checkout.store');
+    Route::post('/payment', [CheckoutController::class,'setPayment']);
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

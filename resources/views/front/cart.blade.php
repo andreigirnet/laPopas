@@ -31,6 +31,7 @@
                 @endforeach
                 <!-- Add more items as needed -->
             </ul>
+            <div class="cartMessage" x-text="cartData.discountMessage"></div>
             <div class="cart-total">
                 <div class="total">Total</div>
                 <div class="discountText" x-show="discount">
@@ -46,7 +47,6 @@
                 @csrf
                 <button class="checkout-button"  x-text="cartData.checkout.toUpperCase()">Checkout</button>
             </form>
-            <button class="checkout-button"  x-text="cartData.checkout.toUpperCase()" x-on:click="setName()">Checkout</button>
         </div>
         @endif
 @endsection

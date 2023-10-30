@@ -55,8 +55,8 @@ class BasketController extends Controller
         }
 
         $result = [
-            'total' => number_format($total, 3),
-            'totalBefore' => number_format($totalBefore, 3)
+            'total' => number_format($total, 2),
+            'totalBefore' => number_format($totalBefore, 2)
         ];
 
         return response()->json($result);

@@ -2,18 +2,21 @@
     "en": {
         "quantity": "Quantity:",
         "checkout": "checkout",
-        "remove": "remove"
+        "remove": "remove",
+        "discountMessage": "**Please note that we will provide a personalized discount to customers who place orders exceeding €300. This discount may vary based on factors such as order frequency and total amount spent. Before making your payment, please review the items in your basket. If you have accidentally added products you don't need, kindly remove them from your basket and make your selection again."
     },
 
     "ru": {
         "quantity": "Kоличество:",
         "checkout": "оформить заказ",
-        "remove": "удалить"
+        "remove": "удалить",
+        "discountMessage": "**Пожалуйста, обратите внимание, что мы предоставим индивидуальную скидку для клиентов, размещающих заказы на сумму более 300 €. Размер этой скидки может варьироваться в зависимости от таких факторов, как частота размещения заказов и общая сумма расходов. Перед совершением оплаты, пожалуйста, внимательно проверьте товары в вашей корзине. Если вы по ошибке добавили продукты, которые вам не нужны, добросердечно удалите их из корзины и сделайте свой выбор снова."
     },
 
     "ro": {
         "quantity": "Cantitate:",
         "checkout": "finalizare comandă",
-        "remove": "ștergere"
+        "remove": "ștergere",
+        "discountMessage": "**Vă rugăm să rețineți că vom oferi o reducere personalizată clienților care plasează comenzi ce depășesc suma de 300 €. Această reducere poate varia în funcție de factori precum frecvența comenzilor și suma totală cheltuită. Înainte de a efectua plata, vă rugăm să revizuiți produsele din coșul dvs. Dacă ați adăugat accidental produse care nu vă sunt necesare, vă rugăm să le eliminați din coș și să vă faceți selecția din nou."
     }
 }

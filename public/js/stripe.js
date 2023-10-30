@@ -1,4 +1,4 @@
-const stripe = Stripe("pk_test_51JenjxEOwT6rweEZmZvuBnKmBuFNI6SB6pFeZuBCeKq8JErAPZVBm8VhJqqUZPv0DQeliLrbgjEPGptvn20OuNGB00lcr89MRV");
+const stripe = Stripe("pk_test_51JenjxEOwT6rweEZRxjL6wziQYj4iCUHc4TGUBWCUPZJAuCLlWPaWY6NPCr1KB7IznhygYwTGCzjs7J7VF3tHh7700UFn3tb2y");
 const elements = stripe.elements();
 
 // Set up Stripe.js and Elements to use in checkout form
@@ -99,6 +99,6 @@ const handleServerResponse = async (response) => {
             handleServerResponse(await serverResponse.json());
         }
     } else {
-        window.location.href = '/packages';
+        window.location.href = '/';
     }
 }
