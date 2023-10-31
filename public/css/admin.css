@@ -1,0 +1,314 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.admin-panel {
+    display: flex;
+    height: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #102f49;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+   opacity: 0.8;
+}
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #102f49;
+    color: #fff;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.data-table tr:hover {
+    background-color: #ddd;
+}
+
+.edit-button, .delete-button, .show-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover, .delete-button:hover, .show-button:hover {
+    background-color: #0056b3;
+}
+.logoAdmin{
+    width: 200px;
+}
+/* Your existing CSS rules */
+
+.action-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF; /* Use the same color as your action buttons */
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.create-button {
+    background-color: #007BFF; /* Use the same color as your action buttons */
+}
+
+.create-button:hover {
+    background-color: #0056b3; /* Darker shade on hover, same as action buttons */
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 292px;
+}
+
+.search-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+#usersTable{
+    margin-top: 20px;
+}
+#ordersTable{
+    margin-top: 20px;
+}
+.edit-user-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.edit-user-form h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.update-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 130px;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+.formEdit{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.formEdit input{
+    width: 100%;
+}
+.lastColumnTable{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+    height: 17px;
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
+/* Style for the select container */
+.select-container {
+    position: relative;
+    width: 200px; /* Adjust the width as needed */
+}
+
+/* Style for the custom select */
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #d0e7d2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    width: 105%;
+    cursor: pointer;
+}
+
+/* Style for the select options */
+.custom-select option {
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Style for when the select is focused */
+.custom-select:focus {
+    outline: none;
+    border: 1px solid #007BFF; /* Change to your desired focus color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7); /* Change to your desired focus shadow */
+}
+#delivery-status{
+    background: #c2d9ff;
+}
+.tableIcon{
+    width: 50px;
+}
+#local{
+    width: 34px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.pagination li.active {
+    background-color: #333;
+    color: #fff;
+}
+.pagination li a{
+    text-decoration: none;
+    color: black;
+}

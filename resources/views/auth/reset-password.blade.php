@@ -1,4 +1,5 @@
 <x-guest-layout>
+    <a href="/"><div class="loginLogoContiner"><img src="{{asset('images/logo/DARKlogo.png')}}" class="loginLogo" alt=""></div></a>
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
 

@@ -63,7 +63,8 @@ const stripePaymentMethodHandler = async (result) => {
                 county: document.getElementById('county').value,
                 city: document.getElementById('city').value,
                 country: document.getElementById('country').value,
-                cartTotal: document.getElementById('cartTotal').value
+                cartTotal: document.getElementById('cartTotal').value,
+                comments: document.getElementById('comments').value
             }),
         })
         const paymentResponse = await res.json();
@@ -99,6 +100,6 @@ const handleServerResponse = async (response) => {
             handleServerResponse(await serverResponse.json());
         }
     } else {
-        window.location.href = '/';
+        window.location.href = '/dashboard';
     }
 }

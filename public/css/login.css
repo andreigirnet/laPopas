@@ -1,0 +1,16 @@
+body{
+    background-image: url("../images/login/new.jpg");
+    background-size: cover;
+}
+.loginLogo{
+    width: 200px;
+}
+.loginLogoContiner{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 1200px){
+    .loginBox{
+        justify-content: center;
+    }
+}

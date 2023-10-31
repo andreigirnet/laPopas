@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('products')->nullable();
             $table->float('totalPaid');
             $table->integer('totalQty');
+            $table->text('comments')->nullable();
             $table->text('deliveryMethod')->nullable();
             $table->text('invoice')->nullable();
             $table->timestamps();

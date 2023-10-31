@@ -56,19 +56,23 @@
                 </div>
                 <div class="form-group">
                     <label for="address">Shipping Address</label>
-                    <input type="text"  id="address" name="address" rows="4" required></input>
+                    <input type="text"  id="address" name="address"  required>
                 </div>
                 <div class="form-group">
                     <label for="address">County</label>
-                    <input type="text" id="county" name="county" rows="4" required></input>
+                    <input type="text" id="county" name="county" required>
                 </div>
                 <div class="form-group">
                     <label for="address">City</label>
-                    <input type="text" id="city" name="city" rows="4" required></input>
+                    <input type="text" id="city" name="city"  required>
                 </div>
                 <div class="form-group">
                     <label for="address">Country</label>
-                    <input type="text" id="country" name="country" rows="4" required></input>
+                    <input type="text" id="country" name="country" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Comments</label>
+                    <textarea type="text" id="comments" name="comments" rows="4" required></textarea>
                 </div>
                 <div id="card-element"></div>
                 <div id="card-errors" style="color: red" role="alert"></div>

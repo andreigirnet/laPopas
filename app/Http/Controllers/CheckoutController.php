@@ -88,11 +88,10 @@ class CheckoutController extends Controller
             # Handle post-payment fulfillment
             $productsArray = [];
             foreach (Cart::content() as $item){
-                $value = $item->name . '|' . $item->qty . '|' . $item->price;
+                $value = '- ' . $item->name . ' | Qty: ' . $item->qty . ' | €: ' . $item->price . '<br>';
                 array_push($productsArray, $value);
             }
-            $productsString = implode(',',$productsArray);
-
+            $productsString = implode(' ',$productsArray);
             Order::create([
                 'user_id' => auth()->user()->id,
                 'products' => $productsString,
@@ -103,6 +102,7 @@ class CheckoutController extends Controller
                 'county' => $request->county,
                 'country' => $request->country,
                 'status' => 'paid',
+                'comments'=> $request->comments
             ]);
             Cart::destroy();
             $request->session()->flash('success', 'Payment has been received successfully');

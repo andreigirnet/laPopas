@@ -1,4 +1,5 @@
 <x-guest-layout>
+    <a href="/"><div class="loginLogoContiner"><img src="{{asset('images/logo/DARKlogo.png')}}" class="loginLogo" alt=""></div></a>
     <div class="mb-4 text-sm text-gray-600">
         {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
     </div>

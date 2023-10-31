@@ -40,7 +40,7 @@
                 </div>
                 <div class="amountWrap">
                 <p x-text="cartTotal" class="amount"></p>
-                    <p>euro</p>
+                    <p>€</p>
                 </div>
             </div>
             <form action="{{route('basket.discount')}}" method="POST">
