@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="{{asset('css/service.css')}}">
         <link rel="stylesheet" href="{{asset('css/product.css')}}">
         <link rel="stylesheet" href="{{asset('css/dash.css')}}">
+        <link rel="stylesheet" href="{{asset('css/contacts.css')}}">
         <link href="https://fonts.cdnfonts.com/css/noir" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>

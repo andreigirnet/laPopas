@@ -1,0 +1,114 @@
+.imageDeliveryContacts{
+    width: 300px;
+    margin-top: 50px;
+}
+.contactsInner{
+    margin-top: 50px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 45%;
+    padding: 40px 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 200px;
+}
+.contactsLeft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.contactsRight{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+}
+.deliveryContacts{
+    display: flex;
+    column-gap: 10px;
+}
+.deliveryContactsContent{
+    font-size: 30px;
+    font-weight: 600;
+}
+.truck{
+    width: 60px;
+}
+.deliveryLocationTime{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.deliveryLocation{
+    font-size: 30px;
+    font-weight: 700;
+}
+.deliveryTime{
+    font-size: 30px;
+}
+.contactsRightTitle{
+    font-size: 30px;
+    font-weight: 600;
+}
+.contactsRightUpperFirstRow{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.contactsRightLowerSecondRow{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.contactsLower{
+    display: flex;
+    column-gap: 50px;
+}
+.lowerContent{
+    margin-top: 25px;
+}
+.contactsContent{
+    font-size: 20px;
+}
+@media only screen and (max-width: 1200px){
+    .contactsInner{
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 0px;
+        row-gap: 20px;
+        border-radius: 0px;
+    }
+    .imageDeliveryContacts{
+        width: 100%;
+    }
+    .contactsLeft{
+        width: 100%;
+    }
+    .deliveryContacts{
+        padding: 0px 10px;
+    }
+    .deliveryLocationTime{
+        padding: 0px 10px;
+    }
+    .contactsRightTitle{
+        padding: 0px 10px;
+    }
+    .contactsRightUpperFirstRow{
+        padding: 0px 10px;
+    }
+    .contactsRightLowerSecondRow{
+        padding: 0px 10px;
+    }
+    .contactsRight{
+        width: 100%;
+    }
+    .contactsLower{
+        column-gap: 10px;
+    }
+    .leftPadd{
+        padding-left: 10px;
+    }
+}

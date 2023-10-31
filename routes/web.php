@@ -28,6 +28,9 @@ Route::get('/service', function(){
 Route::get('/about', function(){
     return view('front.about');
 })->name('about.index');
+Route::get('/contacts', function(){
+    return view('front.contacts');
+})->name('front.contacts');
 Route::get('/product/{key}/{product}', function($product){
     return view('front.product');
 })->name('product');
@@ -40,10 +43,6 @@ Route::delete('/cart/delete/{id}', [App\Http\Controllers\BasketController::class
 Route::put('/update-cart', [App\Http\Controllers\BasketController::class,'update'])->name('basket.update');
 Route::post('/discount', [App\Http\Controllers\BasketController::class,'applyDiscounts'])->name('basket.discount');
 
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
 
@@ -72,7 +71,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/orders/delete/{id}', [OrderController::class, 'destroy'])->name('orders.destroy');
     Route::get('/orders/search', [OrderController::class, 'search'])->name('orders.search');
 
-    Route::get('/dashboard/orders', [DashboardController::class, 'ordersIndex'])->name('dash.orders.index');
+    Route::get('/dashboard/', [DashboardController::class, 'ordersIndex'])->name('dash.orders.index');
     Route::get('/dashboard/profile', [DashboardController::class, 'profileIndex'])->name('dash.profile.index');
     Route::put('/dashboard/profile/update/{id}', [DashboardController::class, 'updateProfile'])->name('dash.profile.update');
 

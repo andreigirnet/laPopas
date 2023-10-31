@@ -61,7 +61,7 @@
                 <a href="/about" class="clearLink" style="color: white"><div x-text="data.navMenu.items[2]" class="menuItem"></div></a>
                 <div class="subMenu">
                     <div class="submenuItem">
-                        <a x-text="data.navMenu.aboutUs[0]" href="/" class="sumbmenuItemKey"></a>
+                        <a x-text="data.navMenu.aboutUs[0]" href="{{route('front.contacts')}}" class="sumbmenuItemKey"></a>
                         <img class="rightArrowMenu" src="{{asset('images/icons/rightArrowYellow.png')}}" alt="">
                     </div>
                     <div class="submenuItem">
