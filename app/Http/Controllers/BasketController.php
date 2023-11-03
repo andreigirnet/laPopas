@@ -81,7 +81,8 @@ class BasketController extends Controller
      */
     public function store(Request $request)
     {
-        Cart::add($request->id, $request->name, 1, $request->price, ['image' => $request->image, 'key'=>$request->key]);
+        $productName = $request->name . '(' . $request->state . ')';
+        Cart::add($request->id, $productName, 1, $request->price, ['image' => $request->image, 'key'=>$request->key]);
         return redirect(route('cart.index'))->with('success',"The course has been added to the cart");
 
     }

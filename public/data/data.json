@@ -188,15 +188,15 @@
             "fromTo":["De la", "Pînă la", "Zilnic"]
         },
         "products":{
-            "Plăcinte la cuptor":{
+            "Semifabricate împachetate":{
                 "Plăcinte cu brînză şi verdeaţă":{
                     "id": 1,
-                    "images":["/images/products/placintaBrinza.webp"],
-                    "state" : "Frozen Product",
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
                     "price": "6",
-                    "deposit": " 180 de zile. Temperatura -18C",
+                    "deposit": "180 de zile. Temperatura -18C",
                     "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
                     "ingredients":"Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă,Ingrediente umplutură: brînză de vacă de 5%, brînză Drochia de 8%,ouă de găină, mărar proaspăt,ceapă verde, crupă de griş, sare alimentară. Umplutură-60%",
                     "nutritiveValue":{
@@ -213,12 +213,14 @@
                 },
                 "Plăcinte cu carne de pui":{
                     "id": 2,
-                    "images":["/images/products/placintaCarnePuiPorc.webp"],
-                    "state" : "Frozen Product",
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
                     "price": "7",
-                    "ingredients":"Aluat: făină de grâu premium, apă de băut, ulei de floarea soarelui deodorizat rafinat, zahăr, sare de masă, oțet de masă, Umplutură: carne de porc, pui, ceapă, ulei de floarea soarelui deodorizat rafinat, sare de masă, piper negru măcinat. Umplere-60%",
+                    "deposit": "180 de zile. Temperatura -18C",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, iar învârtitele cu carne timp de 15-20 minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat: făină de grâu premium, apă de băut, ulei de floarea soarelui deodorizat rafinat, zahăr, sare de masă, oțet de masă, Umplutură: carne de porc, pui, ceapă, ulei de floarea soarelui deodorizat rafinat, sare de masă, piper negru măcinat. Umplere-60%",
                     "nutritiveValue":{
                         "protein": "10,42",
                         "fats": "30,1",
@@ -230,6 +232,680 @@
                     },
                     "weight": "500",
                     "pieces": "4"
+                },
+                "Plăcinte cu cartofi ":{
+                    "id": 3,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "5",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, iar învârtitele cu carne timp de 15-20 minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat:făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă,Ingrediente umplutură: cartofi, ulei de floarea soarelui rafinat dezodorizat, sare alimentară, amestec de piper. Umplutură-70%",
+                    "nutritiveValue":{
+                        "protein": "4,14",
+                        "fats": "11,76",
+                        "carboHydrates": "30"
+                    },
+                    "energyValue":{
+                        "kcal": "242",
+                        "kj": "1015"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu varză proaspătă":{
+                    "id": 4,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "6",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă.Ingrediente umplutură:varză murată cu morcov, ceapă, ulei de floarea soarelui rafinat dezodorizat,piper negru măcinat. Umplutură-66%",
+                    "nutritiveValue":{
+                        "protein": "3,43",
+                        "fats": "5,61",
+                        "carboHydrates": "31,97"
+                    },
+                    "energyValue":{
+                        "kcal": "809",
+                        "kj": "1092"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu varză murată":{
+                    "id": 5,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "6",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă.Ingrediente umplutură:varză murată cu morcov, ceapă, ulei de floarea soarelui rafinat dezodorizat,piper negru măcinat. Umplutură-66%",
+                    "nutritiveValue":{
+                        "protein": "3,43",
+                        "fats": "5,61",
+                        "carboHydrates": "31,97"
+                    },
+                    "energyValue":{
+                        "kcal": "809",
+                        "kj": "1092"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu vișine":{
+                    "id": 6,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat:făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă,umplutură:vişine conservate în suc propriu, zahăr pudră, amidon de cartofi. Umplutură-80%.",
+                    "nutritiveValue":{
+                        "protein": "3,43",
+                        "fats": "5,61",
+                        "carboHydrates": "31,97"
+                    },
+                    "energyValue":{
+                        "kcal": "809",
+                        "kj": "1092"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu dovleac":{
+                    "id": 7,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "6",
+                    "cooking": "Produsul congelat se aranjează pe o tavă acoperită cu hârtie de pergament, se unge cu ou şi se coace în cuptorul preîncălzit la temperatura de 180ºC timp de 25-30 minute.",
+                    "ingredients": "Aluat: făină de grâu premium, apă de băut, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare de masă, oțet de masă. Umplutură: dovleac, zahăr Umplutură-83%",
+                    "nutritiveValue":{
+                        "protein": "3,53",
+                        "fats": "5,39",
+                        "carboHydrates": "31,12"
+                    },
+                    "energyValue":{
+                        "kcal": "187",
+                        "kj": "788"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu halva(Failuli)":{
+                    "id": 8,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7",
+                    "cooking": "Puneți învartitele înghețate pe o foaie de copt acoperită cu o hârtie de pergament cu un decalaj de 2 cm între ele.Folosind o perie,ungeți învartitele cu un ou de găină bătut.Coaceți la cuptor la temperatura de 180-200*C,timp de 20-25 de minute,până se formează o crustă aurie.",
+                    "ingredients": "Aluat:făină de grîu calitate superioară,apa potabilă,ulei de floarea soarelui rafinat dezodorizat,zahăr,sare alimentară,oțet de masă.Ingrediente umplutura:halva Umplutura-66%",
+                    "nutritiveValue":{
+                        "protein": "7,2",
+                        "fats": "15,25",
+                        "carboHydrates": "21,50"
+                    },
+                    "energyValue":{
+                        "kcal": "907",
+                        "kj": "1728"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu mere":{
+                    "id": 9,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "6",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat:făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă.Ingrediente umplutură: mere, zahăr Umplutură-66%.",
+                    "nutritiveValue":{
+                        "protein": "3,12",
+                        "fats": "5,8",
+                        "carboHydrates": "56"
+                    },
+                    "energyValue":{
+                        "kcal": "211",
+                        "kj": "889"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu domnească":{
+                    "id": 10,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7.5",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie pentru copt se aranjează produsul congelat la o distanţă 3-5cm între ele şi se lasă la temperatura camerii pentru 30 min pentru decongelare. După decongelate se ung cu ou şi se coc la temperatura de 175-185 C timp de 15-20 min. Înainte de servire  se răcesc 12-15 min.",
+                    "ingredients":"Aluat - făină de grâu de calitate superioară, unt, apă potabilă, zahăr, drojdie de panificaţie, lapte, sare alimentară, brînză şi telemea de vaci.",
+                    "nutritiveValue":{
+                        "protein": "5,81",
+                        "fats": "19,1",
+                        "carboHydrates": "46,88"
+                    },
+                    "energyValue":{
+                        "kcal": "382",
+                        "kj": "1598"
+                    },
+                    "weight": "500",
+                    "pieces": "2"
+                },
+                "Plăcinte cu cașcaval":{
+                    "id": 11,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "6.5",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Puneţi plăcintele îngheţate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2cm între ele. Folosind o perie, ungeţi plăcintele cu un ou de făină bătut. Coaceţi la cuptor la temperatura de 180-200 C , timp de 20-25 min, pînă se formează o crustă aurie.",
+                    "ingredients":"Făină de calitate superioară, apă potabilă, ulei rafinat, zahăr, sare. Umplutura - 3 tipuri de caşcaval, ouă de găină.",
+                    "nutritiveValue":{
+                        "protein": "10,42",
+                        "fats": "30,1",
+                        "carboHydrates": "24,42"
+                    },
+                    "energyValue":{
+                        "kcal": "441",
+                        "kj": "1705"
+                    },
+                    "weight": "500",
+                    "pieces": "2"
+                },
+                "Chiflă cu susan":{
+                    "id": 12,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "2.5",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul congelat se aşază pe o tavă acoperită cu hârtie pentru copt şi se coace timp de 5 min la temperatura de 200C.",
+                    "ingredients":"Făină de grâu de calitate superioară, maio uscată, seminţe de susan.",
+                    "nutritiveValue":{
+                        "protein": "11,58",
+                        "fats": "5,28",
+                        "carboHydrates": "73,82"
+                    },
+                    "energyValue":{
+                        "kcal": "413",
+                        "kj": "1728"
+                    },
+                    "weight": "450",
+                    "pieces": "6"
+                },
+                "Chiflă cu usturoi":{
+                    "id": 13,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "2.5",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul congelat se aşază pe o ţavă acoperită cu hârtie pentru copt şi se coace timp de 5 min la temperatura de 200C.",
+                    "ingredients":"Făină de grâu de calitate superioară, maio uscată, sos de mujdei de usturoi cu verdeaţă.",
+                    "nutritiveValue":{
+                        "protein": "11,58",
+                        "fats": "5,28",
+                        "carboHydrates": "73,82"
+                    },
+                    "energyValue":{
+                        "kcal": "413",
+                        "kj": "1728"
+                    },
+                    "weight": "450",
+                    "pieces": "6"
+                },
+                "Sarmale cu orez și carne":{
+                    "id": 14,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "19",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează,se transferă în tavа pentru copt și şi se coace în cuptor la 160°C timp de 15-20 de minute. Înainte de coacere, se poate adăuga smântână sau sos după gust.",
+                    "ingredients":"Varză albă , sos din legume si roșii (ceapă, morcov, roşii in suc propriu, ardei dulce, ulei de floarea soarelui, rădăcină de țelină), carne de porc , orez, măra, ulei de floarea soarelui, pastă de tomate, sare alimentară, pătrunjel uscat , leustean uscat, acid sorbic.",
+                    "nutritiveValue":{
+                        "protein": "4,5",
+                        "fats": "12,78",
+                        "carboHydrates": "16,74"
+                    },
+                    "energyValue":{
+                        "kcal": "196",
+                        "kj": "823"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Sarmale cu orez și legume":{
+                    "id": 15,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "19",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează,se transferă în tavа pentru copt și şi se coace în cuptor la 160°C timp de 15-20 de minute. Înainte de coacere, se poate adăuga smântână sau sos după gust.",
+                    "ingredients":"Varză albă , sos din legume si roșii (ceapă, morcov, roşii in suc propriu, ardei dulce, ulei de floarea soarelui, rădăcină de țelină), legume, orez, măra, ulei de floarea soarelui, pastă de tomate, sare alimentară, pătrunjel uscat , leustean uscat, acid sorbic.",
+                    "nutritiveValue":{
+                        "protein": "4,5",
+                        "fats": "12,78",
+                        "carboHydrates": "16,74"
+                    },
+                    "energyValue":{
+                        "kcal": "196",
+                        "kj": "823"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Ardei cu orez și carne":{
+                    "id": 16,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "19",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "А se consuma după tratament termic. Produsul se coace în cuptor la 160 de grade Celsius, timp de 15-20 de minute. Înainte de coacere, puteți adăuga smântână sau alt sos. Atenție! Înainte de preparare, produsul trebuie se pune într-o formă refractară.",
+                    "ingredients":"Аrdei dulce, sos din legume și roșii (ceapă, morcov, roşii în suc propriu, ardei dulce, ulei de floarea soarelui, rădăcină de țelină), orez, carne de porc, apă potabilă, ulei de floarea-soarelui, pastă de tomate, pătrunjel, mărar, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "2,96",
+                        "fats": "10,59",
+                        "carboHydrates": "16,53"
+                    },
+                    "energyValue":{
+                        "kcal": "170",
+                        "kj": "711"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Ardei cu orez și legume":{
+                    "id": 17,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "19",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "А se consuma după tratament termic. Produsul se coace în cuptor la 160 de grade Celsius, timp de 15-20 de minute. Înainte de coacere, puteți adăuga smântână sau alt sos. Atenție! Înainte de preparare, produsul trebuie se pune într-o formă refractară.",
+                    "ingredients":"Аrdei dulce, sos din legume și roșii (ceapă, morcov, roşii în suc propriu, ardei dulce, ulei de floarea soarelui, rădăcină de țelină), orez, legume, apă potabilă, ulei de floarea-soarelui, pastă de tomate, pătrunjel, mărar, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "2,96",
+                        "fats": "10,59",
+                        "carboHydrates": "16,53"
+                    },
+                    "energyValue":{
+                        "kcal": "170",
+                        "kj": "711"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Pîrjoale de casă":{
+                    "id": 18,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează și se prăjește pe ambele părți pe grătar sau tigaie timp de 8-10 minute sau se coace în cuptor timp de 15-20 minute.",
+                    "ingredients":"Carne de porc, carne de vită, ceapă, apă potabilă, amestec de condimente, usturoi, care alimentară.",
+                    "nutritiveValue":{
+                        "protein": "11,08",
+                        "fats": "5,66",
+                        "carboHydrates": "4,73"
+                    },
+                    "energyValue":{
+                        "kcal": "113",
+                        "kj": "474"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                },
+                "Pîrjoale cu carne de curcan":{
+                    "id": 19,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează și se prăjește pe ambele părți pe grătar sau tigaie timp de 8-10 minute sau se coace în cuptor timp de 15-20 minute.",
+                    "ingredients":"Carne de pui, carne de curcan, ceapă, apă potabilă, amestec de condimente, usturoi, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "10,07",
+                        "fats": "4,73",
+                        "carboHydrates": "4,05"
+                    },
+                    "energyValue":{
+                        "kcal": "105",
+                        "kj": "425"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                },
+                "Pîrjoale cu pește":{
+                    "id": 20,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după tratament termic: pârjoalele se întind pe o foaie de copt acoperită cu pergament, se coc la cuptor la 120 de grade C timp de 20 de minute, se răcesc 10-15 minute (fără a acoperi nimic) și se prăjesc în ulei vegetal până se rumenesc",
+                    "ingredients":"File de merluciu, ceapă prăjită, pâine de grâu, ou de pui, lapte, ulei de floarea soarelui, suc de lămâie, bicarbonat de sodiu, sare alimentară, piper negru măcinat",
+                    "nutritiveValue":{
+                        "protein": "10,65",
+                        "fats": "6,66",
+                        "carboHydrates": "6,46"
+                    },
+                    "energyValue":{
+                        "kcal": "127",
+                        "kj": "532"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                },
+                "Chifteluțe cu carne de pui":{
+                    "id": 21,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "6",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează, se prăjeşte pe tigaie pe ambele parti, se adaugă sos după gust și se fierbe 10-15 minute.",
+                    "ingredients":"Сarne de pui de carne, apa potabilă, ceapă, pâine de grâu, ulei de floarea soarelui, aditivi alimentari complex ,preparat cu condimente, sare alimentară, usturoi.",
+                    "nutritiveValue":{
+                        "protein": "12,29",
+                        "fats": "6,79",
+                        "carboHydrates": "7,3"
+                    },
+                    "energyValue":{
+                        "kcal": "138",
+                        "kj": "577"
+                    },
+                    "weight": "600",
+                    "pieces": "12"
+                },
+                "Chifteluțe vegane":{
+                    "id": 22,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "4.5",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează, se prăjeşte pe tigaie pe ambele parti, se adaugă sos după gust și se fierbe 10-15 minute.",
+                    "ingredients":"Dovlecei clasici sau zucchini, piureul de cartofi, usturoi, verdeaţă mărar, mix de condimente, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "10,57",
+                        "fats": "5,44",
+                        "carboHydrates": "6,4"
+                    },
+                    "energyValue":{
+                        "kcal": "108",
+                        "kj": "435"
+                    },
+                    "weight": "600",
+                    "pieces": "12"
+                },
+                "Bătută de pui":{
+                    "id": 23,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după încălzire, produsul se încălzeşte în cuptorul cu microunde timp de 2-4 min sau pe aragaz timp de 5-7 min.",
+                    "ingredients":"Piept de pui broiler marinată, ulei de floarea soarelui, apă potabilă, făină de grîu, ou de găină, sare alimentară, mix de condimente.",
+                    "nutritiveValue":{
+                        "protein": "14,5",
+                        "fats": "7,28",
+                        "carboHydrates": "8,25"
+                    },
+                    "energyValue":{
+                        "kcal": "140",
+                        "kj": "620"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Șnițel cu pulpă de pui şi legume":{
+                    "id": 24,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "9",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după încălzire, produsul se încălzeşte în cuptorul cu microunde timp de 3-5 min sau pe aragaz timp de 6-8 min.",
+                    "ingredients":"Pulpă de găină dezosată, mix de condimente, ulei de floarea soarelui rafinat, făină de grîu, ou de găină, sare alimentară, mix de legume proaspete, caşcaval.",
+                    "nutritiveValue":{
+                        "protein": "16,75",
+                        "fats": "9,12",
+                        "carboHydrates": "8,93"
+                    },
+                    "energyValue":{
+                        "kcal": "173",
+                        "kj": "714"
+                    },
+                    "weight": "640",
+                    "pieces": "4"
+                },
+                "Șnițel":{
+                    "id": 25,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după încălzire, produsul se încălzeşte în cuptorul cu microunde timp de 2-4 minute sau pe aragaz timp de 5-7 minute. ",
+                    "ingredients":"Carne de pui broiler marinată (piept de pui, apă potabilă, E262 acetat de sodiu, sare, E331 citrat de sodiu, E301 ascorbat de sodiu, E300 acid ascorbic, apa, E450 difosfat, aroma, colorant), ulei de floarea soarelui, apă potabilă, făină de grâu, pesmet, amidon, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "10,87",
+                        "fats": "37,85",
+                        "carboHydrates": "14,03"
+                    },
+                    "energyValue":{
+                        "kcal": "437",
+                        "kj": "747"
+                    },
+                    "weight": "680",
+                    "pieces": "4"
+                },
+                "Clătite cu brînză sărată":{
+                    "id": 26,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "18",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după încălzire, produsul se încălzeşte în cuptorul cu microunde timp de 2-4 minute sau pe aragaz timp de 5-7 minute. ",
+                    "ingredients":"Carne de pui broiler marinată (piept de pui, apă potabilă, E262 acetat de sodiu, sare, E331 citrat de sodiu, E301 ascorbat de sodiu, E300 acid ascorbic, apa, E450 difosfat, aroma, colorant), ulei de floarea soarelui, apă potabilă, făină de grâu, pesmet, amidon, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "8,73",
+                        "fats": "19,26",
+                        "carboHydrates": "8,25"
+                    },
+                    "energyValue":{
+                        "kcal": "233",
+                        "kj": "973"
+                    },
+                    "weight": "680",
+                    "pieces": "4"
+                }
+            },
+            "Plăcinte la tigaie": {
+                "Plăcinte cu brînză":{
+                    "id": 11,
+                    "images":["/images/products/placintaBrinza.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7.5",
+                    "deposit": "180 de zile. Temperatura -18C",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients":"Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă,Ingrediente umplutură: brînză de vacă de 5%, brînză Drochia de 8%,ouă de găină, mărar proaspăt,ceapă verde, crupă de griş, sare alimentară. Umplutură-60%",
+                    "nutritiveValue":{
+                        "protein": "13,83",
+                        "fats": "9,46",
+                        "carboHydrates": "19,47"
+                    },
+                    "energyValue":{
+                        "kcal": "218",
+                        "kj": "916"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu cartofi ":{
+                    "id": 12,
+                    "images":["/images/products/placintaCartofi.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "5.5",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, iar învârtitele cu carne timp de 15-20 minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat:făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă,Ingrediente umplutură: cartofi, ulei de floarea soarelui rafinat dezodorizat, sare alimentară, amestec de piper. Umplutură-70%",
+                    "nutritiveValue":{
+                        "protein": "4,14",
+                        "fats": "11,76",
+                        "carboHydrates": "30"
+                    },
+                    "energyValue":{
+                        "kcal": "242",
+                        "kj": "1015"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu varză proaspătă":{
+                    "id": 13,
+                    "images":["/images/products/varzaP.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "6.5",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă.Ingrediente umplutură:varză murată cu morcov, ceapă, ulei de floarea soarelui rafinat dezodorizat,piper negru măcinat. Umplutură-66%",
+                    "nutritiveValue":{
+                        "protein": "3,43",
+                        "fats": "5,61",
+                        "carboHydrates": "31,97"
+                    },
+                    "energyValue":{
+                        "kcal": "809",
+                        "kj": "1092"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu varză murată":{
+                    "id": 14,
+                    "images":["/images/products/varzaMurata.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "6.5",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients": "Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă.Ingrediente umplutură:varză murată cu morcov, ceapă, ulei de floarea soarelui rafinat dezodorizat,piper negru măcinat. Umplutură-66%",
+                    "nutritiveValue":{
+                        "protein": "3,43",
+                        "fats": "5,61",
+                        "carboHydrates": "31,97"
+                    },
+                    "energyValue":{
+                        "kcal": "809",
+                        "kj": "1092"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu brînză dulce și stafide":{
+                    "id": 15,
+                    "images":["/images/products/placintaBrinzaDulce.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7.5",
+                    "deposit": "180 de zile. Temperatura -18C",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients":"Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă,Ingrediente umplutură: brînză de vacă de 5%, brînză Drochia de 8%,ouă de găină, mărar proaspăt,ceapă verde, crupă de griş, sare alimentară. Umplutură-60%",
+                    "nutritiveValue":{
+                        "protein": "13,83",
+                        "fats": "9,46",
+                        "carboHydrates": "19,47"
+                    },
+                    "energyValue":{
+                        "kcal": "218",
+                        "kj": "916"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu brînză sărată":{
+                    "id": 16,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7.5",
+                    "deposit": "180 de zile. Temperatura -18C",
+                    "cooking": "Puneți învârtitele înghețate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2 cm între ele. Folosind o perie, ungeți învârtitele cu un ou de găină bătut. Coaceți la cuptor la temperatura de 180-200 ° C, timp de 20-25 de minute, până se formează o crustă aurie.",
+                    "ingredients":"Aluat: făina de grîu calitate superioară, apă potabilă, ulei de floarea soarelui rafinat dezodorizat, zahăr, sare alimentară, oţet de masă,Ingrediente umplutură: brînză de vacă de 5%, brînză Drochia de 8%,ouă de găină, mărar proaspăt,ceapă verde, crupă de griş, sare alimentară. Umplutură-60%",
+                    "nutritiveValue":{
+                        "protein": "13,83",
+                        "fats": "9,46",
+                        "carboHydrates": "19,47"
+                    },
+                    "energyValue":{
+                        "kcal": "218",
+                        "kj": "916"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Plăcinte cu domnească":{
+                    "id": 17,
+                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7.5",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie pentru copt se aranjează produsul congelat la o distanţă 3-5cm între ele şi se lasă la temperatura camerii pentru 30 min pentru decongelare. După decongelate se ung cu ou şi se coc la temperatura de 175-185 C timp de 15-20 min. Înainte de servire  se răcesc 12-15 min.",
+                    "ingredients":"Aluat - făină de grâu de calitate superioară, unt, apă potabilă, zahăr, drojdie de panificaţie, lapte, sare alimentară, brînză şi telemea de vaci.",
+                    "nutritiveValue":{
+                        "protein": "5,81",
+                        "fats": "19,1",
+                        "carboHydrates": "46,88"
+                    },
+                    "energyValue":{
+                        "kcal": "382",
+                        "kj": "1598"
+                    },
+                    "weight": "500",
+                    "pieces": "2"
                 }
             }
 
