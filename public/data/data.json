@@ -187,7 +187,7 @@
             "aboutUs": ["Contacte", "Livrare"],
             "fromTo":["De la", "Pînă la", "Zilnic"]
         },
-        "products":{
+        "products": {
             "Semifabricate împachetate":{
                 "Plăcinte cu brînză şi verdeaţă":{
                     "id": 1,
@@ -382,7 +382,7 @@
                 },
                 "Plăcinte cu domnească":{
                     "id": 10,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -404,7 +404,7 @@
                 },
                 "Plăcinte cu cașcaval":{
                     "id": 11,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -426,7 +426,7 @@
                 },
                 "Chiflă cu susan":{
                     "id": 12,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -448,7 +448,7 @@
                 },
                 "Chiflă cu usturoi":{
                     "id": 13,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -470,7 +470,7 @@
                 },
                 "Sarmale cu orez și carne":{
                     "id": 14,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -492,7 +492,7 @@
                 },
                 "Sarmale cu orez și legume":{
                     "id": 15,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -514,7 +514,7 @@
                 },
                 "Ardei cu orez și carne":{
                     "id": 16,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -536,7 +536,7 @@
                 },
                 "Ardei cu orez și legume":{
                     "id": 17,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -558,7 +558,7 @@
                 },
                 "Pîrjoale de casă":{
                     "id": 18,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -580,7 +580,7 @@
                 },
                 "Pîrjoale cu carne de curcan":{
                     "id": 19,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -602,7 +602,7 @@
                 },
                 "Pîrjoale cu pește":{
                     "id": 20,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -624,7 +624,7 @@
                 },
                 "Chifteluțe cu carne de pui":{
                     "id": 21,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -646,7 +646,7 @@
                 },
                 "Chifteluțe vegane":{
                     "id": 22,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -668,7 +668,7 @@
                 },
                 "Bătută de pui":{
                     "id": 23,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -690,7 +690,7 @@
                 },
                 "Șnițel cu pulpă de pui şi legume":{
                     "id": 24,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -712,7 +712,7 @@
                 },
                 "Șnițel":{
                     "id": 25,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
@@ -734,14 +734,14 @@
                 },
                 "Clătite cu brînză sărată":{
                     "id": 26,
-                    "images":["/images/products/placintaBrinzaSarata.webp"],
+                    "images":["/images/products/comingsoon.jpeg"],
                     "state" : "Produs congelat",
                     "top": false,
                     "cart": "In Cart",
                     "price": "18",
                     "deposit": "30 de zile. Temperatura -18C",
-                    "cooking": "A se consuma după încălzire, produsul se încălzeşte în cuptorul cu microunde timp de 2-4 minute sau pe aragaz timp de 5-7 minute. ",
-                    "ingredients":"Carne de pui broiler marinată (piept de pui, apă potabilă, E262 acetat de sodiu, sare, E331 citrat de sodiu, E301 ascorbat de sodiu, E300 acid ascorbic, apa, E450 difosfat, aroma, colorant), ulei de floarea soarelui, apă potabilă, făină de grâu, pesmet, amidon, sare alimentară.",
+                    "cooking": "Se consumă după decongelare și tratament termic; produsul se prăjește pe ambele părți într-o tigaie timp de 2-3 minute și se coace la cuptor pentru 5-7 minute",
+                    "ingredients":"Aluat: lapte, făină de grâu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, caroten; umplutură: produs de brînză, brînză de vaci, ouă, sare alimentară, zahăr.",
                     "nutritiveValue":{
                         "protein": "8,73",
                         "fats": "19,26",
@@ -751,13 +751,321 @@
                         "kcal": "233",
                         "kj": "973"
                     },
-                    "weight": "680",
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu cartofi":{
+                    "id": 27,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "17",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează, se prăjește pe ambele părți în tigaie 2-3 minute și se coace în cuptor 5-7 minute.",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, caroten; umplutură: cartofi, ouă, sare alimentară zahăr",
+                    "nutritiveValue":{
+                        "protein": "4,82",
+                        "fats": "7,66",
+                        "carboHydrates": "26,23"
+                    },
+                    "energyValue":{
+                        "kcal": "188",
+                        "kj": "786"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu cartofi și ciuperci":{
+                    "id": 28,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "17",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza, se prăjește pe ambele părți în tigaie 2-3 minute și se coace în cuptor 5-7 minute.",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: cartofi, ciuperci, ouă, sare alimentară, zahăr.",
+                    "nutritiveValue":{
+                        "protein": "8,94",
+                        "fats": "6,84",
+                        "carboHydrates": "39,62"
+                    },
+                    "energyValue":{
+                        "kcal": "249",
+                        "kj": "1037"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu carne de pui":{
+                    "id": 29,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "19",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza, se prăjește pe ambele părți în tigaie 2-3 minute și se coace în cuptor 5-7 minute.",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: carne tocata de pui, ouă, sare alimentară zahăr",
+                    "nutritiveValue":{
+                        "protein": "12,39",
+                        "fats": "9,06",
+                        "carboHydrates": "15,55"
+                    },
+                    "energyValue":{
+                        "kcal": "190",
+                        "kj": "796"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu brînză de vaci și stafide":{
+                    "id": 30,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "18",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza, se prăjește pe ambele părți în tigaie 2-3 minute și se coace în cuptor 5-7 minute.",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: produs de brînză, brînză de vaci, stafide, ouă, sare alimentară zahăr.",
+                    "nutritiveValue":{
+                        "protein": "7,89",
+                        "fats": "12,58",
+                        "carboHydrates": "31,36"
+                    },
+                    "energyValue":{
+                        "kcal": "264",
+                        "kj": "1104"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu brînză de vaci":{
+                    "id": 31,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "18",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se coace în cuptor la 180 ° C timp de 15-18 minute (înainte de coacere se stropeşte cu sirop de zahăr și unt topit).",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: produs de brînză, brînză de vaci, stafide, ouă, sare alimentară zahăr.",
+                    "nutritiveValue":{
+                        "protein": "4,33",
+                        "fats": "3,41",
+                        "carboHydrates": "36,69"
+                    },
+                    "energyValue":{
+                        "kcal": "188",
+                        "kj": "784"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu vișină":{
+                    "id": 32,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "19",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul este gata de utilizare după decongelare. Se recomandă aranjarea clătitelor în straturi, acoperirea cu cremă dulce și ciocolată rasă.",
+                    "ingredients": "Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: vișină, sare alimentară zahăr.",
+                    "nutritiveValue":{
+                        "protein": "4,16",
+                        "fats": "3,4",
+                        "carboHydrates": "45,69"
+                    },
+                    "energyValue":{
+                        "kcal": "221",
+                        "kj": "924"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Brînzoaice cu brînză dulce":{
+                    "id": 33,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "3",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Prăjiți brânzoaicele congelate pe ulei vegetal bine încălzit. Se prăjesc pe ambele părți până se rumenesc. Mutați brânzoaicele gata pe o foaie de copt acoperită cu hârtie de pergament și coaceți la cuptor la temperatura de 180 ° C timp de 10-15 minute. Se servesc cu smântână și sau gem.",
+                    "ingredients": "Brînză de vaci 5%, brînză de vaci 18%, brînză de vaci 8%, zahăr, crupe de griș, smîntînă 20%, zahăr vanilat.",
+                    "nutritiveValue":{
+                        "protein": "12,01",
+                        "fats": "8,12",
+                        "carboHydrates": "13,68"
+                    },
+                    "energyValue":{
+                        "kcal": "194",
+                        "kj": "804"
+                    },
+                    "weight": "480",
                     "pieces": "4"
+                },
+                "Brînzoaice cu brînză sărată":{
+                    "id": 34,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "3",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Prăjiți brânzoaicele congelate în ulei vegetal bine încălzit pe ambele părți. Apoi transferați pe o tavă de copt acoperită cu hârtie de pergament și coaceți 10-12 minute la temperatura de 180ºC. Serviți cu smântână.",
+                    "ingredients": "Brînză de vaci 5%, brînză de vaci 18%, brînză de vaci 8%, lapte 2,5%, făină de grîu, crupe de griș, zahăr, mărar verde, busuioc verde, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "10,78",
+                        "fats": "7,77",
+                        "carboHydrates": "7,8"
+                    },
+                    "energyValue":{
+                        "kcal": "160",
+                        "kj": "672"
+                    },
+                    "weight": "480",
+                    "pieces": "4"
+                },
+                "Gogoși rotunde":{
+                    "id": 35,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjește abundent în ulei de floarea soarelui pe ambele părți. Se servesc la dorinţă tăvăliţi prin zahăr pudră, miere de albini, sos de ciocolată ş.a.",
+                    "ingredients": "Brînză de vaci, făină de grîu calitate superioară, ouă de găină, sare alimentară, zahăr, extract de vanilie, praf de copt, coajă rasă de vanilie.",
+                    "nutritiveValue":{
+                        "protein": "9,17",
+                        "fats": "7,50",
+                        "carboHydrates": "7,6"
+                    },
+                    "energyValue":{
+                        "kcal": "150",
+                        "kj": "652"
+                    },
+                    "weight": "650",
+                    "pieces": "12"
+                },
+                "Gogoși răsuciți":{
+                    "id": 36,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjește abundent în ulei de floarea soarelui pe ambele părți. Se servesc la dorinţă tăvăliţi prin zahăr pudră, miere de albini, sos de ciocolată ş.a.",
+                    "ingredients": "Brînză de vaci, făină de grîu calitate superioară, ouă de găină, sare alimentară, zahăr, extract de vanilie, praf de copt, coajă rasă de vanilie.",
+                    "nutritiveValue":{
+                        "protein": "9,20",
+                        "fats": "7,60",
+                        "carboHydrates": "7,8"
+                    },
+                    "energyValue":{
+                        "kcal": "160",
+                        "kj": "662"
+                    },
+                    "weight": "650",
+                    "pieces": "8"
+                },
+                "Chebureki cu carne de pui":{
+                    "id": 37,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "9",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjesc ceburekii în cantitate mare de ulei pe ambele părţi. Le servim calde.",
+                    "ingredients": "Făină de calitate superioară, apă potabilă, carne tocată de pui, ulei de floarea soarelui rafinat, ceapă, morcov, sare alimentară, mix de condimente.",
+                    "nutritiveValue":{
+                        "protein": "10,42",
+                        "fats": "30,1",
+                        "carboHydrates": "24,42"
+                    },
+                    "energyValue":{
+                        "kcal": "411",
+                        "kj": "1705"
+                    },
+                    "weight": "650",
+                    "pieces": "6"
+                },
+                "Chebureki cu cașcaval":{
+                    "id": 38,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "9",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjesc ceburekii în cantitate mare de ulei pe ambele părţi. Le servim calde.",
+                    "ingredients": "Făină de calitate superioară, apă potabilă, piureul de cartofi, ciuperci, ceapă, ulei de floarea soarelui rafinat, sare alimentară, ouă de găină.",
+                    "nutritiveValue":{
+                        "protein": "11,57",
+                        "fats": "37,02",
+                        "carboHydrates": "35,7"
+                    },
+                    "energyValue":{
+                        "kcal": "500",
+                        "kj": "1807"
+                    },
+                    "weight": "650",
+                    "pieces": "6"
+                },
+                "Chebureki cu cartofi și ciuperci":{
+                    "id": 39,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjesc ceburekii în cantitate mare de ulei pe ambele părţi. Le servim calde.",
+                    "ingredients": "Făină de calitate superioară, apă potabilă, piureul de cartofi, ciuperci, ceapă, ulei de floarea soarelui rafinat, sare alimentară, ouă de găină.",
+                    "nutritiveValue":{
+                        "protein": "10,75",
+                        "fats": "28,43",
+                        "carboHydrates": "30,8"
+                    },
+                    "energyValue":{
+                        "kcal": "375",
+                        "kj": "1702"
+                    },
+                    "weight": "650",
+                    "pieces": "6"
+                },
+                "Croissant francez classic":{
+                    "id": 40,
+                    "images":["/images/products/comingsoon.jpeg"],
+                    "state" : "Produs congelat",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "15",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tava acoperită cu hîrtie pentru copt se aranjează produsul congelat la o distanța 3-5 cm între ele și se lasă la temperatura camerei pentru 30 min pentru decongelare. După decongelare se ung cu ou și se coc la temperatura de 175-185 ° C timp de 15-20 min. Înainte de servire se răcesc 12-15 min. Se pot servi cu unt și gem.",
+                    "ingredients": "Aluat: făină de grâu calitatea superioară, unt, apa potabilă, zahar, drojdie de panificaţie, lapte praf, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "5,8",
+                        "fats": "19",
+                        "carboHydrates": "46,8"
+                    },
+                    "energyValue":{
+                        "kcal": "382",
+                        "kj": "1600"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
                 }
             },
             "Plăcinte la tigaie": {
                 "Plăcinte cu brînză":{
-                    "id": 11,
+                    "id": 41,
                     "images":["/images/products/placintaBrinza.webp"],
                     "state" : "Produs gătit",
                     "top": false,
@@ -779,7 +1087,7 @@
                     "pieces": "4"
                 },
                 "Plăcinte cu cartofi ":{
-                    "id": 12,
+                    "id": 42,
                     "images":["/images/products/placintaCartofi.webp"],
                     "state" : "Produs gătit",
                     "top": false,
@@ -800,7 +1108,7 @@
                     "pieces": "4"
                 },
                 "Plăcinte cu varză proaspătă":{
-                    "id": 13,
+                    "id": 43,
                     "images":["/images/products/varzaP.webp"],
                     "state" : "Produs gătit",
                     "top": false,
@@ -821,7 +1129,7 @@
                     "pieces": "4"
                 },
                 "Plăcinte cu varză murată":{
-                    "id": 14,
+                    "id": 44,
                     "images":["/images/products/varzaMurata.webp"],
                     "state" : "Produs gătit",
                     "top": false,
@@ -842,7 +1150,7 @@
                     "pieces": "4"
                 },
                 "Plăcinte cu brînză dulce și stafide":{
-                    "id": 15,
+                    "id": 45,
                     "images":["/images/products/placintaBrinzaDulce.webp"],
                     "state" : "Produs gătit",
                     "top": false,
@@ -864,7 +1172,7 @@
                     "pieces": "4"
                 },
                 "Plăcinte cu brînză sărată":{
-                    "id": 16,
+                    "id": 46,
                     "images":["/images/products/placintaBrinzaSarata.webp"],
                     "state" : "Produs gătit",
                     "top": false,
@@ -886,7 +1194,7 @@
                     "pieces": "4"
                 },
                 "Plăcinte cu domnească":{
-                    "id": 17,
+                    "id": 47,
                     "images":["/images/products/placintaBrinzaSarata.webp"],
                     "state" : "Produs gătit",
                     "top": false,
@@ -906,6 +1214,671 @@
                     },
                     "weight": "500",
                     "pieces": "2"
+                },
+                "Plăcinte cu cașcaval":{
+                    "id": 48,
+                    "images":["/images/products/placintaCascaval.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7.5",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Puneţi plăcintele îngheţate pe o foaie de copt acoperită cu hârtie de pergament cu un decalaj de 2cm între ele. Folosind o perie, ungeţi plăcintele cu un ou de făină bătut. Coaceţi la cuptor la temperatura de 180-200 C , timp de 20-25 min, pînă se formează o crustă aurie.",
+                    "ingredients":"Făină de calitate superioară, apă potabilă, ulei rafinat, zahăr, sare. Umplutura - 3 tipuri de caşcaval, ouă de găină.",
+                    "nutritiveValue":{
+                        "protein": "10,42",
+                        "fats": "30,1",
+                        "carboHydrates": "24,42"
+                    },
+                    "energyValue":{
+                        "kcal": "441",
+                        "kj": "1705"
+                    },
+                    "weight": "500",
+                    "pieces": "2"
+                }
+            },
+            "Chifle": {
+                "Chiflă cu susan":{
+                    "id": 49,
+                    "images":["/images/products/chiflaSusan.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "3",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul congelat se aşază pe o tavă acoperită cu hârtie pentru copt şi se coace timp de 5 min la temperatura de 200C.",
+                    "ingredients":"Făină de grâu de calitate superioară, maio uscată, seminţe de susan.",
+                    "nutritiveValue":{
+                        "protein": "11,58",
+                        "fats": "5,28",
+                        "carboHydrates": "73,82"
+                    },
+                    "energyValue":{
+                        "kcal": "413",
+                        "kj": "1728"
+                    },
+                    "weight": "450",
+                    "pieces": "6"
+                },
+                "Chiflă cu usturoi":{
+                    "id": 50,
+                    "images":["/images/products/chiflaUsturoi.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "3",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul congelat se aşază pe o ţavă acoperită cu hârtie pentru copt şi se coace timp de 5 min la temperatura de 200C.",
+                    "ingredients":"Făină de grâu de calitate superioară, maio uscată, sos de mujdei de usturoi cu verdeaţă.",
+                    "nutritiveValue":{
+                        "protein": "11,58",
+                        "fats": "5,28",
+                        "carboHydrates": "73,82"
+                    },
+                    "energyValue":{
+                        "kcal": "413",
+                        "kj": "1728"
+                    },
+                    "weight": "450",
+                    "pieces": "6"
+                }
+            },
+            "Sarmale şi ardei umpluţi": {
+                "Sarmale cu orez și carne":{
+                    "id": 51,
+                    "images":["/images/products/sarmaleCarne.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "22",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează,se transferă în tavа pentru copt și şi se coace în cuptor la 160°C timp de 15-20 de minute. Înainte de coacere, se poate adăuga smântână sau sos după gust.",
+                    "ingredients":"Varză albă , sos din legume si roșii (ceapă, morcov, roşii in suc propriu, ardei dulce, ulei de floarea soarelui, rădăcină de țelină), carne de porc , orez, măra, ulei de floarea soarelui, pastă de tomate, sare alimentară, pătrunjel uscat , leustean uscat, acid sorbic.",
+                    "nutritiveValue":{
+                        "protein": "4,5",
+                        "fats": "12,78",
+                        "carboHydrates": "16,74"
+                    },
+                    "energyValue":{
+                        "kcal": "196",
+                        "kj": "823"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Sarmale cu orez și legume":{
+                    "id": 52,
+                    "images":["/images/products/sarmaleVegan.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "22",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează,se transferă în tavа pentru copt și şi se coace în cuptor la 160°C timp de 15-20 de minute. Înainte de coacere, se poate adăuga smântână sau sos după gust.",
+                    "ingredients":"Varză albă , sos din legume si roșii (ceapă, morcov, roşii in suc propriu, ardei dulce, ulei de floarea soarelui, rădăcină de țelină), legume, orez, măra, ulei de floarea soarelui, pastă de tomate, sare alimentară, pătrunjel uscat , leustean uscat, acid sorbic.",
+                    "nutritiveValue":{
+                        "protein": "4,5",
+                        "fats": "12,78",
+                        "carboHydrates": "16,74"
+                    },
+                    "energyValue":{
+                        "kcal": "196",
+                        "kj": "823"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Ardei cu orez și carne":{
+                    "id": 53,
+                    "images":["/images/products/ardeiCarne.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "22",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "А se consuma după tratament termic. Produsul se coace în cuptor la 160 de grade Celsius, timp de 15-20 de minute. Înainte de coacere, puteți adăuga smântână sau alt sos. Atenție! Înainte de preparare, produsul trebuie se pune într-o formă refractară.",
+                    "ingredients":"Аrdei dulce, sos din legume și roșii (ceapă, morcov, roşii în suc propriu, ardei dulce, ulei de floarea soarelui, rădăcină de țelină), orez, carne de porc, apă potabilă, ulei de floarea-soarelui, pastă de tomate, pătrunjel, mărar, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "2,96",
+                        "fats": "10,59",
+                        "carboHydrates": "16,53"
+                    },
+                    "energyValue":{
+                        "kcal": "170",
+                        "kj": "711"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Ardei cu orez și legume":{
+                    "id": 54,
+                    "images":["/images/products/ardeiVegan.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "22",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "А se consuma după tratament termic. Produsul se coace în cuptor la 160 de grade Celsius, timp de 15-20 de minute. Înainte de coacere, puteți adăuga smântână sau alt sos. Atenție! Înainte de preparare, produsul trebuie se pune într-o formă refractară.",
+                    "ingredients":"Аrdei dulce, sos din legume și roșii (ceapă, morcov, roşii în suc propriu, ardei dulce, ulei de floarea soarelui, rădăcină de țelină), orez, legume, apă potabilă, ulei de floarea-soarelui, pastă de tomate, pătrunjel, mărar, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "2,96",
+                        "fats": "10,59",
+                        "carboHydrates": "16,53"
+                    },
+                    "energyValue":{
+                        "kcal": "170",
+                        "kj": "711"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                }
+            },
+            "Pîrjoale": {
+                "Pîrjoale de casă":{
+                    "id": 55,
+                    "images":["/images/products/pirjoale.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează și se prăjește pe ambele părți pe grătar sau tigaie timp de 8-10 minute sau se coace în cuptor timp de 15-20 minute.",
+                    "ingredients":"Carne de porc, carne de vită, ceapă, apă potabilă, amestec de condimente, usturoi, care alimentară.",
+                    "nutritiveValue":{
+                        "protein": "11,08",
+                        "fats": "5,66",
+                        "carboHydrates": "4,73"
+                    },
+                    "energyValue":{
+                        "kcal": "113",
+                        "kj": "474"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                },
+                "Pîrjoale cu carne de curcan":{
+                    "id": 56,
+                    "images":["/images/products/pirjoaleCurcan.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează și se prăjește pe ambele părți pe grătar sau tigaie timp de 8-10 minute sau se coace în cuptor timp de 15-20 minute.",
+                    "ingredients":"Carne de pui, carne de curcan, ceapă, apă potabilă, amestec de condimente, usturoi, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "10,07",
+                        "fats": "4,73",
+                        "carboHydrates": "4,05"
+                    },
+                    "energyValue":{
+                        "kcal": "105",
+                        "kj": "425"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                },
+                "Pîrjoale cu pește":{
+                    "id": 57,
+                    "images":["/images/products/pirjoaleCurcan.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "9",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după tratament termic: pârjoalele se întind pe o foaie de copt acoperită cu pergament, se coc la cuptor la 120 de grade C timp de 20 de minute, se răcesc 10-15 minute (fără a acoperi nimic) și se prăjesc în ulei vegetal până se rumenesc",
+                    "ingredients":"File de merluciu, ceapă prăjită, pâine de grâu, ou de pui, lapte, ulei de floarea soarelui, suc de lămâie, bicarbonat de sodiu, sare alimentară, piper negru măcinat",
+                    "nutritiveValue":{
+                        "protein": "10,65",
+                        "fats": "6,66",
+                        "carboHydrates": "6,46"
+                    },
+                    "energyValue":{
+                        "kcal": "127",
+                        "kj": "532"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                }
+            },
+            "Chifteluțe": {
+                "Chifteluțe cu carne de pui":{
+                    "id": 58,
+                    "images":["/images/products/chiftelute.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "7",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează, se prăjeşte pe tigaie pe ambele parti, se adaugă sos după gust și se fierbe 10-15 minute.",
+                    "ingredients":"Сarne de pui de carne, apa potabilă, ceapă, pâine de grâu, ulei de floarea soarelui, aditivi alimentari complex ,preparat cu condimente, sare alimentară, usturoi.",
+                    "nutritiveValue":{
+                        "protein": "12,29",
+                        "fats": "6,79",
+                        "carboHydrates": "7,3"
+                    },
+                    "energyValue":{
+                        "kcal": "138",
+                        "kj": "577"
+                    },
+                    "weight": "600",
+                    "pieces": "12"
+                },
+                "Chifteluțe vegane":{
+                    "id": 59,
+                    "images":["/images/products/chifteluteVegane.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "5.5",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează, se prăjeşte pe tigaie pe ambele parti, se adaugă sos după gust și se fierbe 10-15 minute.",
+                    "ingredients":"Dovlecei clasici sau zucchini, piureul de cartofi, usturoi, verdeaţă mărar, mix de condimente, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "10,57",
+                        "fats": "5,44",
+                        "carboHydrates": "6,4"
+                    },
+                    "energyValue":{
+                        "kcal": "108",
+                        "kj": "435"
+                    },
+                    "weight": "600",
+                    "pieces": "12"
+                }
+            },
+            "Bătute și șnițel": {
+                "Bătută de pui":{
+                    "id": 60,
+                    "images":["/images/products/batuta.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după încălzire, produsul se încălzeşte în cuptorul cu microunde timp de 2-4 min sau pe aragaz timp de 5-7 min.",
+                    "ingredients":"Piept de pui broiler marinată, ulei de floarea soarelui, apă potabilă, făină de grîu, ou de găină, sare alimentară, mix de condimente.",
+                    "nutritiveValue":{
+                        "protein": "14,5",
+                        "fats": "7,28",
+                        "carboHydrates": "8,25"
+                    },
+                    "energyValue":{
+                        "kcal": "140",
+                        "kj": "620"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Șnițel cu pulpă de pui şi legume":{
+                    "id": 61,
+                    "images":["/images/products/batutaPulpa.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după încălzire, produsul se încălzeşte în cuptorul cu microunde timp de 3-5 min sau pe aragaz timp de 6-8 min.",
+                    "ingredients":"Pulpă de găină dezosată, mix de condimente, ulei de floarea soarelui rafinat, făină de grîu, ou de găină, sare alimentară, mix de legume proaspete, caşcaval.",
+                    "nutritiveValue":{
+                        "protein": "16,75",
+                        "fats": "9,12",
+                        "carboHydrates": "8,93"
+                    },
+                    "energyValue":{
+                        "kcal": "173",
+                        "kj": "714"
+                    },
+                    "weight": "640",
+                    "pieces": "4"
+                },
+                "Șnițel":{
+                    "id": 62,
+                    "images":["/images/products/snitel.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "A se consuma după încălzire, produsul se încălzeşte în cuptorul cu microunde timp de 2-4 minute sau pe aragaz timp de 5-7 minute. ",
+                    "ingredients":"Carne de pui broiler marinată (piept de pui, apă potabilă, E262 acetat de sodiu, sare, E331 citrat de sodiu, E301 ascorbat de sodiu, E300 acid ascorbic, apa, E450 difosfat, aroma, colorant), ulei de floarea soarelui, apă potabilă, făină de grâu, pesmet, amidon, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "10,87",
+                        "fats": "37,85",
+                        "carboHydrates": "14,03"
+                    },
+                    "energyValue":{
+                        "kcal": "437",
+                        "kj": "747"
+                    },
+                    "weight": "680",
+                    "pieces": "4"
+                }
+            },
+            "Cătite": {
+                "Clătite cu brînză sărată":{
+                    "id": 63,
+                    "images":["/images/products/clatitaSarata.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Se consumă după decongelare și tratament termic; produsul se prăjește pe ambele părți într-o tigaie timp de 2-3 minute și se coace la cuptor pentru 5-7 minute",
+                    "ingredients":"Aluat: lapte, făină de grâu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, caroten; umplutură: produs de brînză, brînză de vaci, ouă, sare alimentară, zahăr.",
+                    "nutritiveValue":{
+                        "protein": "8,73",
+                        "fats": "19,26",
+                        "carboHydrates": "8,25"
+                    },
+                    "energyValue":{
+                        "kcal": "233",
+                        "kj": "973"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu cartofi":{
+                    "id": 64,
+                    "images":["/images/products/clatiteCartof.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "19",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongelează, se prăjește pe ambele părți în tigaie 2-3 minute și se coace în cuptor 5-7 minute.",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, caroten; umplutură: cartofi, ouă, sare alimentară zahăr",
+                    "nutritiveValue":{
+                        "protein": "4,82",
+                        "fats": "7,66",
+                        "carboHydrates": "26,23"
+                    },
+                    "energyValue":{
+                        "kcal": "188",
+                        "kj": "786"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu cartofi și ciuperci":{
+                    "id": 65,
+                    "images":["/images/products/clatiteCiuperci.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "19",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza, se prăjește pe ambele părți în tigaie 2-3 minute și se coace în cuptor 5-7 minute.",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: cartofi, ciuperci, ouă, sare alimentară, zahăr.",
+                    "nutritiveValue":{
+                        "protein": "8,94",
+                        "fats": "6,84",
+                        "carboHydrates": "39,62"
+                    },
+                    "energyValue":{
+                        "kcal": "249",
+                        "kj": "1037"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu carne de pui":{
+                    "id": 66,
+                    "images":["/images/products/clatitePui.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "21",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza, se prăjește pe ambele părți în tigaie 2-3 minute și se coace în cuptor 5-7 minute.",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: carne tocata de pui, ouă, sare alimentară zahăr",
+                    "nutritiveValue":{
+                        "protein": "12,39",
+                        "fats": "9,06",
+                        "carboHydrates": "15,55"
+                    },
+                    "energyValue":{
+                        "kcal": "190",
+                        "kj": "796"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu brînză de vaci și stafide":{
+                    "id": 67,
+                    "images":["/images/products/clatiteStafide.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza, se prăjește pe ambele părți în tigaie 2-3 minute și se coace în cuptor 5-7 minute.",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: produs de brînză, brînză de vaci, stafide, ouă, sare alimentară zahăr.",
+                    "nutritiveValue":{
+                        "protein": "7,89",
+                        "fats": "12,58",
+                        "carboHydrates": "31,36"
+                    },
+                    "energyValue":{
+                        "kcal": "264",
+                        "kj": "1104"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu brînză de vaci":{
+                    "id": 68,
+                    "images":["/images/products/clatiteVaci.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se coace în cuptor la 180 ° C timp de 15-18 minute (înainte de coacere se stropeşte cu sirop de zahăr și unt topit).",
+                    "ingredients":"Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: produs de brînză, brînză de vaci, stafide, ouă, sare alimentară zahăr.",
+                    "nutritiveValue":{
+                        "protein": "4,33",
+                        "fats": "3,41",
+                        "carboHydrates": "36,69"
+                    },
+                    "energyValue":{
+                        "kcal": "188",
+                        "kj": "784"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Clătite cu vișină":{
+                    "id": 69,
+                    "images":["/images/products/clatitaVisina.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "21",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul este gata de utilizare după decongelare. Se recomandă aranjarea clătitelor în straturi, acoperirea cu cremă dulce și ciocolată rasă.",
+                    "ingredients": "Aluat: lapte, făină de grîu, ouă, zahăr, ulei de floarea soarelui, sare alimentară, carotene; umplutură: vișină, sare alimentară zahăr.",
+                    "nutritiveValue":{
+                        "protein": "4,16",
+                        "fats": "3,4",
+                        "carboHydrates": "45,69"
+                    },
+                    "energyValue":{
+                        "kcal": "221",
+                        "kj": "924"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                }
+            },
+            "Brînzoaice": {
+                "Brînzoaice cu brînză dulce":{
+                    "id": 70,
+                    "images":["/images/products/brinzoaiceDulci.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "4",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Prăjiți brânzoaicele congelate pe ulei vegetal bine încălzit. Se prăjesc pe ambele părți până se rumenesc. Mutați brânzoaicele gata pe o foaie de copt acoperită cu hârtie de pergament și coaceți la cuptor la temperatura de 180 ° C timp de 10-15 minute. Se servesc cu smântână și sau gem.",
+                    "ingredients": "Brînză de vaci 5%, brînză de vaci 18%, brînză de vaci 8%, zahăr, crupe de griș, smîntînă 20%, zahăr vanilat.",
+                    "nutritiveValue":{
+                        "protein": "12,01",
+                        "fats": "8,12",
+                        "carboHydrates": "13,68"
+                    },
+                    "energyValue":{
+                        "kcal": "194",
+                        "kj": "804"
+                    },
+                    "weight": "480",
+                    "pieces": "4"
+                },
+                "Brînzoaice cu brînză sărată":{
+                    "id": 71,
+                    "images":["/images/products/brînzoaice.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "4",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Prăjiți brânzoaicele congelate în ulei vegetal bine încălzit pe ambele părți. Apoi transferați pe o tavă de copt acoperită cu hârtie de pergament și coaceți 10-12 minute la temperatura de 180ºC. Serviți cu smântână.",
+                    "ingredients": "Brînză de vaci 5%, brînză de vaci 18%, brînză de vaci 8%, lapte 2,5%, făină de grîu, crupe de griș, zahăr, mărar verde, busuioc verde, sare alimentară.",
+                    "nutritiveValue":{
+                        "protein": "10,78",
+                        "fats": "7,77",
+                        "carboHydrates": "7,8"
+                    },
+                    "energyValue":{
+                        "kcal": "160",
+                        "kj": "672"
+                    },
+                    "weight": "480",
+                    "pieces": "4"
+                }
+            },
+            "Gogoși": {
+                "Gogoși rotunde":{
+                    "id": 72,
+                    "images":["/images/products/gogoși.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "12",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjește abundent în ulei de floarea soarelui pe ambele părți. Se servesc la dorinţă tăvăliţi prin zahăr pudră, miere de albini, sos de ciocolată ş.a.",
+                    "ingredients": "Brînză de vaci, făină de grîu calitate superioară, ouă de găină, sare alimentară, zahăr, extract de vanilie, praf de copt, coajă rasă de vanilie.",
+                    "nutritiveValue":{
+                        "protein": "9,17",
+                        "fats": "7,50",
+                        "carboHydrates": "7,6"
+                    },
+                    "energyValue":{
+                        "kcal": "150",
+                        "kj": "652"
+                    },
+                    "weight": "650",
+                    "pieces": "12"
+                },
+                "Gogoși răsuciți":{
+                    "id": 73,
+                    "images":["/images/products/gogoși.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "12",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjește abundent în ulei de floarea soarelui pe ambele părți. Se servesc la dorinţă tăvăliţi prin zahăr pudră, miere de albini, sos de ciocolată ş.a.",
+                    "ingredients": "Brînză de vaci, făină de grîu calitate superioară, ouă de găină, sare alimentară, zahăr, extract de vanilie, praf de copt, coajă rasă de vanilie.",
+                    "nutritiveValue":{
+                        "protein": "9,20",
+                        "fats": "7,60",
+                        "carboHydrates": "7,8"
+                    },
+                    "energyValue":{
+                        "kcal": "160",
+                        "kj": "662"
+                    },
+                    "weight": "650",
+                    "pieces": "8"
+                }
+            },
+            "Chebureki": {
+                "Chebureki cu carne de pui":{
+                    "id": 74,
+                    "images":["/images/products/chebureki.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjesc ceburekii în cantitate mare de ulei pe ambele părţi. Le servim calde.",
+                    "ingredients": "Făină de calitate superioară, apă potabilă, carne tocată de pui, ulei de floarea soarelui rafinat, ceapă, morcov, sare alimentară, mix de condimente.",
+                    "nutritiveValue":{
+                        "protein": "10,42",
+                        "fats": "30,1",
+                        "carboHydrates": "24,42"
+                    },
+                    "energyValue":{
+                        "kcal": "411",
+                        "kj": "1705"
+                    },
+                    "weight": "650",
+                    "pieces": "6"
+                },
+                "Chebureki cu cașcaval":{
+                    "id": 75,
+                    "images":["/images/products/chebureki.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjesc ceburekii în cantitate mare de ulei pe ambele părţi. Le servim calde.",
+                    "ingredients": "Făină de calitate superioară, apă potabilă, piureul de cartofi, ciuperci, ceapă, ulei de floarea soarelui rafinat, sare alimentară, ouă de găină.",
+                    "nutritiveValue":{
+                        "protein": "11,57",
+                        "fats": "37,02",
+                        "carboHydrates": "35,7"
+                    },
+                    "energyValue":{
+                        "kcal": "500",
+                        "kj": "1807"
+                    },
+                    "weight": "650",
+                    "pieces": "6"
+                },
+                "Chebureki cu cartofi și ciuperci":{
+                    "id": 76,
+                    "images":["/images/products/chebureki.webp"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "9",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Produsul se decongeleaza şi se prăjesc ceburekii în cantitate mare de ulei pe ambele părţi. Le servim calde.",
+                    "ingredients": "Făină de calitate superioară, apă potabilă, piureul de cartofi, ciuperci, ceapă, ulei de floarea soarelui rafinat, sare alimentară, ouă de găină.",
+                    "nutritiveValue":{
+                        "protein": "10,75",
+                        "fats": "28,43",
+                        "carboHydrates": "30,8"
+                    },
+                    "energyValue":{
+                        "kcal": "375",
+                        "kj": "1702"
+                    },
+                    "weight": "650",
+                    "pieces": "6"
+                }
+            },
+            "Platouri mix carne": {
+                "Platou cu carne":{
+                    "id": 77,
+                    "images":["/images/products/chebureki.webp"],
+                    "state" : "Produs gătit",
+                    "size": ["900","1800"],
+                    "bulkPrice": [40,80]
                 }
             }
 

@@ -6,6 +6,7 @@ function app() {
         cartData: null,
         singleProduct: null,
         singlePageData:null,
+        bulkPrice: null,
         cart:{},
         categoryIndex: null,
         productIndex: null,
@@ -51,13 +52,26 @@ function app() {
                 this.categoryIndex = categoryKeys.indexOf(slicedArray[0])
                 this.productIndex = productsKeys.indexOf(slicedArray[1])
             }
-            console.log(this.categoryIndex, this.productIndex)
             const productsKeys = Object.keys(this.data.products);
             let keyToDisplay = productsKeys[this.categoryIndex]
             const productsItems = Object.keys(this.data.products[keyToDisplay]);
             let itemToDisplay = productsItems[this.productIndex]
             this.singleProduct = this.data.products[keyToDisplay][itemToDisplay]
             this.singleProduct['name'] = itemToDisplay
+            if (this.singleProduct['name'].includes('Platou')){
+                this.bulkPrice = this.singleProduct.bulkPrice[0]
+                console.log(this.bulkPrice)
+            }
+            console.log(this.singleProduct)
+        },
+        updatePrice(value){
+            console.log(value)
+        },
+        platouCheck(itemName){
+            return !itemName.includes('Platou')
+        },
+        platouCheckShow(itemName){
+            return itemName.includes('Platou')
         },
         decodePath(encodedPath) {
         try {

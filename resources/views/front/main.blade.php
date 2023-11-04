@@ -8,9 +8,13 @@
                     <div class="homeCategoriesMenuTitle">Categories</div>
                     <div class="listCategories">
                         <template x-for="(item, key) in data.products">
-                            <div class="fixedMenuItem">
-                                <a class="homeCategory" x-text="key"></a>
-                                <img src="{{asset('images/icons/rightArrowYellow.png')}}" class="rightArrowMenu secondArrowMenu" alt="">
+                            <div>
+                            <a x-bind:href="'#' + key" class="clearLink">
+                                <div class="fixedMenuItem">
+                                    <p class="homeCategory" x-text="key"></p>
+                                    <img src="{{asset('images/icons/rightArrowYellow.png')}}" class="rightArrowMenu secondArrowMenu" alt="">
+                                </div>
+                            </a>
                             </div>
                         </template>
                     </div>
@@ -22,7 +26,7 @@
                         <div class="homeProductsCategory">
                             <div class="titleContent">
                                 <img src="{{asset('images/icons/catalog-icon.svg')}}" class="logoCategory" alt="">
-                                <div x-text="key" class="titleCategoryProducts"></div>
+                                <div x-text="key" :id="key" class="titleCategoryProducts"></div>
                             </div>
                             <div class="products">
                                 <template x-for="(product, productKey) in item" x-bind:key="productKey">
