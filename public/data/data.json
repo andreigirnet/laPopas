@@ -1875,11 +1875,117 @@
             "Platouri mix carne": {
                 "Platou cu carne":{
                     "id": 77,
-                    "images":["/images/products/chebureki.webp"],
+                    "images":["/images/products/platoulCarneMix.jpg"],
                     "state" : "Produs gătit",
+                    "person" : ["2","4"],
                     "size": ["900","1800"],
-                    "bulkPrice": [40,80]
+                    "bulkPrice": [40,80],
+                    "content": ["- Frigarui porc","- Frigarui pui","- Cârnați porc","- Cârnați pui","- Ceafă porc","- Piept de pui sau curcan","- Pulpă de pui dezosată","- Aripi de pui","- Ficăţei cu becon", "- Mici de vită","- Chiftele porc","- Chiftele pui"]
+                },
+                "Platou cu cartofi":{
+                    "id": 78,
+                    "images":["/images/products/platoulCarneMix.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1800"],
+                    "bulkPrice": [40,80],
+                    "content": ["- Cartofi wedges","- Ardei iuţi marinaţi","- Conopidă marinată","- Gogonele murate","- Ciuperci marinaţi","- Gogoşari marinaţi"]
+                },
+                "Platou cu salate":{
+                    "id": 79,
+                    "images":["/images/products/platoulCarneMix.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1800"],
+                    "bulkPrice": [40,80],
+                    "content": ["- Salată de vinete","- Salată de castraveţi şi roşii","- Roşii, avocado, mix seminţe, verdeaţă","- Roşii, mozzarella, sos pesto","- Varză şi morcov","- Varză roşie", "- Varză murată"]
+                },
+                "Platou cu sos":{
+                    "id": 80,
+                    "images":["/images/products/platoulCarneMix.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1800"],
+                    "bulkPrice": [40,80],
+                    "content": ["- Gratar dulce","- Gratar iute","- Sos de frunze verzi","- Avocado cu iaurt","- Pesto de spanac", "- Adjică ce casă", "- Muştar"]
                 }
+            },
+            "Platouri mix legume": {
+                "Platou Grill legume":{
+                    "id": 81,
+                    "images":["/images/products/grillLegume.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1800"],
+                    "bulkPrice": [35,70],
+                    "content": ["- Ardei roşii graşi","- Ciuperci","- Zucchini sau dovlecel","- Vînătă", "- Roșii", "- Păpușoi", "- Sparanghel", "- Ceapă/usturoi", "- Morcovi", "- Broccoli", "- Conopidă", "- Cartofi", "- Cartofi dulci", "- Fasole verde", "- Radicchio"]
+                },
+                "Platou sosuri":{
+                    "id": 82,
+                    "images":["/images/products/grillLegume.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1800"],
+                    "bulkPrice": [35,70],
+                    "content": ["- Sos de iaurt (usturoi, sare, ulei masline, iaurt, lămîie)","- Pesto de spanac (spanac, ulei de măsline)","- Sos cu citrice (ghimbir, usturoi, lămîie, miere de albini)", "- Sos de roşii coapte dulci", "- Sos de roşii coapte iute", "- Sos verdeţuri (pătrunjel, busuioc, ulei de măsline, lămîie, sare, piper)", "- Adjică"]
+                },
+                "Platou tradițional țărănesc":{
+                    "id": 83,
+                    "images":["/images/products/platouTraditional.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1200"],
+                    "bulkPrice": [40,80],
+                    "content": ["- pastrama ţărănească", "- muşchi ţărănesc", "- toba tradițională", "- slănină ţărănească", "- şorici", "- caş de oaie sau branza de oaie", "- ceapă verde", "- roşii cheerz", "- ceapă roşie", "- ardei gras", "- masline", "- salată verde"]
+                },
+                "Platou pește":{
+                    "id": 84,
+                    "images":["/images/products/platouPeste.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1200"],
+                    "bulkPrice": [35,70],
+                    "content": ["- Doi peşti bine prăjiţi", "- Gril cu legume atent alese (broccoli, ciuperci, zucchini, ardei gras roşii şi galben, roşii cherry, lămîie)."]
+                },
+                "Platou ruladă de carne la cuptor":{
+                    "id": 85,
+                    "images":["/images/products/rulouCarne.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1200"],
+                    "bulkPrice": [35,70],
+                    "content": ["- Ruladă de curcan", "- rulouri de beicon", "- rulouri cu şuncă şi caşcaval", "- pulpe dezosate la cuptor"]
+                },
+                "Platou aperitiv brînzeturi":{
+                    "id": 86,
+                    "images":["/images/products/platouBrinzeturi.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1200"],
+                    "bulkPrice": [35,70],
+                    "content": ["- Parmezan grana padano", "- brînză cheddar", "- french camembert", "- brînză le crem lux", "- greek style cheese cubes", "- brînză emmentaler", "- mozzarella caşcaval afumat", "- şuncă", "- grişine", "- roşii cherry", "- portocală", "- roşii strufure", "- nuci"]
+                },
+                "Platou aperitiv vegan":{
+                    "id": 87,
+                    "images":["/images/products/platouBrinzeturi.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1200"],
+                    "bulkPrice": [40,80],
+                    "content": ["- Salată cu avocado şi năut", "- frigărui cu crochete şi legume", "- salată de paste", "- inele de ceapă", "- tarte", "- bastonaşe cu legume", "- biscuiţi crackers", "- chiftele vegane"]
+                },
+                "Platou mini rulouri":{
+                    "id": 88,
+                    "images":["/images/products/platouBrinzeturi.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["900","1200"],
+                    "bulkPrice": [40,80],
+                    "content": ["- Salată cu avocado şi năut", "- frigărui cu crochete şi legume", "- salată de paste", "- inele de ceapă", "- tarte", "- bastonaşe cu legume", "- biscuiţi crackers", "- chiftele vegane"]
+                }
+            },
+            "Menu Paște": {
+
             }
 
         }

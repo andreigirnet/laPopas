@@ -298,6 +298,10 @@ body{
     flex-direction: column;
     row-gap: 50px;
 }
+.detailsButton{
+    font-size: 18px;
+    color: #845f4d;
+}
 .fixedMenuItem{
     display: flex;
     align-items: center;

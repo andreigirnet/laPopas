@@ -39,7 +39,7 @@
                             <div class="custom-select">
                                 <div class="select-label">
                                     <label for="sizeSelect">Mărime (grame):</label>
-                                    <select id="sizeSelect" class="custom-select-dropdown" x-on:change="updatePrice($event.target.value)">
+                                    <select id="sizeSelect" class="custom-select-dropdown" x-on:change="updatePrice($event.target.selectedIndex)">
                                         <option :value="singleProduct.size[0]" x-text="singleProduct.size[0]"></option>
                                         <option :value="singleProduct.size[1]" x-text="singleProduct.size[1]"></option>
                                     </select>
@@ -54,7 +54,26 @@
                 </div>
             </div>
             <div class="deliverySingleInfo">
-                <div class="deliverySingleText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda consequatur dolore dolorem ducimus eius expedita explicabo, inventore, ipsum molestiae nostrum numquam optio perferendis placeat saepe similique sit soluta tempora.</div>
+                <template x-if="platouCheck(singleProduct['name'])">
+                    <div>
+                        <div class="deliverySingleText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda consequatur dolore dolorem ducimus eius expedita explicabo, inventore, ipsum molestiae nostrum numquam optio perferendis placeat saepe similique sit soluta tempora.</div>
+                    </div>
+                </template>
+                <template x-if="platouCheckShow(singleProduct['name'])">
+                    <div class="listContentPlatou">
+                        <template x-for="item in singleProduct.content">
+                            <div x-text="item"></div>
+                        </template>
+                    </div>
+                </template>
+                <template x-if="platouCheckShow(singleProduct['name'])">
+                <div class="personNumber">
+                    <div>For</div>
+                    <div x-text="platouSize"></div>
+                    <div>Persons</div>
+
+                </div>
+                </template>
             </div>
             <div class="singleItemLine"></div>
             <template x-if="platouCheck(singleProduct['name'])">

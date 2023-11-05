@@ -7,6 +7,7 @@ function app() {
         singleProduct: null,
         singlePageData:null,
         bulkPrice: null,
+        platouSize: "2",
         cart:{},
         categoryIndex: null,
         productIndex: null,
@@ -65,7 +66,8 @@ function app() {
             console.log(this.singleProduct)
         },
         updatePrice(value){
-            console.log(value)
+            this.bulkPrice = this.singleProduct.bulkPrice[value]
+            this.platouSize = this.singleProduct.person[value]
         },
         platouCheck(itemName){
             return !itemName.includes('Platou')

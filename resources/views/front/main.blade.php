@@ -40,10 +40,12 @@
                                                 <div class="productLine"></div>
                                             </div>
                                             <div class="priceContainer">
+                                                <template x-if="!product.bulkPrice">
                                                 <div class="priceFull">
                                                     <div class="price" x-text="product.price"></div>
                                                     <div class="price">€</div>
                                                 </div>
+                                                </template>
                                                 <form action="{{route('basket.store')}}" method="POST">
                                                     @csrf
                                                     <input type="hidden" name="name" :value="productKey">
@@ -52,10 +54,15 @@
                                                     <input type="hidden" name="id" :value="product.id">
                                                     <input type="hidden" name="price" :value="product.price">
                                                     <input type="hidden" name="image" :value="product.images[0]">
-                                                    <button class="cartAddProductContainer" type="submit" x-on:mouseenter="cartHovered = productKey" x-on:mouseleave="cartHovered = null">
-                                                        <img :src="cartHovered === productKey ? cartPath[1] : cartPath[0]" class="cartImgProduct" alt="">
-                                                        <div class="" x-text="product.cart"></div>
-                                                    </button>
+                                                    <template x-if="!product.bulkPrice">
+                                                        <button class="cartAddProductContainer" type="submit" x-on:mouseenter="cartHovered = productKey" x-on:mouseleave="cartHovered = null">
+                                                            <img :src="cartHovered === productKey ? cartPath[1] : cartPath[0]" class="cartImgProduct" alt="">
+                                                            <div class="" x-text="product.cart"></div>
+                                                        </button>
+                                                    </template>
+                                                    <template x-if="product.bulkPrice">
+                                                        <p class="detailsButton">Press for details</p>
+                                                    </template>
                                                 </form>
                                             </div>
                                         </div>
