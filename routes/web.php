@@ -25,12 +25,13 @@ Route::get('/', function () {
 Route::get('/service', function(){
     return view('front.service');
 })->name('service.index');
-Route::get('/about', function(){
-    return view('front.about');
-})->name('about.index');
+
 Route::get('/contacts', function(){
     return view('front.contacts');
 })->name('front.contacts');
+Route::get('/delivery', function(){
+    return view('front.delivery');
+})->name('front.delivery');
 Route::get('/product/{key}/{product}', function($product){
     return view('front.product');
 })->name('product');

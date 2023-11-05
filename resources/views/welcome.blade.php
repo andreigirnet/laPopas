@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="{{asset('css/checkout.css')}}">
         <link rel="stylesheet" href="{{asset('css/service.css')}}">
         <link rel="stylesheet" href="{{asset('css/product.css')}}">
+        <link rel="stylesheet" href="{{asset('css/loader.css')}}">
         <link rel="stylesheet" href="{{asset('css/dash.css')}}">
         <link rel="stylesheet" href="{{asset('css/contacts.css')}}">
         <link href="https://fonts.cdnfonts.com/css/noir" rel="stylesheet">
@@ -20,11 +21,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     </head>
     <body x-data="app()">
+       <div id="loading-overlay" class="loading-overlay">
+           <div class="loader"></div>
+       </div>
        @include('includes/nav')
-
+       @include('includes/mobileNav')
        @yield('content')
-
-
         <section class="infoSection">
             <div class="infoContainer">
                 <div class="info">
@@ -84,6 +86,8 @@
         </section>
         <script src="{{asset('js/front.js')}}"></script>
         <script src="{{asset('js/banner.js')}}"></script>
+        <script src="{{asset('js/loading.js')}}"></script>
+        <script src="{{asset('js/mobileNav.js')}}"></script>
 {{--        <script src="{{asset('js/scroll.js')}}"></script>--}}
 {{--       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>--}}
        <script type="module">

@@ -102,6 +102,7 @@ class CheckoutController extends Controller
                 'county' => $request->county,
                 'country' => $request->country,
                 'status' => 'paid',
+                'deliveryMethod'=>'Delivery',
                 'comments'=> $request->comments
             ]);
             Cart::destroy();

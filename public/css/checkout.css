@@ -98,6 +98,10 @@ textarea {
     display: flex;
     justify-content: end;
 }
+.cartCheckoutPrice{
+    display: flex;
+    column-gap: 3px;
+}
 @media only screen and (max-width: 1200px){
     .checkoutContainer{
         flex-direction: column;
@@ -111,5 +115,8 @@ textarea {
     .checkout-container{
         width: 90%;
         border-radius: 0;
+    }
+    .basketContainer{
+        background-image: none;
     }
 }

@@ -269,7 +269,7 @@ body{
 }
 .homeCategory{
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     display: flex;
     align-items: center;
 }
@@ -287,7 +287,7 @@ body{
     position: sticky;
     position: -webkit-sticky;
     width: 270px;
-    max-height: 800px;
+    max-height: 900px;
     top: 10px;
 }
 .logoCategory{
@@ -493,6 +493,97 @@ body{
 .clearLink{
     text-decoration: none;
 }
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff; /* Change the color as needed */
+    margin-left: 5px;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+/* Rotate the arrow-down when submenu is active */
+.has-dropdown.active .arrow-down {
+    transform: rotate(180deg);
+}
+
+/* Adjust styles for the submenu */
+.has-dropdown .submenu {
+    display: none;
+    top: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1; /* To ensure it's above other content */
+}
+
+.has-dropdown.active .submenu {
+    display: block;
+}
+
+.has-dropdown .submenu li {
+    margin: 0;
+}
+
+.has-dropdown .submenu a {
+    color: #fff;
+    padding: 9px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.has-dropdown .submenu a:hover {
+    background-color: #555; /* Change the background color on hover */
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    transition: 0.4s;
+    z-index: 1200;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin: 20px 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @media (max-width: 1200px) {
@@ -542,6 +633,17 @@ body{
     }
     .centerMainMenu img{
         width: 75%;
+    }
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .mobile-menu.active {
+        right: 0;
     }
     /* Add more responsive styles here as needed */
 }

@@ -8,9 +8,13 @@
                         <img src="{{$item->options->image}}" alt="Product 1">
                         <div class="product-details">
                             <h2>{{$item->name}}</h2>
-                            <p>{{$item->price}}</p>
+                            <div class="cartCheckoutPrice">
+                                <p x-text="checkoutData.price"></p>
+                                <p>{{$item->price}}</p>
+                                <div>€</div>
+                            </div>
                             <div class="qty">
-                                <label for="quantity" class="labelQty" x-text="cartData.quantity"></label>
+                                <label for="quantity" class="labelQty" x-text="checkoutData.quantity"></label>
                                 <input type="hidden" id="total" value="{{Cart::Total()}}">
                                 <input type="number" id="quantity_{{$item->rowId}}" value="{{$item->qty}}" name="quantity" class="nice-number-input" x-on:change="updateQuantity('{{$item->rowId}}')" min="1">
                             </div>
@@ -18,7 +22,7 @@
                         <form action="{{route('basket.delete', $item->rowId)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="remove-button" x-text="cartData.remove.toUpperCase()">Remove</button>
+                            <button class="remove-button" x-text="checkoutData.remove.toUpperCase()">Remove</button>
                         </form>
                     </li>
                 @endforeach
@@ -47,7 +51,7 @@
                     <!--Stripe.js injects the Link Authentication Element-->
                 </div>
                 <div class="form-group">
-                    <label for="name">Full Name</label>
+                    <label for="name" x-text="checkoutData.name">Full Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
@@ -55,23 +59,23 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="address">Shipping Address</label>
+                    <label for="address" x-text="checkoutData.address">Shipping Address</label>
                     <input type="text"  id="address" name="address"  required>
                 </div>
                 <div class="form-group">
-                    <label for="address">County</label>
+                    <label for="address" x-text="checkoutData.county">County</label>
                     <input type="text" id="county" name="county" required>
                 </div>
                 <div class="form-group">
-                    <label for="address">City</label>
+                    <label for="address" x-text="checkoutData.city">City</label>
                     <input type="text" id="city" name="city"  required>
                 </div>
                 <div class="form-group">
-                    <label for="address">Country</label>
+                    <label for="address" x-text="checkoutData.country">Country</label>
                     <input type="text" id="country" name="country" required>
                 </div>
                 <div class="form-group">
-                    <label for="address">Comments</label>
+                    <label for="address" x-text="checkoutData.comments">Comments</label>
                     <textarea type="text" id="comments" name="comments" rows="4" required></textarea>
                 </div>
                 <div id="card-element"></div>

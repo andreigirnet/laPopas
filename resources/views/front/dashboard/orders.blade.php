@@ -18,14 +18,14 @@
                 <tr>
                     <td>{{$order->id}}</td>
                     <td>{!! nl2br($order->products) !!}</td>
-                    <td class="hideOnMobile">>{{$order->totalQty}}</td>
+                    <td class="hideOnMobile">{{$order->totalQty}}</td>
                     <td>{{$order->totalPaid}}€</td>
                     @if($order->deliveryMethod === 'Delivery')
                         <td class="iconRow"><img src="{{asset('images/icons/car.png')}}" class="tableIcon" alt=""></td>
                     @else
                         <td class="iconRow"><img src="{{asset('images/icons/local.png')}}" id="local" class="tableIcon" alt=""></td>
                     @endif
-                    <td class="hideOnMobile">>{{$order->created_at}}</td>
+                    <td class="hideOnMobile">{{$order->created_at}}</td>
                 </tr>
             @endforeach
             </tbody>

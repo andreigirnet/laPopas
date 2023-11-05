@@ -15,7 +15,11 @@
                     <img src="{{$item->options->image}}" alt="Product 1">
                     <div class="product-details">
                         <h2>{{$item->name}}</h2>
-                        <p>{{$item->price}}</p>
+                        <div class="cartCheckoutPrice">
+                            <p x-text="cartData.price">Price:</p>
+                            <p>{{$item->price}}</p>
+                            <div>€</div>
+                        </div>
                         <div class="qty">
                             <label for="quantity" class="labelQty" x-text="cartData.quantity"></label>
                             <input type="hidden" id="total" value="{{Cart::Total()}}">

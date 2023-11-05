@@ -70,10 +70,22 @@
 .deliverySingleInfo{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    column-gap: 200px;
+}
+.multipleChoice{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 50%;
+}
+.errorsProductMessageMeat{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    color: red;
 }
 .deliverySingleText{
-    width: 44%;
+    width: 60%;
     margin-top: 30px;
     color: #533e34;
     font-size: 18px;
@@ -229,6 +241,15 @@
     font-size: 20px;
     display: flex;
     column-gap: 5px;
+}
+.inputCheck{
+    display: flex;
+    column-gap: 5px;
+}
+.secondLinemultiple{
+    display: flex;
+    margin-top: 50px;
+    column-gap: 200px;
 }
 @media only screen and (max-width: 1200px){
     .productSingleImg{

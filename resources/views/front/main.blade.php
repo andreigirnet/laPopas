@@ -25,7 +25,7 @@
                     <template  x-for="(item, key) in data.products" x-bind:key="key">
                         <div class="homeProductsCategory">
                             <div class="titleContent">
-                                <img src="{{asset('images/icons/catalog-icon.svg')}}" class="logoCategory" alt="">
+                                <img src="{{asset('images/icons/catalogIcon.png')}}" class="logoCategory" alt="">
                                 <div x-text="key" :id="key" class="titleCategoryProducts"></div>
                             </div>
                             <div class="products">

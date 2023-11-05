@@ -16,17 +16,15 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <img class="swiper-slide" src="{{asset('images/banner/banner1.jpg')}}" alt="">
-        <img class="swiper-slide" src="{{asset('images/banner/banner2.jpg')}}" alt="">
-        <img class="swiper-slide" src="{{asset('images/banner/banner3.jpg')}}" alt="">
-        <img class="swiper-slide" src="{{asset('images/banner/banner4.jpg')}}" alt="">
+        <img class="swiper-slide" src="{{asset('images/banner/background1.jpg')}}" alt="">
+
     </div>
     <!-- If we need pagination -->
 {{--    <div class="swiper-pagination"></div>--}}
 
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+{{--    <div class="swiper-button-prev"></div>--}}
+{{--    <div class="swiper-button-next"></div>--}}
 
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>

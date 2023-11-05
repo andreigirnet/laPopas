@@ -8,34 +8,34 @@
                 <div class="priceActionBox">
                     <div class="priceSingleItem">
                         <div style="font-weight: 600">Price: </div>
-                        <template x-if="platouCheck(singleProduct['name'])">
+                        <template x-if="platouCheck(singleProduct.id)">
                             <div>
                                 <div class="singlePriceDigit" x-text="singleProduct.price"></div>
                             </div>
                         </template>
-                        <template x-if="platouCheckShow(singleProduct['name'])">
+                        <template x-if="platouCheckShow(singleProduct.id)">
                             <div>
                                 <div class="singlePriceDigit" x-text="bulkPrice"></div>
                             </div>
                         </template>
                         <div class="Currency">€</div>
                     </div>
-                    <form action="{{route('basket.store')}}" method="POST" id="singleProductForm">
+                    <form action="{{route('basket.store')}}" x-on:submit="onSubmit" method="POST" id="singleProductForm">
                         @csrf
-                        <input type="hidden" name="name" :value="singleProduct['name']">
+                        <input type="hidden" name="name" id="nameProduct">
                         <input type="hidden" name="id" :value="singleProduct.id">
-                        <template x-if="platouCheck(singleProduct['name'])">
+                        <template x-if="platouCheck(singleProduct.id)">
                         <div>
                             <input type="hidden" name="price" :value="singleProduct.price">
                         </div>
                         </template>
-                        <template x-if="platouCheckShow(singleProduct['name'])">
+                        <template x-if="platouCheckShow(singleProduct.id)">
                         <div>
                             <input type="hidden" name="price" x-model="bulkPrice">
                         </div>
                         </template>
                         <input type="hidden" name="image" :value="singleProduct.images[0]">
-                        <template x-if="platouCheckShow(singleProduct['name'])">
+                        <template x-if="platouCheckShow(singleProduct.id)">
                             <div class="custom-select">
                                 <div class="select-label">
                                     <label for="sizeSelect">Mărime (grame):</label>
@@ -46,27 +46,52 @@
                                 </div>
                             </div>
                         </template>
-                        <button class="addToCartSingleButton">
+                        <button class="addToCartSingleButton" id="submitFormProduct">
                             <img src="{{asset('images/icons/cartSingle.png')}}" alt="">
                             <div>To Cart</div>
                         </button>
                     </form>
                 </div>
             </div>
+            <div class="errorsProductMessageMeat" x-text="errorMessageProduct" x-show="errorMessageProduct"></div>
+            <div class="errorsProductMessageMeat" x-text="finalSubmitError" x-show="finalSubmitError"></div>
             <div class="deliverySingleInfo">
-                <template x-if="platouCheck(singleProduct['name'])">
+                <template x-if="platouCheck(singleProduct.id)">
                     <div>
-                        <div class="deliverySingleText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda consequatur dolore dolorem ducimus eius expedita explicabo, inventore, ipsum molestiae nostrum numquam optio perferendis placeat saepe similique sit soluta tempora.</div>
+                        <div class="deliverySingleText" x-text="singleProduct.message"></div>
                     </div>
                 </template>
-                <template x-if="platouCheckShow(singleProduct['name'])">
-                    <div class="listContentPlatou">
-                        <template x-for="item in singleProduct.content">
-                            <div x-text="item"></div>
-                        </template>
+                <template x-if="platouCheckShow(singleProduct.id)">
+                    <div class="multipleChoice">
+                        <div x-show="singleProduct.id === 77">You can select 3 elements from below</div>
+                        <div x-show="singleProduct.id === 78">You can select only 5 elements from below</div>
+                        <div class="listContentPlatou">
+                            <template x-for="item in singleProduct.content">
+                                <div class="inputCheck">
+                                    <input type="checkbox" :value="item" x-on:change="updateSelectedItemsMeat(item, event)" x-show="singleProduct.id === 77 || singleProduct.id === 78">
+                                    <div x-text="item"></div>
+                                </div>
+                            </template>
+                        </div>
                     </div>
                 </template>
-                <template x-if="platouCheckShow(singleProduct['name'])">
+
+                <template x-if="platouCheckShow(singleProduct.id)">
+                    <div class="multipleChoice">
+                        <div x-show="singleProduct.id === 77">You can Select only one item from below</div>
+                        <div x-show="singleProduct.id === 78">You can Select only two item from below</div>
+                        <div class="listContentPlatou">
+                            <template x-for="item in singleProduct.muraturi">
+                                <div class="inputCheck">
+                                    <input type="checkbox" :value="item" x-on:change="updateSelectedItemsMurat(item, event)">
+                                    <div x-text="item"></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+
+                <template x-if="platouCheckShow(singleProduct.id)">
                 <div class="personNumber">
                     <div>For</div>
                     <div x-text="platouSize"></div>
@@ -75,8 +100,37 @@
                 </div>
                 </template>
             </div>
+            <div class="errorsProductMessageMeat" x-text="errorMessageProductBelow" x-show="errorMessageProductBelow"></div>
+            <template x-if="platouCheckShow(singleProduct.id)">
+                <div class="secondLinemultiple"  x-show="singleProduct.id === 77">
+                    <div class="multipleChoice">
+                        <div>You can Select only one item from below</div>
+                        <div class="listContentPlatou">
+                            <template x-for="item in singleProduct.salat">
+                                <div class="inputCheck">
+                                    <input type="checkbox" :value="item" x-on:change="updateSelectedItemsSalat(item, event)">
+                                    <div x-text="item"></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="multipleChoice"  x-show="singleProduct.id === 77">
+                        <div>You can Select only one item from below</div>
+                        <div class="listContentPlatou">
+                            <template x-for="item in singleProduct.sous">
+                                <div class="inputCheck">
+                                    <input type="checkbox" :value="item" x-on:change="updateSelectedItemsSauce(item, event)">
+                                    <div x-text="item"></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+
             <div class="singleItemLine"></div>
-            <template x-if="platouCheck(singleProduct['name'])">
+            <template x-if="platouCheck(singleProduct.id)">
                 <div>
                     <div class="nutritionalContainer" >
                         <div class="nutritionSection">

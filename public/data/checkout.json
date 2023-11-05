@@ -1,0 +1,40 @@
+{
+    "en": {
+        "name": "Full Name",
+        "address": "Delivery Address",
+        "county": "County",
+        "city": "City",
+        "country": "Country",
+        "comments": "Comments",
+        "remove": "remove",
+        "quantity": "Quantity:",
+        "price": "Price:",
+        "pay": "Pay"
+    },
+
+    "ru": {
+        "name": "Имя и Фамилия",
+        "address": "Адрес доставки",
+        "county": "Район",
+        "city": "Город",
+        "country": "Страна",
+        "comments": "Комментарии",
+        "quantity": "Kоличество:",
+        "remove": "удалить",
+        "price": "цена:",
+        "pay": "Оплатить"
+    },
+
+    "ro": {
+        "name": "Numele și Prenumele",
+        "address": "Adresa de Livrare",
+        "county": "Zona",
+        "city": "Oraș",
+        "country": "Țară",
+        "comments": "Comentarii",
+        "remove": "ștergere",
+        "quantity": "Cantitate:",
+        "price": "Preț:",
+        "pay": "Plătește"
+    }
+}

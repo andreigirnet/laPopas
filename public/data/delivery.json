@@ -1,0 +1,50 @@
+{
+    "en": {
+        "mainTitle": "Delivery Service Hours:",
+        "finitProductsTitle": "Delivery of Finished Products:",
+        "finitText": "The 'La Popas' delivery service is available daily between 12:00 and 20:00 on weekdays and official holidays (except for December 31, January 1, and Easter).<br><br>To place an order by phone, please contact the call center operator at 0892333268 or place your order directly on the website. We count on your understanding, and please meet the courier at the entrance of your building/business center, etc.<br><br>The delivery service is available in the Dublin area (Dublin 1-Dublin 24) with the delivery prices below (the delivery cost was calculated depending on the distance in kilometers from our headquarters).",
+        "suburbanTitle": "Suburbs and Delivery Prices:",
+        "deliveryPayment": "Payment Method:",
+        "deliveryPaymentText": "All orders can be paid online on our website using any bank card issued by any country, including Revolut cards. For your safety, payments will be made through the Stripe payment system. In case of the need for a refund of online payments, the procedure may take up to 14 calendar days.",
+        "important": [
+            "- Provide accurate contact information (phone number/email address/delivery address).",
+            "- You can contact our operators only if you need to modify/cancel your order.",
+            "- Orders placed cannot be canceled/modified in less than 12 hours from the scheduled delivery time.",
+            "- If you wish to place an order with special requirements beyond the standard menu, please send us a request by email to info@lapopas.com or call us at 0892333268 at least 12 hours before the delivery time or before placing the order online.",
+            "- Specify your convenient delivery time in your order.",
+            "- In case of delays, our operator will contact you to announce and arrange another delivery time."
+        ]
+    },
+    "ru": {
+        "mainTitle": "Рабочее время службы доставки:",
+        "finitProductsTitle": "Доставка готовых продуктов:",
+        "finitText": "Служба доставки 'La Popas' доступна ежедневно с 12:00 до 20:00 в будние дни и официальные праздники (кроме 31 декабря, 1 января и Пасхи).<br><br>Для размещения заказа по телефону, свяжитесь с оператором колл-центра по номеру 0892333268 или разместите заказ непосредственно на сайте. Мы рассчитываем на ваше понимание и просим вас встретить курьера у входа в ваше здание/деловой центр и так далее.<br><br>Служба доставки доступна в Дублине (Дублин 1-Дублин 24) по нижеприведенным ценам (стоимость доставки рассчитывается в зависимости от расстояния в километрах от нашего офиса).",
+        "suburbanTitle": "Пригороды и цены на доставку:",
+        "deliveryPayment": "Метод оплаты:",
+        "deliveryPaymentText": "Все заказы можно оплатить онлайн на нашем сайте с использованием любой банковской карты, выпущенной любой страной, включая карты Revolut. Для вашей безопасности платежи будут проводиться через систему оплаты Stripe. В случае необходимости возврата средств, оплаченных онлайн, процедура может занять до 14 календарных дней.",
+        "important": [
+            "- Укажите точную контактную информацию (номер телефона/адрес электронной почты/адрес доставки).",
+            "- Вы можете связаться с нашими операторами только в случае необходимости изменения/отмены заказа.",
+            "- Заказы, размещенные, не могут быть отменены/изменены менее чем за 12 часов до назначенного времени доставки.",
+            "- Если вы хотите разместить заказ с особыми требованиями, выходящими за рамки стандартного меню, отправьте нам запрос по электронной почте на адрес info@lapopas.com или позвоните нам по номеру 0892333268 за 12 часов до времени доставки или перед размещением заказа онлайн.",
+            "- Укажите удобное для вас время доставки в вашем заказе.",
+            "- В случае задержек, наш оператор свяжется с вами, чтобы уведомить и договориться о другом времени доставки."
+        ]
+    },
+    "ro": {
+        "mainTitle": "Programul de lucru pentru serviciul de livrare:",
+        "finitProductsTitle": "Livrarea produselor finite:",
+        "finitText": "Serviciul de livrare “La Popas” este disponibil între orele 12:00-20:00 zilnic în zilele saptamanale si sărbătorile oficiale (cu excepție 31 decembrie,1 ianuarie și Sărbătorile Pascale).<br><br> Pentru a efectua o comanda prin telefon,trebuie sa contactați operatorul call-centrului la 0892333268 sau efectuati comanda direct pe site-ul web.Contam pe înțelegerea dvs. și va rugam sa intalniti curierul la intrarea blocului/centru de afacere etc. <br><br>Serviciul de livrare este disponibil atat in zona Dublin (Dublin 1-Dublin 24) cu prețurile pentru livrare mai jos(costul pentru livrare a fost calculat in dependenta de km distanța de la sediul nostru)\n",
+        "suburbanTitle": "Suburbii si preturi pentru livrare: ",
+        "deliveryPayment": "Metoda de plata:",
+        "deliveryPaymentText": "Toate comenzile se pot achita online pe pagina noastra de web folosind orice card bancar emis de orice tara inclusiv Revolut card. Pentru siguranța dvs plățile vor fi efectuate prin sistema de plata Stripe. În cazul necesității returnării banilor încasați prin intermediul achitării on-line,procedura poate dura pana la 14 zile calendaristice.",
+        "important": [
+            "- Indicați corect datele de contact (număr de telefon/adresă de email/adresă pentru livrare).",
+            "- Puteți contacta operatorii doar în necesitatea de a modifica/anula comanda.",
+            "- Comanda plasată nu poate fi anulată/modificată în mai puțin de 12 ore de la ora stabilită pentru livrare.",
+            "- Dacă doriți să plasați comanda cu unele cerințe aparte de meniul standard, vă rugăm să ne expediați o solicitare prin email la info@lapopas.com sau să apelați telefonic la 0892333268 cu 12 ore înainte de ora livrării sau înainte de a plasa comanda online.",
+            "- În comanda specificați timpul convenabil pentru livrare.",
+            "- În cazul unor întârzieri, operatorul vă va contacta pentru a anunța și concretiza o altă oră de livrare."
+        ]
+    }
+}

@@ -58,14 +58,14 @@
             </div>
             <a href="/service" class="clearLink" style="color: white"><div x-text="data.navMenu.items[1]" class="menuItem"></div></a>
             <div class="subCategoryMenu" id="menuDrop">
-                <a href="/about" class="clearLink" style="color: white"><div x-text="data.navMenu.items[2]" class="menuItem"></div></a>
+               <div x-text="data.navMenu.items[2]" class="menuItem"></div>
                 <div class="subMenu">
                     <div class="submenuItem">
                         <a x-text="data.navMenu.aboutUs[0]" href="{{route('front.contacts')}}" class="sumbmenuItemKey"></a>
                         <img class="rightArrowMenu" src="{{asset('images/icons/rightArrowYellow.png')}}" alt="">
                     </div>
                     <div class="submenuItem">
-                        <a x-text="data.navMenu.aboutUs[1]" href="/" class="sumbmenuItemKey"></a>
+                        <a x-text="data.navMenu.aboutUs[1]" href="/delivery" class="sumbmenuItemKey"></a>
                         <img class="rightArrowMenu" src="{{asset('images/icons/rightArrowYellow.png')}}" alt="">
                     </div>
                 </div>
@@ -77,7 +77,7 @@
             <div class="imgPhoneDial"><img src="{{asset('images/icons/Phone_Icon.png')}}" alt=""></div>
             <div class="mainMenuContent">
                 <div class="upperMainMenuContent"><span x-text="data.navMenu.fromTo[0]" class="whiteText"></span><span class="time">08.00</span><span x-text="data.navMenu.fromTo[1]" class="whiteText"></span><span  class="time">22.00</span><span x-text="data.navMenu.fromTo[2]" class="whiteText"></span></div>
-                <div class="lowerMainMenuContent"><span class="preNumber">022</span><span class="tel">264-600</span></div>
+                <div class="lowerMainMenuContent"><span class="preNumber">089</span><span class="tel">2333268</span></div>
             </div>
         </div>
     </div>

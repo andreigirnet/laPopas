@@ -2,11 +2,27 @@
 function app() {
     return {
         data: null,
+        finalName: "",
+        finalSubmitError: "",
+        counterSingleError: 0,
+        counterSingleSalatError: 0,
+        counterSingleSauceError:0,
+        selectedMeatItems: [],
+        selectedVeggieItems: [],
+        selectedCartofItems: '',
+        selectedSalatItems: '',
+        selectedSauceItems: '',
+        errorMessageProduct: "",
+        errorMessageProductBelow: "",
         allLangData: null,
+        serviceData: null,
+        deliveryData: null,
         cartData: null,
+        contactData: null,
         singleProduct: null,
         singlePageData:null,
         bulkPrice: null,
+        checkoutData: null,
         platouSize: "2",
         cart:{},
         categoryIndex: null,
@@ -25,11 +41,32 @@ function app() {
             try {
                 let lang = localStorage.getItem('lang');
                 this.currentLanguage = lang
-
-                let cartDataResponse;
-                cartDataResponse = await axios.get('/data/cart.json');
-                this.cartData = cartDataResponse.data[lang]
-
+                if (window.location.pathname === '/cart') {
+                    let cartDataResponse;
+                    cartDataResponse = await axios.get('/data/cart.json');
+                    this.cartData = cartDataResponse.data[lang]
+                }
+                if (window.location.pathname === '/service') {
+                    let serviceResponse;
+                    serviceResponse = await axios.get('/data/service.json');
+                    this.serviceData = serviceResponse.data[lang];
+                }
+                if (window.location.pathname === '/contact') {
+                    let contactResponse;
+                    contactResponse = await axios.get('/data/contacts.json');
+                    this.contactData = contactResponse.data[lang];
+                }
+                if (window.location.pathname === '/delivery') {
+                    let deliveryResponse;
+                    deliveryResponse = await axios.get('/data/delivery.json');
+                    this.deliveryData = deliveryResponse.data[lang];
+                }
+                if (window.location.pathname === '/checkout') {
+                    let checkoutResponse;
+                    checkoutResponse = await axios.get('/data/checkout.json');
+                    this.checkoutData = checkoutResponse.data[lang];
+                    console.log(this.checkoutData);
+                }
                 let singlePageResponse = await axios.get('/data/single.json');
                 this.singlePageData = singlePageResponse.data[lang]
 
@@ -59,21 +96,229 @@ function app() {
             let itemToDisplay = productsItems[this.productIndex]
             this.singleProduct = this.data.products[keyToDisplay][itemToDisplay]
             this.singleProduct['name'] = itemToDisplay
-            if (this.singleProduct['name'].includes('Platou')){
+            if (this.singleProduct['name'].includes('Platou') || this.singleProduct['name'].includes('Colaci')){
                 this.bulkPrice = this.singleProduct.bulkPrice[0]
-                console.log(this.bulkPrice)
             }
-            console.log(this.singleProduct)
+
         },
         updatePrice(value){
             this.bulkPrice = this.singleProduct.bulkPrice[value]
             this.platouSize = this.singleProduct.person[value]
         },
-        platouCheck(itemName){
-            return !itemName.includes('Platou')
+        setName(){
+            if (this.singleProduct['id'] === 77) {
+                if (this.singleProduct.name && this.selectedMeatItems[0] && this.selectedMeatItems[1] && this.selectedMeatItems[2] && this.selectedCartofItems && this.selectedSalatItems && this.selectedSauceItems) {
+                    this.finalSubmitError = ""
+                    this.finalName = this.singleProduct.name + "(" + this.selectedMeatItems[0] + '/' + this.selectedMeatItems[1] +  "/" + this.selectedMeatItems[2]+ ")"+ "(" + this.selectedCartofItems + ")"+ "(" + this.selectedSalatItems + ")" + "(" + this.selectedSauceItems + ")";
+                } else {
+                    this.finalNamePlatou = ''
+                    if (this.currentLanguage === 'en') {
+                        this.finalSubmitError = "Please choose from all select fields as required"
+                    } else if (this.currentLanguage === 'ro') {
+                        this.finalSubmitError = "Alege atent din toate selectiile conform instructiunilor"
+                    } else {
+                        this.finalSubmitError = "Выберите 3 товара из всеx раздела"
+                    }
+                }
+            }else if(this.singleProduct['id'] === 78){
+                if (this.singleProduct.name && this.selectedMeatItems[0] && this.selectedMeatItems[1] && this.selectedMeatItems[2] && this.selectedMeatItems[3] && this.selectedMeatItems[4] && this.selectedVeggieItems[0]  && this.selectedVeggieItems[1]) {
+                    this.finalSubmitError = ""
+                    this.finalName = this.singleProduct.name + "(" + this.selectedMeatItems[0] + '/' + this.selectedMeatItems[1] +  "/" + this.selectedMeatItems[2]+ ")"+ "("+ this.selectedVeggieItems[0] + "/" + this.selectedVeggieItems[1] + ")";
+                } else {
+                    this.finalNamePlatou = ''
+                    if (this.currentLanguage === 'en') {
+                        this.finalSubmitError = "Please choose from all select fields as required"
+                    } else if (this.currentLanguage === 'ro') {
+                        this.finalSubmitError = "Alege atent din toate selectiile conform instructiunilor"
+                    } else {
+                        this.finalSubmitError = "Выберите товара из всеx раздела"
+                    }
+                }
+            }
+            else{
+                this.finalName = this.singleProduct['name']
+            }
         },
-        platouCheckShow(itemName){
-            return itemName.includes('Platou')
+        onSubmit: function(event) {
+            let name = document.getElementById('nameProduct')
+            if (this.singleProduct['id'] === 77 || this.singleProduct['id'] === 78){
+                this.setName()
+                name.value= this.finalName
+                if (!this.finalName) {
+                    event.preventDefault(); // Prevent the form submission if conditions are not met
+                }
+            }else{
+                name.value= this.singleProduct['name']
+            }
+        },
+        updateSelectedItemsMeat(elem, event){
+            if(this.singleProduct.id === 77) {
+                if (event.target.checked) {
+                    if (this.selectedMeatItems.length < 4) {
+                        this.selectedMeatItems.push(elem);
+                        console.log(this.selectedMeatItems)
+                    }
+                    if (this.selectedMeatItems.length > 3) {
+                        console.log(this.selectedMeatItems.length)
+                        if (this.currentLanguage === 'en') {
+                            this.errorMessageProduct = "Please choose three elements from meat select section"
+                        } else if (this.currentLanguage === 'ro') {
+                            this.errorMessageProduct = "Alege 3 produse din sectiunea carne"
+                        } else {
+                            this.errorMessageProduct = "Выберите 3 товара из мясного раздела"
+                        }
+                    }
+                } else {
+                    const index = this.selectedMeatItems.indexOf(elem);
+                    if (elem !== -1) {
+                        this.selectedMeatItems.splice(index, 1);
+                        if (this.selectedMeatItems.length <= 3) {
+                            this.errorMessageProduct = '';
+                        }
+                    }
+                }
+            }else if(this.singleProduct.id === 78){
+                if (event.target.checked) {
+                    if (this.selectedMeatItems.length < 6) {
+                        this.selectedMeatItems.push(elem);
+                        console.log(this.selectedMeatItems)
+                    }
+                    if (this.selectedMeatItems.length > 5) {
+                        console.log(this.selectedMeatItems.length)
+                        if (this.currentLanguage === 'en') {
+                            this.errorMessageProduct = "Please choose five elements from veggies select section"
+                        } else if (this.currentLanguage === 'ro') {
+                            this.errorMessageProduct = "Alege 5 produse din sectiunea legume"
+                        } else {
+                            this.errorMessageProduct = "Выберите 5 товара из овощи раздела"
+                        }
+                    }
+                } else {
+                    const index = this.selectedMeatItems.indexOf(elem);
+                    if (elem !== -1) {
+                        this.selectedMeatItems.splice(index, 1);
+                        if (this.selectedMeatItems.length <= 5) {
+                            this.errorMessageProduct = '';
+                        }
+                    }
+                }
+            }
+
+        },
+        updateSelectedItemsMurat(elem, event){
+            if(this.singleProduct.id === 77) {
+                if (event.target.checked) {
+                    if (this.selectedCartofItems === '' || this.selectedCartofItems === null) {
+                        this.selectedCartofItems += elem;
+                    }
+                    this.counterSingleError++;
+                    console.log(this.counterSingleError)
+                    if (this.counterSingleError > 1) {
+                        if (this.currentLanguage === 'en') {
+                            this.errorMessageProduct = "Please choose only one element from salat select section"
+                        } else if (this.currentLanguage === 'ro') {
+                            this.errorMessageProduct = "Alege doar un produs din sectiunea murături"
+                        } else {
+                            this.errorMessageProduct = "Выберите 1 товара из салаты раздела"
+                        }
+                    }
+                } else {
+                    if (this.counterSingleError >= 0) {
+                        this.counterSingleError--;
+                    }
+                    this.selectedCartofItems = ''
+                    if (this.counterSingleError === 1) {
+                        this.errorMessageProduct = ""
+                    }
+                }
+            }else if(this.singleProduct.id === 78){
+                if (event.target.checked) {
+                    if (this.selectedVeggieItems.length < 3) {
+                        this.selectedVeggieItems.push(elem);
+                        console.log(this.selectedVeggieItems)
+                    }
+                    if (this.selectedVeggieItems.length > 2) {
+                        console.log(this.selectedVeggieItems.length)
+                        if (this.currentLanguage === 'en') {
+                            this.errorMessageProduct = "Please choose two elements from veggies select section"
+                        } else if (this.currentLanguage === 'ro') {
+                            this.errorMessageProduct = "Alege 2 produse din sectiunea legume"
+                        } else {
+                            this.errorMessageProduct = "Выберите 2 товара из овощи раздела"
+                        }
+                    }
+                } else {
+                    const index = this.selectedVeggieItems.indexOf(elem);
+                    if (elem !== -1) {
+                        this.selectedVeggieItems.splice(index, 1);
+                        if (this.selectedVeggieItems.length <= 2) {
+                            this.errorMessageProduct = '';
+                        }
+                    }
+                }
+            }
+        },
+        updateSelectedItemsSalat(elem, event){
+            if (event.target.checked) {
+                if (this.selectedSalatItems === '' || this.selectedSalatItems === null) {
+                    this.selectedSalatItems += elem;
+                }
+                this.counterSingleSalatError ++;
+                console.log(this.counterSingleSalatError)
+                if (this.counterSingleSalatError > 1){
+                    if (this.currentLanguage === 'en'){
+                        this.errorMessageProductBelow = "Please choose only one element from salat select section"
+                    }else if(this.currentLanguage === 'ro'){
+                        this.errorMessageProductBelow = "Alege doar un produs din sectiunea salate"
+                    }else{
+                        this.errorMessageProductBelow = "Выберите 1 товара из салаты раздела"
+                    }
+                }
+            } else {
+                if (this.counterSingleSalatError >= 0){
+                    this.counterSingleSalatError --;
+                }
+                this.selectedSalatItems = ''
+                if (this.counterSingleSalatError === 1) {
+                    this.errorMessageProductBelow = ""
+                }
+            }
+
+        },
+        updateSelectedItemsSauce(elem, event){
+            if (event.target.checked) {
+                if (this.selectedSauceItems === '' || this.selectedSauceItems === null) {
+                    this.selectedSauceItems += elem;
+                }
+                this.counterSingleSauceError ++;
+                console.log(this.counterSingleSauceError)
+                if (this.counterSingleSauceError > 1){
+                    if (this.currentLanguage === 'en'){
+                        this.errorMessageProductBelow = "Please choose only one element from sauce select section"
+                    }else if(this.currentLanguage === 'ro'){
+                        this.errorMessageProductBelow = "Alege doar un produs din sectiunea sousuri"
+                    }else{
+                        this.errorMessageProductBelow = "Выберите 1 товара из салаты раздела"
+                    }
+                }
+            } else {
+                if (this.counterSingleSauceError >= 0){
+                    this.counterSingleSauceError --;
+                }
+                this.selectedSauceItems = ''
+                if (this.counterSingleSauceError === 1) {
+                    this.errorMessageProductBelow = ""
+                }
+            }
+
+        },
+        platouCheck(itemId){
+            let idsToCheck = [77,78,79,80,81,82,83,84]
+            return !idsToCheck.includes(itemId);
+        },
+        platouCheckShow(itemId){
+            let idsToCheck = [77,78,79,80,81,82,83,84]
+            return idsToCheck.includes(itemId);
         },
         decodePath(encodedPath) {
         try {
@@ -81,7 +326,6 @@ function app() {
             const decodedPath = parts.join('/');
             return decodedPath;
         } catch (error) {
-            // Handle any potential decoding errors
             console.error("Error decoding path:", error);
             return null;
         }

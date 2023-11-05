@@ -1783,7 +1783,7 @@
                 },
                 "Gogoși răsuciți":{
                     "id": 73,
-                    "images":["/images/products/gogoși.jpg"],
+                    "images":["/images/products/gogosiRasuciti.jpg"],
                     "state" : "Produs gătit",
                     "top": false,
                     "cart": "In Cart",
@@ -1880,57 +1880,25 @@
                     "person" : ["2","4"],
                     "size": ["900","1800"],
                     "bulkPrice": [40,80],
-                    "content": ["- Frigarui porc","- Frigarui pui","- Cârnați porc","- Cârnați pui","- Ceafă porc","- Piept de pui sau curcan","- Pulpă de pui dezosată","- Aripi de pui","- Ficăţei cu becon", "- Mici de vită","- Chiftele porc","- Chiftele pui"]
-                },
-                "Platou cu cartofi":{
-                    "id": 78,
-                    "images":["/images/products/platoulCarneMix.jpg"],
-                    "state" : "Produs gătit",
-                    "person" : ["2","4"],
-                    "size": ["900","1800"],
-                    "bulkPrice": [40,80],
-                    "content": ["- Cartofi wedges","- Ardei iuţi marinaţi","- Conopidă marinată","- Gogonele murate","- Ciuperci marinaţi","- Gogoşari marinaţi"]
-                },
-                "Platou cu salate":{
-                    "id": 79,
-                    "images":["/images/products/platoulCarneMix.jpg"],
-                    "state" : "Produs gătit",
-                    "person" : ["2","4"],
-                    "size": ["900","1800"],
-                    "bulkPrice": [40,80],
-                    "content": ["- Salată de vinete","- Salată de castraveţi şi roşii","- Roşii, avocado, mix seminţe, verdeaţă","- Roşii, mozzarella, sos pesto","- Varză şi morcov","- Varză roşie", "- Varză murată"]
-                },
-                "Platou cu sos":{
-                    "id": 80,
-                    "images":["/images/products/platoulCarneMix.jpg"],
-                    "state" : "Produs gătit",
-                    "person" : ["2","4"],
-                    "size": ["900","1800"],
-                    "bulkPrice": [40,80],
-                    "content": ["- Gratar dulce","- Gratar iute","- Sos de frunze verzi","- Avocado cu iaurt","- Pesto de spanac", "- Adjică ce casă", "- Muştar"]
+                    "content": [" Frigarui porc"," Frigarui pui"," Cârnați porc"," Cârnați pui"," Ceafă porc"," Piept de pui sau curcan"," Pulpă de pui dezosată"," Aripi de pui"," Ficăţei cu becon", " Mici de vită"," Chiftele porc"," Chiftele pui"],
+                    "muraturi": ["Varză murată/pickled cabbage", "Ardei iuţi marinaţi/Marinated hot peppers", "Conopidă marinată/marinated cauliflower", "Gogonele murate", "Ciuperci marinaţi/Marinated mushrooms", "Gogoşari marinaţi/Marinated peppers (not spicy)"],
+                    "salat": ["- Salată de vinete","- Salată de castraveţi şi roşii","- Roşii, avocado, mix seminţe, verdeaţă","- Roşii, mozzarella, sos pesto","- Varză şi morcov","- Varză roşie", "- Varză murată"],
+                    "sous": ["- Gratar dulce","- Gratar iute","- Sos de frunze verzi","- Avocado cu iaurt","- Pesto de spanac", "- Adjică ce casă", "- Muştar"]
                 }
             },
             "Platouri mix legume": {
-                "Platou Grill legume":{
-                    "id": 81,
+                "Platouri mix legume":{
+                    "id": 78,
                     "images":["/images/products/grillLegume.jpg"],
                     "state" : "Produs gătit",
                     "person" : ["2","4"],
                     "size": ["900","1800"],
                     "bulkPrice": [35,70],
-                    "content": ["- Ardei roşii graşi","- Ciuperci","- Zucchini sau dovlecel","- Vînătă", "- Roșii", "- Păpușoi", "- Sparanghel", "- Ceapă/usturoi", "- Morcovi", "- Broccoli", "- Conopidă", "- Cartofi", "- Cartofi dulci", "- Fasole verde", "- Radicchio"]
-                },
-                "Platou sosuri":{
-                    "id": 82,
-                    "images":["/images/products/grillLegume.jpg"],
-                    "state" : "Produs gătit",
-                    "person" : ["2","4"],
-                    "size": ["900","1800"],
-                    "bulkPrice": [35,70],
-                    "content": ["- Sos de iaurt (usturoi, sare, ulei masline, iaurt, lămîie)","- Pesto de spanac (spanac, ulei de măsline)","- Sos cu citrice (ghimbir, usturoi, lămîie, miere de albini)", "- Sos de roşii coapte dulci", "- Sos de roşii coapte iute", "- Sos verdeţuri (pătrunjel, busuioc, ulei de măsline, lămîie, sare, piper)", "- Adjică"]
+                    "content": ["- Ardei roşii graşi","- Ciuperci","- Zucchini sau dovlecel","- Vînătă", "- Roșii", "- Păpușoi", "- Sparanghel", "- Ceapă/usturoi", "- Morcovi", "- Broccoli", "- Conopidă", "- Cartofi", "- Cartofi dulci", "- Fasole verde", "- Radicchio"],
+                    "muraturi":  ["- Sos de iaurt (usturoi, sare, ulei masline, iaurt, lămîie)","- Pesto de spanac (spanac, ulei de măsline)","- Sos cu citrice (ghimbir, usturoi, lămîie, miere de albini)", "- Sos de roşii coapte dulci", "- Sos de roşii coapte iute", "- Sos verdeţuri (pătrunjel, busuioc, ulei de măsline, lămîie, sare, piper)", "- Adjică"]
                 },
                 "Platou tradițional țărănesc":{
-                    "id": 83,
+                    "id": 79,
                     "images":["/images/products/platouTraditional.jpg"],
                     "state" : "Produs gătit",
                     "person" : ["2","4"],
@@ -1939,7 +1907,7 @@
                     "content": ["- pastrama ţărănească", "- muşchi ţărănesc", "- toba tradițională", "- slănină ţărănească", "- şorici", "- caş de oaie sau branza de oaie", "- ceapă verde", "- roşii cheerz", "- ceapă roşie", "- ardei gras", "- masline", "- salată verde"]
                 },
                 "Platou pește":{
-                    "id": 84,
+                    "id": 80,
                     "images":["/images/products/platouPeste.jpg"],
                     "state" : "Produs gătit",
                     "person" : ["2","4"],
@@ -1948,7 +1916,7 @@
                     "content": ["- Doi peşti bine prăjiţi", "- Gril cu legume atent alese (broccoli, ciuperci, zucchini, ardei gras roşii şi galben, roşii cherry, lămîie)."]
                 },
                 "Platou ruladă de carne la cuptor":{
-                    "id": 85,
+                    "id": 81,
                     "images":["/images/products/rulouCarne.jpg"],
                     "state" : "Produs gătit",
                     "person" : ["2","4"],
@@ -1957,7 +1925,7 @@
                     "content": ["- Ruladă de curcan", "- rulouri de beicon", "- rulouri cu şuncă şi caşcaval", "- pulpe dezosate la cuptor"]
                 },
                 "Platou aperitiv brînzeturi":{
-                    "id": 86,
+                    "id": 82,
                     "images":["/images/products/platouBrinzeturi.jpg"],
                     "state" : "Produs gătit",
                     "person" : ["2","4"],
@@ -1966,8 +1934,8 @@
                     "content": ["- Parmezan grana padano", "- brînză cheddar", "- french camembert", "- brînză le crem lux", "- greek style cheese cubes", "- brînză emmentaler", "- mozzarella caşcaval afumat", "- şuncă", "- grişine", "- roşii cherry", "- portocală", "- roşii strufure", "- nuci"]
                 },
                 "Platou aperitiv vegan":{
-                    "id": 87,
-                    "images":["/images/products/platouBrinzeturi.jpg"],
+                    "id": 83,
+                    "images":["/images/products/platouVegan.jpg"],
                     "state" : "Produs gătit",
                     "person" : ["2","4"],
                     "size": ["900","1200"],
@@ -1975,8 +1943,8 @@
                     "content": ["- Salată cu avocado şi năut", "- frigărui cu crochete şi legume", "- salată de paste", "- inele de ceapă", "- tarte", "- bastonaşe cu legume", "- biscuiţi crackers", "- chiftele vegane"]
                 },
                 "Platou mini rulouri":{
-                    "id": 88,
-                    "images":["/images/products/platouBrinzeturi.jpg"],
+                    "id": 84,
+                    "images":["/images/products/miniRulouri.jpg"],
                     "state" : "Produs gătit",
                     "person" : ["2","4"],
                     "size": ["900","1200"],
@@ -1985,7 +1953,640 @@
                 }
             },
             "Menu Paște": {
-
+                "Pască cu brînză sărată": {
+                    "id": 85,
+                    "images":["/images/products/pasca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de grâu de calitate superioară, ouă de găină, lapte de vaci, unt, zahăr, drojdie uscată, sare alimentară, brînză de oi sărată.",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cozonac cu nuci": {
+                    "id": 86,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "25",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de calitate superioară, lapte de vaci, drojdie uscată, zahăr, esenţă de rum, ceapă de portocală, ouă de găină, sare de bucătărie, miez de nucă, praf de cacao.",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cozonac cu mac": {
+                    "id": 87,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "25",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de calitate superioară, lapte de vaci, drojdie uscată, zahăr, esenţă de rum, ceapă de portocală, ouă de găină, sare bucătărie, mac măcinat.",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cozonac cu rahat și stafide": {
+                    "id": 88,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "25",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de calitate superioară, lapte de vaci, drojdie uscată, zahăr, esenţă de rum, ceapă de portocală, ouă de găină, sare bucătărie, rahat tăiat bucăţi mici, stafide..",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cozonac cu zmeură și ciocolată": {
+                    "id": 89,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "25",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de calitate superioară, lapte de vaci, drojdie uscată, zahăr, esenţă de rum, ceapă de portocală, ouă de găină, sare bucătărie, gem de zmeură, amidon.",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cozonac cu vișină și ciocolată": {
+                    "id": 90,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "25",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de calitate superioară, lapte de vaci, drojdie uscată, zahăr, esenţă de rum, ceapă de portocală, ouă de găină, sare bucătărie, gem de vişină şi fulgi de ciocolată.",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cozonac cu nutella și ciocolată": {
+                    "id": 91,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "25",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de calitate superioară, lapte de vaci, drojdie uscată, zahăr, esenţă de rum, ceapă de portocală, ouă de găină, sare bucătărie, cremă de Nutella şi fulgi de ciocolată.",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cozonac cu halva, prune și mere": {
+                    "id": 92,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "25",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de calitate superioară, lapte de vaci, drojdie uscată, zahăr, esenţă de rum, ceapă de portocală, ouă de găină, sare bucătărie, halva, prune uscate, mere.",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cozonac cu pistachio": {
+                    "id": 93,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "25",
+                    "deposit": "30 de zile. Temperatura -18C",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se aranjează produsul congelat şi se lasă la temperatura camerei pentru  60 min pentru decongelare. După decongelare se ung cu ou şi se coc la temperatura de 175-185 C timp de 40-60 min în dependenţă de rolă.",
+                    "ingredients": "Făină de calitate superioară, lapte de vaci, drojdie uscată, zahăr, esenţă de rum, ceapă de portocală, ouă de găină, sare bucătărie, Pistachio.",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                }
+            },
+            "Salate": {
+                "Salată Olivie": {
+                    "id": 94,
+                    "images":["/images/products/olivie.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Sos maioneză 22,6%, salam fiert 19,89%, ouă 13,92%, cartofi 13,56%, morcovi 10,48%, mazăre verde conservată 9,04%, castraveți murați 9,04%, ceapă 1,08%",
+                    "nutritiveValue":{
+                        "protein": "5,73",
+                        "fats": "21,1",
+                        "carboHydrates": "5,32"
+                    },
+                    "energyValue":{
+                        "kcal": "233",
+                        "kj": "976"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată cu pește și șubă": {
+                    "id": 95,
+                    "images":["/images/products/suba.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Sos maioneză 24%, sfeclă 18%, macrou conservat 15%, cartofi 15%, morcovi 13%, ouă 13%, ceapă 2%",
+                    "nutritiveValue":{
+                        "protein": "4,8",
+                        "fats": "17",
+                        "carboHydrates": "5,22"
+                    },
+                    "energyValue":{
+                        "kcal": "192",
+                        "kj": "806"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată mimoza": {
+                    "id": 96,
+                    "images":["/images/products/mimoză.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Ouă 30%, sos maioneză 22,5%, macrou în ulei 20%, mere 12,5%, cașcaval 10%, ceapă 2,5%, unt 2,5%.",
+                    "nutritiveValue":{
+                        "protein": "8,7",
+                        "fats": "22,2",
+                        "carboHydrates": "5,22"
+                    },
+                    "energyValue":{
+                        "kcal": "248",
+                        "kj": "1040"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată de pui cu cașcaval": {
+                    "id": 97,
+                    "images":["/images/products/salataPuiCascaval.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": " 18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Sos maioneză 26,87%, ouă 17,41%, carne de pui broiler 14,93%, cașcaval 12,44%, ciuperci champignon 10,95%, cartofi 9,95%, ceapă 7,46%.",
+                    "nutritiveValue":{
+                        "protein": "8,6",
+                        "fats": "24",
+                        "carboHydrates": "7,2"
+                    },
+                    "energyValue":{
+                        "kcal": "267",
+                        "kj": "1117"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată cu limbă de vită": {
+                    "id": 98,
+                    "images":["/images/products/salataLimbaVita.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Сastraveți 19,46%, castraveți murate 19,46%, radacina de telina 19,46%, maioneza 19,46%, limba de carne de vită fiartă 17,51% (limba de carne de vită, apă potabilă, sare alimentară, frunze de dafin, ienibahar), albuș de ou 3,89%, usturoi 0,39%, sare alimentară 0,39%",
+                    "nutritiveValue":{
+                        "protein": "4,8",
+                        "fats": "15,18",
+                        "carboHydrates": "6,43"
+                    },
+                    "energyValue":{
+                        "kcal": "180",
+                        "kj": "755"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată de pui și ananas": {
+                    "id": 99,
+                    "images":["/images/products/salataPuiAnanas.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Carne de pui broiler fiartă 29,76%, maioneză 29,76%, ananas în sirop dulce 24,8%, produs de brânză 14,88%, usturoi 0,79%.",
+                    "nutritiveValue":{
+                        "protein": "6,8",
+                        "fats": "22",
+                        "carboHydrates": "4,2"
+                    },
+                    "energyValue":{
+                        "kcal": "260",
+                        "kj": "1088"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată cu bastonașe de crabi": {
+                    "id": 100,
+                    "images":["/images/products/salataCrabi.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Produs din pește \"Вastoanașe de crabi\" 27,27%, sos maioneză 22,73%, castraveți 13,64%, cașcaval 13,64%, ouă 13,64%, porumb conservat 9,09%",
+                    "nutritiveValue":{
+                        "protein": "5,9",
+                        "fats": "17",
+                        "carboHydrates": "6"
+                    },
+                    "energyValue":{
+                        "kcal": "197",
+                        "kj": "826"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată legume proaspete și șuncă": {
+                    "id": 101,
+                    "images":["/images/products/salataLegumeSunca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "10",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Şuncă 19,27%, maioneza 19,27%, castraveți 17,34%, ardei roșu dulce 14,45%, ardei galben dulce 14,45% , varză chinezească 14,45%, sare alimentară 0,77%",
+                    "nutritiveValue":{
+                        "protein": "3,6",
+                        "fats": "17",
+                        "carboHydrates": "6"
+                    },
+                    "energyValue":{
+                        "kcal": "172",
+                        "kj": "721"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată picantă cu morcov în stil coreean": {
+                    "id": 102,
+                    "images":["/images/products/salataCorean.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Şuncă 19,27%, maioneza 19,27%, castraveți 17,34%, ardei roșu dulce 14,45%, ardei galben dulce 14,45% , varză chinezească 14,45%, sare alimentară 0,77%",
+                    "nutritiveValue":{
+                        "protein": "0,6",
+                        "fats": "3",
+                        "carboHydrates": "0,4"
+                    },
+                    "energyValue":{
+                        "kcal": "78",
+                        "kj": "325"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată de vinete": {
+                    "id": 103,
+                    "images":["/images/products/salataVinete.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "vinete coapte 73,19%, sare alimentară 0,59%, usturoi 0,39%, piper negru 0,2% ulei de floarea soarelui 2.94% Sos:cu maioneza la cererea clientului",
+                    "nutritiveValue":{
+                        "protein": "0,6",
+                        "fats": "14,48",
+                        "carboHydrates": "5,4"
+                    },
+                    "energyValue":{
+                        "kcal": "155",
+                        "kj": "650"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată din sfeclă cu nuci și usturoi": {
+                    "id": 104,
+                    "images":["/images/products/salataSfecla.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "ridiche proaspătă 38,83%, castravete 19,42%, ouă 19,42%, maioneză 14,56%, ceapă verde 5,83%, sare alimentară 1,17%, mărar 0,78%",
+                    "nutritiveValue":{
+                        "protein": "2,6",
+                        "fats": "10,4",
+                        "carboHydrates": "1,7"
+                    },
+                    "energyValue":{
+                        "kcal": "112",
+                        "kj": "470"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată ghiveci/zacuscă din legume": {
+                    "id": 105,
+                    "images":["/images/products/ghiveci.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Sos de tomate 20,89%, sos pentru pizza 15,66%, morcov 10,44%, ceapă 9,40%, ulei de floarea soarelui 8,56%, ardei gras roșu 8,35%, ardei gras galben 8,35%, dovlecei 8,35%, vânătă 8,35%, usturoi 1,04%, sare alimentară 0,52%, piper negru măcinat 0,03% ",
+                    "nutritiveValue":{
+                        "protein": "2",
+                        "fats": "16",
+                        "carboHydrates": "11"
+                    },
+                    "energyValue":{
+                        "kcal": "203",
+                        "kj": "850"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                },
+                "Salată fasoliță": {
+                    "id": 106,
+                    "images":["/images/products/fasolita.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "8",
+                    "deposit": "18 ore.Temperatura +2…+6°C, umiditatea relativă a aerului 75±5%.",
+                    "cooking": "",
+                    "ingredients": "Fasole 50,3%, apă potabilă 25,2%, ceapă 12,6%, morcov 6,3%, ulei de floarea-soarelui 5,0%, usturoi 0,3%, sare alimentară 0,3%, ardei iute 0,1%, ceapă prăjită ",
+                    "nutritiveValue":{
+                        "protein": "5,4",
+                        "fats": "6",
+                        "carboHydrates": "11,6"
+                    },
+                    "energyValue":{
+                        "kcal": "130",
+                        "kj": "540"
+                    },
+                    "weight": "500",
+                    "pieces": "1"
+                }
+            },
+            "Patiserie": {
+                "Colaci": {
+                    "id": 107,
+                    "images":["/images/products/grillLegume.jpg"],
+                    "state" : "Produs gătit",
+                    "person" : ["2","4"],
+                    "size": ["750","1500"],
+                    "bulkPrice": [7.5,15]
+                },
+                "Cornulețe cu vișină": {
+                    "id": 108,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C.",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se pune produsul,se lasă 30 min la decongelat se coc 25 min la temperatura 170C. Se lasă 10 min să se răcească şi se pudrează.",
+                    "ingredients": "Făină de calitate superioară, smîntînă, untura de pork, zahăr pudră, esenţă vanilie.",
+                    "nutritiveValue":{
+                        "protein": "9",
+                        "fats": "17",
+                        "carboHydrates": "11,6"
+                    },
+                    "energyValue":{
+                        "kcal": "350",
+                        "kj": "937"
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                },
+                "Cornulețe cu piersici": {
+                    "id": 109,
+                    "images":["/images/products/cozonacNuca.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C.",
+                    "cooking": "Pe o tavă acoperită cu hârtie de copt se pune produsul,se lasă 30 min la decongelat se coc 25 min la temperatura 170C. Se lasă 10 min să se răcească şi se pudrează.",
+                    "ingredients": "Făină de grîu calitate superioară, extract de vanilie, sare de bucătărie, nucă măcinată, dulceaţă de caise, cacao, zahăr pudră, colorant gel roşu, colorant gel galben, zahăr tos.",
+                    "nutritiveValue":{
+                        "protein": "7",
+                        "fats": "17",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": "970"
+                    },
+                    "weight": "1000",
+                    "pieces": "1"
+                }
+            },
+            "Comemorări": {
+                "Pachet praznic pulpa": {
+                    "id": 110,
+                    "images":["/images/products/pachet-pulpa.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C.",
+                    "cooking": "",
+                    "message": "La cererea clientului,asiguram colaci,coliva si alte produse necesare",
+                    "ingredients": "Sarmalute moldovenesti (4 bucati,150gr),orez (150gr),pulpa de pui (250-270 gr),castravete murat / salata de varza (50gr),chifla (100gr). Pachetul include un suc gratis la dorința clientului : 1)Coca-cola original, 2)Coca-cola sugar free, 3)seven up, 4)capri-sun juice, 5)apa ",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "",
+                    "pieces": ""
+                },
+                "Pachet ceafă sau pulpă dezosată": {
+                    "id": 111,
+                    "images":["/images/products/pachet-ceafă.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C.",
+                    "cooking": "",
+                    "message": "La cererea clientului,asiguram colaci,coliva si alte produse necesare",
+                    "ingredients": "Sarmale moldovenesti (4 bucati,150gr),orez (150gr) cu ceafa de port/pulpa dezosata(230-250gr) și castravete murat sau salata de varza (50gr),chifla (100gr). Pachetul include un suc gratis la dorința clientului :1)Coca-cola original,2)Coca-cola sugar free,3)seven up,4)capri-sun juice,5)apa ",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "",
+                    "pieces": ""
+                },
+                "Pachet praznic post": {
+                    "id": 112,
+                    "images":["/images/products/pachet-ceafă.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C.",
+                    "cooking": "",
+                    "message": "La cererea clientului,asiguram colaci,coliva si alte produse necesare",
+                    "ingredients": "Sarmale de post(4 bucati 150gr),orez cu legume si ciuperci,masline,parjoala cu legume,gogosar la otet.Ardei iute la cerința clientului\n Pachetul include un suc gratis la dorința clientului :1)Coca-cola original,2)Coca-cola sugar free,3)seven up,4)capri-sun juice,5)apa ",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "",
+                    "pieces": ""
+                },
+                "Pachet praznic post peste": {
+                    "id": 113,
+                    "images":["/images/products/pachet-ceafă.jpg"],
+                    "state" : "Produs gătit",
+                    "top": false,
+                    "cart": "In Cart",
+                    "price": "20",
+                    "deposit": "30 de zile. Temperatura -18C.",
+                    "cooking": "",
+                    "message": "La cererea clientului,asiguram colaci,coliva si alte produse necesare",
+                    "ingredients": "Sarmale de post(4 bucati 150gr) Peste la cuptor (400gr aprox ),orez cu legume,gogosar la otet,chifla (100gr),ardei iute la cerința clientului.\nPachetul include un suc gratis la dorința clientului :1)Coca-cola original,2)Coca-cola sugar free,3)seven up,4)capri-sun juice,5)apa ",
+                    "nutritiveValue":{
+                        "protein": "",
+                        "fats": "",
+                        "carboHydrates": ""
+                    },
+                    "energyValue":{
+                        "kcal": "",
+                        "kj": ""
+                    },
+                    "weight": "",
+                    "pieces": ""
+                }
             }
 
         }
@@ -2001,24 +2602,549 @@
             "fromTo":["от", "до", "ежедневно"]
         },
         "products":{
-            "Cheburecki":{
-                "Cheburecki":{
-                    "id": 4,
-                    "images":["/images/products/product1.jpg", "/images/products/product2.jpg"],
-                    "state" : "Frozen Product",
+            "Фасованные полуфабрикаты": {
+                "Пирожки с сыром и зеленью": {
+                    "id": 1,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
                     "top": false,
-                    "cart": "In Cart",
-                    "price": "20.99",
-                    "Ingredients":"XY",
-                    "nutritiveValue":{
-                        "protein": "36",
-                        "fats": "200",
-                        "carboHydrates": "500"
+                    "cart": "В корзине",
+                    "price": "6",
+                    "deposit": "180 дней. Температура -18°C",
+                    "cooking": "Разместите замороженные пирожки на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. С помощью кисти смажьте пирожки взбитым куриным яйцом. Запекайте в духовке при температуре 180-200 °C, время приготовления 20-25 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Тесто: высший сорт пшеничной муки, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, поваренная соль, столовый уксус. Ингредиенты начинки: 5% говяжьего сыра, 8% сыра Дрокия, куриные яйца, свежая петрушка, зеленый лук, гречка, поваренная соль. Начинка - 60%",
+                    "nutritiveValue": {
+                        "protein": "13,83",
+                        "fats": "9,46",
+                        "carboHydrates": "19,47"
                     },
-                    "energyValue":{
-                        "kcal": "200",
-                        "kj": "200"
-                    }
+                    "energyValue": {
+                        "kcal": "218",
+                        "kj": "916"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Пирожки с курицей": {
+                    "id": 2,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "7",
+                    "deposit": "180 дней. Температура -18°C",
+                    "cooking": "Разместите замороженные пирожки на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. Смажьте пирожки взбитым куриным яйцом. Запекайте в духовке при температуре 180-200 °C, время приготовления 15-20 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Тесто: пшеничная мука высшего сорта, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, поваренная соль, столовый уксус. Начинка: свинина, курица, лук, рафинированное беззапаховое подсолнечное масло, поваренная соль, молотый черный перец. Начинка - 60%",
+                    "nutritiveValue": {
+                        "protein": "10,42",
+                        "fats": "30,1",
+                        "carboHydrates": "24,42"
+                    },
+                    "energyValue": {
+                        "kcal": "411",
+                        "kj": "1705"
+                    },
+                    "weight": "500",
+                    "pieces": "4"
+                },
+                "Пирожки с картофелем": {
+                    "id": 3,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "5",
+                    "cooking": "Разместите замороженные пирожки на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. С помощью кисти смажьте пирожки взбитым куриным яйцом. Запекайте в духовке при температуре 180-200 °C, время приготовления 20-25 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Тесто: высший сорт пшеничной муки, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, поваренная соль, столовый уксус. Ингредиенты начинки: картофель, рафинированное беззапаховое подсолнечное масло, поваренная соль, смесь перцев. Начинка - 70%",
+                    "nutritiveValue": {
+                        "protein": "4,14",
+                        "fats": "11,76",
+                        "carboHydrates": "30"
+                    },
+                    "energyValue": {
+                        "kcal": "242",
+                        "kj": "1015"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Пирожки с свежей капустой": {
+                    "id": 4,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "6",
+                    "cooking": "Разместите замороженные пирожки на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. С помощью кисти смажьте пирожки взбитым куриным яйцом. Запекайте в духовке при температуре 180-200 °C, время приготовления 20-25 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Тесто: высший сорт пшеничной муки, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, поваренная соль, столовый уксус. Ингредиенты начинки: квашеная капуста с морковью, лук, рафинированное беззапаховое подсолнечное масло, молотый черный перец. Начинка - 66%",
+                    "nutritiveValue": {
+                        "protein": "3,43",
+                        "fats": "5,61",
+                        "carboHydrates": "31,97"
+                    },
+                    "energyValue": {
+                        "kcal": "809",
+                        "kj": "1092"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Пирожки с квашеной капустой": {
+                    "id": 5,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "6",
+                    "cooking": "Разместите замороженные пирожки на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. С помощью кисти смажьте пирожки взбитым куриным яйцом. Запекайте в духовке при температуре 180-200 °C, время приготовления 20-25 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Тесто: высший сорт пшеничной муки, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, поваренная соль, столовый уксус. Ингредиенты начинки: квашеная капуста с морковью, лук, рафинированное беззапаховое подсолнечное масло, молотый черный перец. Начинка - 66%",
+                    "nutritiveValue": {
+                        "protein": "3,43",
+                        "fats": "5,61",
+                        "carboHydrates": "31,97"
+                    },
+                    "energyValue": {
+                        "kcal": "809",
+                        "kj": "1092"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Пирожки с вишней": {
+                    "id": 6,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "7",
+                    "cooking": "Разместите замороженные пирожки на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. С помощью кисти смажьте пирожки взбитым куриным яйцом. Запекайте в духовке при температуре 180-200 °C, время приготовления 20-25 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Тесто: высший сорт пшеничной муки, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, поваренная соль, столовый уксус. Ингредиенты начинки: вишни консервированные в собственном соку, сахарная пудра, картофельный крахмал. Начинка - 80%",
+                    "nutritiveValue": {
+                        "protein": "3,43",
+                        "fats": "5,61",
+                        "carboHydrates": "31,97"
+                    },
+                    "energyValue": {
+                        "kcal": "809",
+                        "kj": "1092"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Пирожки с тыквой": {
+                    "id": 7,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "6",
+                    "cooking": "Замороженный продукт размещается на противне, покрытом пергаментной бумагой, смазывается яйцом и выпекается в предварительно разогретой духовке при температуре 180°C в течение 25-30 минут.",
+                    "ingredients": "Тесто: пшеничная мука высшего сорта, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, столовая соль, столовый уксус. Ингредиенты начинки: тыква, сахар. Начинка - 83%",
+                    "nutritiveValue": {
+                        "protein": "3,53",
+                        "fats": "5,39",
+                        "carboHydrates": "31,12"
+                    },
+                    "energyValue": {
+                        "kcal": "187",
+                        "kj": "788"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Пирожки с халвой (Файлули)": {
+                    "id": 8,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "7",
+                    "cooking": "Разместите замороженные вареники на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. С помощью кисти смажьте вареники взбитым куриным яйцом. Запекайте в духовке при температуре 180-200°C, время приготовления 20-25 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Тесто: высший сорт пшеничной муки, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, поваренная соль, столовый уксус. Ингредиенты начинки: халва. Начинка - 66%",
+                    "nutritiveValue": {
+                        "protein": "7,2",
+                        "fats": "15,25",
+                        "carboHydrates": "21,50"
+                    },
+                    "energyValue": {
+                        "kcal": "907",
+                        "kj": "1728"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Пирожки с яблоками": {
+                    "id": 9,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "6",
+                    "cooking": "Разместите замороженные пирожки на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. С помощью кисти смажьте пирожки взбитым куриным яйцом. Запекайте в духовке при температуре 180-200 °C, время приготовления 20-25 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Тесто: высший сорт пшеничной муки, питьевая вода, рафинированное беззапаховое подсолнечное масло, сахар, поваренная соль, столовый уксус. Ингредиенты начинки: яблоки, сахар. Начинка - 66%",
+                    "nutritiveValue": {
+                        "protein": "3,12",
+                        "fats": "5,8",
+                        "carboHydrates": "56"
+                    },
+                    "energyValue": {
+                        "kcal": "211",
+                        "kj": "889"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Пирожки по-княжески": {
+                    "id": 10,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "7.5",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "На противне, покрытом бумагой для выпечки, разместите замороженные продукты, оставив расстояние 3-5 см между ними, и оставьте при комнатной температуре на 30 минут для размораживания. После размораживания смажьте их яйцом и выпекайте при температуре 175-185°C в течение 15-20 минут. Перед подачей дайте им остыть 12-15 минут.",
+                    "ingredients": "Тесто - пшеничная мука высшего сорта, масло сливочное, питьевая вода, сахар, дрожжи хлебопекарные, молоко, столовая соль, сыр и телемеа с голубцами.",
+                    "nutritiveValue": {
+                        "protein": "5,81",
+                        "fats": "19,1",
+                        "carboHydrates": "46,88"
+                    },
+                    "energyValue": {
+                        "kcal": "382",
+                        "kj": "1598"
+                    },
+                    "weight": "500",
+                    "pieces": "2"
+                },
+                "Пирожки с сыром": {
+                    "id": 11,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "6.5",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Разместите замороженные пирожки на противне, покрытом пергаментной бумагой, с расстоянием 2 см между ними. С помощью кисти смажьте пирожки взбитым куриным яйцом. Запекайте в духовке при температуре 180-200°C, время приготовления 20-25 минут, пока не образуется золотистая корка.",
+                    "ingredients": "Мука высшего качества, питьевая вода, рафинированное масло, сахар, соль. Начинка - 3 вида сыра, куриные яйца.",
+                    "nutritiveValue": {
+                        "protein": "10,42",
+                        "fats": "30,1",
+                        "carboHydrates": "24,42"
+                    },
+                    "energyValue": {
+                        "kcal": "441",
+                        "kj": "1705"
+                    },
+                    "weight": "500",
+                    "pieces": "2"
+                },
+                "Булка с кунжутом": {
+                    "id": 12,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "2.5",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Замороженный продукт размещается на противне, покрытом бумагой для выпечки, и выпекается в течение 5 минут при температуре 200°C.",
+                    "ingredients": "Мука высшего сорта пшеницы, сушеная майонезная подкислая масса, кунжутные семена.",
+                    "nutritiveValue": {
+                        "protein": "11,58",
+                        "fats": "5,28",
+                        "carboHydrates": "73,82"
+                    },
+                    "energyValue": {
+                        "kcal": "413",
+                        "kj": "1728"
+                    },
+                    "weight": "450",
+                    "pieces": "6"
+                },
+                "Булка с чесноком": {
+                    "id": 13,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "2.5",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Замороженный продукт размещается на противне, покрытом бумагой для выпечки, и выпекается в течение 5 минут при температуре 200°C.",
+                    "ingredients": "Мука высшего сорта пшеницы, сушеная майонезная подкислая масса, чесночный соус с зеленью.",
+                    "nutritiveValue": {
+                        "protein": "11,58",
+                        "fats": "5,28",
+                        "carboHydrates": "73,82"
+                    },
+                    "energyValue": {
+                        "kcal": "413",
+                        "kj": "1728"
+                    },
+                    "weight": "450",
+                    "pieces": "6"
+                },
+                "Сарма с рисом и мясом": {
+                    "id": 14,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "19",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Продукт размораживается, перекладывается на противень для выпечки и выпекается в духовке при 160°C в течение 15-20 минут. Перед приготовлением можно добавить сметану или соус по вкусу.",
+                    "ingredients": "Белокочанная капуста, овощной томатный соус (лук, морковь, помидоры в собственном соку, сладкий перец, подсолнечное масло, сельдерей), свинина, рис, масло, томатное пюре, поваренная соль, сушеная петрушка, сушеный лавровый лист, сорбиновая кислота.",
+                    "nutritiveValue": {
+                        "protein": "4,5",
+                        "fats": "12,78",
+                        "carboHydrates": "16,74"
+                    },
+                    "energyValue": {
+                        "kcal": "196",
+                        "kj": "823"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Сарма с рисом и овощами": {
+                    "id": 15,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "19",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Продукт размораживается, перекладывается на противень для выпечки и выпекается в духовке при 160°C в течение 15-20 минут. Перед приготовлением можно добавить сметану или соус по вкусу.",
+                    "ingredients": "Белокочанная капуста, овощной томатный соус (лук, морковь, помидоры в собственном соку, сладкий перец, подсолнечное масло, сельдерей), овощи, рис, масло, томатное пюре, поваренная соль, сушеная петрушка, сушеный лавровый лист, сорбиновая кислота.",
+                    "nutritiveValue": {
+                        "protein": "4,5",
+                        "fats": "12,78",
+                        "carboHydrates": "16,74"
+                    },
+                    "energyValue": {
+                        "kcal": "196",
+                        "kj": "823"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Перец фаршированный рисом и мясом": {
+                    "id": 16,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "19",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Подлежит термической обработке. Продукт выпекается в духовке при 160 градусах Цельсия в течение 15-20 минут. Перед приготовлением можно добавить сметану или другой соус. Внимание! Продукт необходимо разместить в жаропрочной форме перед приготовлением.",
+                    "ingredients": "Сладкий болгарский перец, овощной томатный соус (лук, морковь, помидоры в собственном соку, сладкий перец, подсолнечное масло, сельдерей), рис, свинина, питьевая вода, подсолнечное масло, томатное пюре, петрушка, укроп, поваренная соль.",
+                    "nutritiveValue": {
+                        "protein": "2,96",
+                        "fats": "10,59",
+                        "carboHydrates": "16,53"
+                    },
+                    "energyValue": {
+                        "kcal": "170",
+                        "kj": "711"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Перец фаршированный рисом и овощами": {
+                    "id": 17,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "19",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Подлежит термической обработке. Продукт выпекается в духовке при 160 градусах Цельсия в течение 15-20 минут. Перед приготовлением можно добавить сметану или другой соус. Внимание! Продукт необходимо разместить в жаропрочной форме перед приготовлением.",
+                    "ingredients": "Сладкий болгарский перец, овощной томатный соус (лук, морковь, помидоры в собственном соку, сладкий перец, подсолнечное масло, сельдерей), овощи, рис, питьевая вода, подсолнечное масло, томатное пюре, петрушка, укроп, поваренная соль.",
+                    "nutritiveValue": {
+                        "protein": "2,96",
+                        "fats": "10,59",
+                        "carboHydrates": "16,53"
+                    },
+                    "energyValue": {
+                        "kcal": "170",
+                        "kj": "711"
+                    },
+                    "weight": "1000",
+                    "pieces": ""
+                },
+                "Домашние фрикадельки": {
+                    "id": 18,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "7",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Продукт размораживается и обжаривается с обеих сторон на гриле или сковороде в течение 8-10 минут, либо выпекается в духовке в течение 15-20 минут.",
+                    "ingredients": "Свинина, говядина, лук, питьевая вода, специи, чеснок, поваренная соль.",
+                    "nutritiveValue": {
+                        "protein": "11,08",
+                        "fats": "5,66",
+                        "carboHydrates": "4,73"
+                    },
+                    "energyValue": {
+                        "kcal": "113",
+                        "kj": "474"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                },
+                "Фрикадельки с индейкой": {
+                    "id": 19,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "7",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Продукт размораживается и обжаривается с обеих сторон на гриле или сковороде в течение 8-10 минут, либо выпекается в духовке в течение 15-20 минут.",
+                    "ingredients": "Курица, индейка, лук, питьевая вода, специи, чеснок, поваренная соль.",
+                    "nutritiveValue": {
+                        "protein": "10,07",
+                        "fats": "4,73",
+                        "carboHydrates": "4,05"
+                    },
+                    "energyValue": {
+                        "kcal": "105",
+                        "kj": "425"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                },
+                "Фрикадельки с рыбой": {
+                    "id": 20,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "8",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Подлежит термической обработке: фрикадельки размещаются на противне, покрытом пергаментом, выпекаются в духовке при 120 градусах Цельсия в течение 20 минут, остужают 10-15 минут (без укрытия), а затем жарятся в растительном масле до золотистой корки.",
+                    "ingredients": "Филе лосося, обжаренный лук, пшеничный хлеб, куриное яйцо, молоко, подсолнечное масло, лимонный сок, сода, поваренная соль, молотый черный перец.",
+                    "nutritiveValue": {
+                        "protein": "10,65",
+                        "fats": "6,66",
+                        "carboHydrates": "6,46"
+                    },
+                    "energyValue": {
+                        "kcal": "127",
+                        "kj": "532"
+                    },
+                    "weight": "680",
+                    "pieces": "6"
+                },
+                "Куриные котлеты": {
+                    "id": 21,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "6",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Продукт размораживается, обжаривается с обеих сторон на сковороде, добавляется соус по вкусу и варится 10-15 минут.",
+                    "ingredients": "Куриное мясо, питьевая вода, лук, пшеничный хлеб, подсолнечное масло, комплекс пищевых добавок, специи, поваренная соль, чеснок.",
+                    "nutritiveValue": {
+                        "protein": "12,29",
+                        "fats": "6,79",
+                        "carboHydrates": "7,3"
+                    },
+                    "energyValue": {
+                        "kcal": "138",
+                        "kj": "577"
+                    },
+                    "weight": "600",
+                    "pieces": "12"
+                },
+                "Веганские котлеты": {
+                    "id": 22,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "4.5",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Продукт размораживается, обжаривается с обеих сторон на сковороде, добавляется соус по вкусу и варится 10-15 минут.",
+                    "ingredients": "Классические цуккини или кабачки, картофельное пюре, чеснок, зелень, майоран, смесь специй, поваренная соль.",
+                    "nutritiveValue": {
+                        "protein": "10,57",
+                        "fats": "5,44",
+                        "carboHydrates": "6,4"
+                    },
+                    "energyValue": {
+                        "kcal": "108",
+                        "kj": "435"
+                    },
+                    "weight": "600",
+                    "pieces": "12"
+                },
+                "Куриная котлета": {
+                    "id": 23,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "7",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Подлежит тепловой обработке, продукт разогревается в микроволновой печи в течение 2-4 минуты или на плите в течение 5-7 минут.",
+                    "ingredients": "Куриное грудное филе, рафинированное подсолнечное масло, питьевая вода, пшеничная мука, куриное яйцо, поваренная соль, смесь специй.",
+                    "nutritiveValue": {
+                        "protein": "14,5",
+                        "fats": "7,28",
+                        "carboHydrates": "8,25"
+                    },
+                    "energyValue": {
+                        "kcal": "140",
+                        "kj": "620"
+                    },
+                    "weight": "600",
+                    "pieces": "4"
+                },
+                "Котлета с курицей и овощами": {
+                    "id": 24,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "9",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Подлежит тепловой обработке, продукт разогревается в микроволновой печи в течение 3-5 минут или на плите в течение 6-8 минут.",
+                    "ingredients": "Десертированное куринное филе, смесь специй, рафинированное подсолнечное масло, пшеничная мука, куриное яйцо, поваренная соль, свежие овощи, сыр.",
+                    "nutritiveValue": {
+                        "protein": "16,75",
+                        "fats": "9,12",
+                        "carboHydrates": "8,93"
+                    },
+                    "energyValue": {
+                        "kcal": "173",
+                        "kj": "714"
+                    },
+                    "weight": "640",
+                    "pieces": "4"
+                },
+                "Котлета": {
+                    "id": 25,
+                    "images": ["/images/products/comingsoon.jpeg"],
+                    "state": "Замороженный продукт",
+                    "top": false,
+                    "cart": "В корзине",
+                    "price": "7",
+                    "deposit": "30 дней. Температура -18°C",
+                    "cooking": "Подлежит тепловой обработке, продукт разогревается в микроволновой печи в течение 2-4 минут или на плите в течение 5-7 минут.",
+                    "ingredients": "Маринованное грудное мясо цыплят-бройлеров (куриное филе, питьевая вода, ацетат натрия E262, поваренная соль, цитрат натрия E331, аскорбат натрия E301, аскорбиновая кислота E300, дифосфат E450, ароматизатор, краситель), рафинированное подсолнечное масло, питьевая вода, пшеничная мука, панировка, крахмал, поваренная соль.",
+                    "nutritiveValue": {
+                        "protein": "10,87",
+                        "fats": "37,85",
+                        "carboHydrates": "14,03"
+                    },
+                    "energyValue": {
+                        "kcal": "437",
+                        "kj": "747"
+                    },
+                    "weight": "680",
+                    "pieces": "4"
                 }
             }
         }

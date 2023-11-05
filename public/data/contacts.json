@@ -1,0 +1,35 @@
+{
+    "en": {
+        "delivery": "Delivery",
+        "timeDelivery": "Delivery Hours:",
+        "howOrderTitle": "How to Order?",
+        "howOrderContent": "Add the desired products to your cart and complete the registration with accurate personal information (please check your full name / email address / delivery address) before placing the order to avoid mistakes. After placing the order, you will receive an email with information about your order.",
+        "paymentTitle": "Payment Methods",
+        "paymentContent": "Cash on delivery. Credit card: Visa, Master Card, Maestro (any bank card from any country, including Revolut cards, is accepted).",
+        "speedDeliveryTitle": "Delivery Time:",
+        "speedDeliveryContent": "Orders placed by 8:00 PM will be delivered the next day at your desired time between 12:00 PM - 8:00 PM.",
+        "weekDays": "Monday-Sunday"
+    },
+    "ru": {
+        "delivery": "Доставка",
+        "timeDelivery": "Часы доставки:",
+        "howOrderTitle": "Как сделать заказ?",
+        "howOrderContent": "Добавьте желаемые продукты в корзину и заполните регистрацию с точными личными данными (пожалуйста, проверьте ваше полное имя / адрес электронной почты / адрес доставки) перед размещением заказа, чтобы избежать ошибок. После размещения заказа, вы получите электронное письмо с информацией о вашем заказе.",
+        "paymentTitle": "Способы оплаты",
+        "paymentContent": "Наличными при доставке. Кредитная карта: Visa, Master Card, Maestro (принимаются любые банковские карты из любой страны, включая карты Revolut).",
+        "speedDeliveryTitle": "Время доставки:",
+        "speedDeliveryContent": "Заказы, размещенные до 20:00, будут доставлены на следующий день в желаемое вами время с 12:00 до 20:00.",
+        "weekDays": "Понедельник-воскресенье"
+    },
+    "ro": {
+        "delivery": "Livrare",
+        "timeDelivery": "Orele pentru livrare:",
+        "howOrderTitle": "Cum comandați?",
+        "howOrderContent": "Adăugați produsele dorite în coș și completați înregistrarea cu informații personale corecte (vă rugăm să verificați numele complet / adresa de email / adresa de livrare) înainte de a plasa comanda pentru a evita greșeli. După plasarea comenzii, veți primi un email cu informații despre comanda dvs.",
+        "paymentTitle": "Modalități de plată",
+        "paymentContent": "Plată în numerar la livrare. Card de credit: Visa, Master Card, Maestro (sunt acceptate orice card bancar emis de orice țară, inclusiv cardurile Revolut).",
+        "speedDeliveryTitle": "Timp Livrare:",
+        "speedDeliveryContent": "Comenzile înregistrate până la ora 20:00 vor fi livrate a doua zi la ora dorită de dvs., între orele 12:00 - 20:00.",
+        "weekDays": "Luni-Duminică"
+    }
+}
