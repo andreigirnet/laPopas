@@ -47,36 +47,37 @@
                 </div>
                 <input type="hidden" name="cartTotal" id="cartTotal" value="{{Cart::total()}}">
                 <input type="hidden" name="cartQty" id="qty" value="{{Cart::count()}}">
-                <div id="link-authentication-element">
-                    <!--Stripe.js injects the Link Authentication Element-->
-                </div>
                 <div class="form-group">
                     <label for="name" x-text="checkoutData.name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" value="{{auth()->user()->name}}" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" value="{{auth()->user()->email}}" required>
                 </div>
                 <div class="form-group">
                     <label for="address" x-text="checkoutData.address">Shipping Address</label>
-                    <input type="text"  id="address" name="address"  required>
+                    <input type="text"  id="address" name="address" value="{{auth()->user()->address}}"  required>
                 </div>
                 <div class="form-group">
                     <label for="address" x-text="checkoutData.county">County</label>
-                    <input type="text" id="county" name="county" required>
+                    <input type="text" id="county" name="county" value="{{auth()->user()->county}}" required>
                 </div>
                 <div class="form-group">
                     <label for="address" x-text="checkoutData.city">City</label>
-                    <input type="text" id="city" name="city"  required>
+                    <input type="text" id="city" name="city" value="{{auth()->user()->city}}" required>
                 </div>
                 <div class="form-group">
                     <label for="address" x-text="checkoutData.country">Country</label>
-                    <input type="text" id="country" name="country" required>
+                    <input type="text" id="country" name="country" value="{{auth()->user()->country}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="address" x-text="checkoutData.phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" value="{{auth()->user()->phone}}" required>
                 </div>
                 <div class="form-group">
                     <label for="address" x-text="checkoutData.comments">Comments</label>
-                    <textarea type="text" id="comments" name="comments" rows="4" required></textarea>
+                    <textarea type="text" id="comments" name="comments" rows="4"></textarea>
                 </div>
                 <div id="card-element"></div>
                 <div id="card-errors" style="color: red" role="alert"></div>
@@ -85,4 +86,6 @@
             </form>
         </div>
     </div>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{{asset('js/stripe.js')}}"></script>
 @endsection

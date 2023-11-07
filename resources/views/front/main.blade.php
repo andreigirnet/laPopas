@@ -33,7 +33,11 @@
                                     <!-- Display product information here -->
                                     <a :href="'/product/' + key + '/' + productKey" class="clearLink">
                                     <div class="productCard">
-                                            <div x-text="product.state" class="productState"></div>
+                                            <div class="productStateHeader">
+                                                <div x-text="product.state" class="productState"></div>
+                                                <img src="{{asset('images/icons/frost.svg')}}" class="frozenIcon" alt="" x-show="product.state === 'Frozen product' || product.state === 'Produs congelat' || product.state === 'Замороженный продукт'">
+                                                <img src="{{asset('images/icons/ready-product.svg')}}" class="frozenIcon"  alt="" x-show="product.state === 'Cooked Product' || product.state === 'Produs gătit' || product.state === 'Готовый продукт'">
+                                            </div>
                                             <img :src="product.images[0]" class="productImg" alt="">
                                             <div x-text="productKey" class="productTitle"></div>
                                             <div class="lineContainer">

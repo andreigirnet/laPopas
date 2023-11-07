@@ -31,40 +31,35 @@
             <div class="infoContainer">
                 <div class="info">
                     <div class="infoTitle">Delivery</div>
-                    <div class="infoContent">In town 3 euro</div>
-                    <div class="infoContent">Outside 2 euro</div>
+                    <a class="infoContent clearLink" x-text="data.footer.deliveryText" href="/delivery">In town 3 euro</a>
                     <img src="{{asset('images/icons/domik-delivery.png')}}" class="domik" alt="">
                 </div>
                 <div class="hrDiv"></div>
                 <div class="info">
                     <div class="infoTitle">How you Order?</div>
-                    <div class="infoContent">079776698</div>
-                    <div class="infoContent">079776698</div>
-                    <div class="infoContent">www.x.md</div>
+                    <div class="infoContent" x-text="data.footer.howOrder">079776698</div>
                 </div>
                 <div class="hrDiv"></div>
                 <div class="info">
                     <div class="infoTitle">Payment Methods</div>
-                    <div class="infoContent">Cash when you reveice the order</div>
-                    <div class="infoContent">By card(Visa, MasterCard)</div>
+                    <div class="infoContent" x-text="data.footer.paymentFooter">Cash when you reveice the order</div>
                 </div>
                 <div class="hrDiv"></div>
                 <div class="info">
                     <div class="infoTitle">Time Of Delivery</div>
-                    <div class="infoContent">In aceeasi zi</div>
-                    <div class="infoContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dignissimos fugiat libero nobis, pariatur quo ullam vero. maxime moptio quasi.</div>
+                    <div class="infoContent"  x-text="data.footer.deliveryTime">In aceeasi zi</div>
                 </div>
             </div>
         </section>
         <section class="footerSection">
             <div class="footerContainer">
-                <img src="{{asset('images/icons/catalog-icon.svg')}}" alt="">
-                <div class="footerSlogan">Deliver fast and convenient</div>
+                <img src="{{asset('images/icons/catalogIcon.png')}}" alt="" class="footerIcon">
+                <div class="footerSlogan" x-text="data.footer.footerSlogan">Deliver fast and convenient</div>
                 <div class="footerMenu">
                     <div class="footerMenuRow">
-                        <div class="footerMenuElement">Menu</div>
-                        <div class="footerMenuElement">Contacts</div>
-                        <div class="footerMenuElement">Delivery</div>
+                        <div class="footerMenuElement" x-text="data.navMenu.items[0]"></div>
+                        <div class="footerMenuElement" x-text="data.navMenu.aboutUs[0]">Contacts</div>
+                        <div class="footerMenuElement" x-text="data.navMenu.aboutUs[1]">Delivery</div>
                     </div>
                     <div class="footerMenuRow">
                         <div class="footerMenuElement">Corporative</div>
@@ -115,7 +110,5 @@
                // },
            });
        </script>
-       <script src="https://js.stripe.com/v3/"></script>
-       <script src="{{asset('js/stripe.js')}}"></script>
     </body>
 </html>

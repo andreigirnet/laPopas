@@ -20,7 +20,7 @@ class DashboardController extends Controller
     public function ordersIndex()
     {
         $user = auth()->user()->id;
-        $orders = Order::latest()->get()->where('user_id', $user);
+        $orders = Order::where('user_id', $user)->latest()->paginate(7);
         return view('front.dashboard.orders', compact('orders'));
     }
 

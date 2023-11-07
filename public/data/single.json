@@ -9,7 +9,11 @@
         "fats": "Fats",
         "carbs": "Carbohydrates",
         "grams": "grams",
-        "storage": "Storage:"
+        "storage": "Storage:",
+        "selectThreeItems": "You can select 3 items from below",
+        "selectOneItem": "You can select only 1 item from below",
+        "selectTwoItems": "You can select only 2 item from below",
+        "selectFiveItems": "You can select 5 items from below"
     },
 
     "ru": {
@@ -22,7 +26,11 @@
         "fats": "Жиры",
         "carbs": "Углеводы",
         "grams": "граммы",
-        "storage": "Хранение:"
+        "storage": "Хранение:",
+        "selectThreeItems": "Вы можете выбрать 3 элемента из списка ниже",
+        "selectOneItem": "Вы можете выбрать только 1 элемент из списка ниже",
+        "selectTwoItems": "Вы можете выбрать только 2 элемент из списка ниже",
+        "selectFiveItems": "Вы можете выбрать 5 элемента из списка ниже"
     },
 
     "ro": {
@@ -35,6 +43,10 @@
         "fats": "Grăsimi",
         "carbs": "Carbohidrați",
         "grams": "grame",
-        "storage": "Stocare:"
+        "storage": "Stocare:",
+        "selectThreeItems": "Puteți selecta 3 elemente din cele de mai jos",
+        "selectOneItem": "Puteți selecta doar 1 element din cele de mai jos",
+        "selectTwoItems": "Puteți selecta doar 2 element din cele de mai jos",
+        "selectFiveItems": "Puteți selecta 5 elemente din cele de mai jos"
     }
 }

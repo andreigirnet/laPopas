@@ -55,6 +55,13 @@
             </div>
             <div class="errorsProductMessageMeat" x-text="errorMessageProduct" x-show="errorMessageProduct"></div>
             <div class="errorsProductMessageMeat" x-text="finalSubmitError" x-show="finalSubmitError"></div>
+            <template x-if="platouCheckShow(singleProduct.id)">
+                <div class="personNumber">
+                    <div>For</div>
+                    <div x-text="platouSize"></div>
+                    <div>Persons</div>
+                </div>
+            </template>
             <div class="deliverySingleInfo">
                 <template x-if="platouCheck(singleProduct.id)">
                     <div>
@@ -63,8 +70,8 @@
                 </template>
                 <template x-if="platouCheckShow(singleProduct.id)">
                     <div class="multipleChoice">
-                        <div x-show="singleProduct.id === 77">You can select 3 elements from below</div>
-                        <div x-show="singleProduct.id === 78">You can select only 5 elements from below</div>
+                        <div x-show="singleProduct.id === 77" class="productBigText" x-text="singlePageData.selectThreeItems">You can select 3 elements from below:</div>
+                        <div x-show="singleProduct.id === 78" class="productBigText" x-text="singlePageData.selectFiveItems">You can select only 5 elements from below:</div>
                         <div class="listContentPlatou">
                             <template x-for="item in singleProduct.content">
                                 <div class="inputCheck">
@@ -78,8 +85,8 @@
 
                 <template x-if="platouCheckShow(singleProduct.id)">
                     <div class="multipleChoice">
-                        <div x-show="singleProduct.id === 77">You can Select only one item from below</div>
-                        <div x-show="singleProduct.id === 78">You can Select only two item from below</div>
+                        <div x-show="singleProduct.id === 77" class="productBigText" x-text="singlePageData.selectOneItem">You can Select only one item from below:</div>
+                        <div x-show="singleProduct.id === 78" class="productBigText" x-text="singlePageData.selectTwoItems">You can Select only two item from below:</div>
                         <div class="listContentPlatou">
                             <template x-for="item in singleProduct.muraturi">
                                 <div class="inputCheck">
@@ -91,20 +98,12 @@
                     </div>
                 </template>
 
-                <template x-if="platouCheckShow(singleProduct.id)">
-                <div class="personNumber">
-                    <div>For</div>
-                    <div x-text="platouSize"></div>
-                    <div>Persons</div>
-
-                </div>
-                </template>
             </div>
             <div class="errorsProductMessageMeat" x-text="errorMessageProductBelow" x-show="errorMessageProductBelow"></div>
             <template x-if="platouCheckShow(singleProduct.id)">
                 <div class="secondLinemultiple"  x-show="singleProduct.id === 77">
                     <div class="multipleChoice">
-                        <div>You can Select only one item from below</div>
+                        <div class="productBigText" x-text="singlePageData.selectOneItem">You can Select only one item from below:</div>
                         <div class="listContentPlatou">
                             <template x-for="item in singleProduct.salat">
                                 <div class="inputCheck">
@@ -115,7 +114,7 @@
                         </div>
                     </div>
                     <div class="multipleChoice"  x-show="singleProduct.id === 77">
-                        <div>You can Select only one item from below</div>
+                        <div class="productBigText" x-text="singlePageData.selectOneItem">You can Select only one item from below:</div>
                         <div class="listContentPlatou">
                             <template x-for="item in singleProduct.sous">
                                 <div class="inputCheck">

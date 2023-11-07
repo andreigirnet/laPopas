@@ -96,7 +96,8 @@ function app() {
             let itemToDisplay = productsItems[this.productIndex]
             this.singleProduct = this.data.products[keyToDisplay][itemToDisplay]
             this.singleProduct['name'] = itemToDisplay
-            if (this.singleProduct['name'].includes('Platou') || this.singleProduct['name'].includes('Colaci')){
+            let idsToCheck = [77,78,79,80,81,82,83,84]
+            if (idsToCheck.includes( this.singleProduct.id)){
                 this.bulkPrice = this.singleProduct.bulkPrice[0]
             }
 
@@ -109,7 +110,7 @@ function app() {
             if (this.singleProduct['id'] === 77) {
                 if (this.singleProduct.name && this.selectedMeatItems[0] && this.selectedMeatItems[1] && this.selectedMeatItems[2] && this.selectedCartofItems && this.selectedSalatItems && this.selectedSauceItems) {
                     this.finalSubmitError = ""
-                    this.finalName = this.singleProduct.name + "(" + this.selectedMeatItems[0] + '/' + this.selectedMeatItems[1] +  "/" + this.selectedMeatItems[2]+ ")"+ "(" + this.selectedCartofItems + ")"+ "(" + this.selectedSalatItems + ")" + "(" + this.selectedSauceItems + ")";
+                    this.finalName = this.singleProduct.name + "(" + this.selectedMeatItems[0] + '/' + this.selectedMeatItems[1] +  "/" + this.selectedMeatItems[2]+ ")"+ "(" + this.selectedCartofItems + ")"+ "(" + this.selectedSalatItems + ")" + "(" + this.selectedSauceItems + ")" + " • For " + this.platouSize + " people";
                 } else {
                     this.finalNamePlatou = ''
                     if (this.currentLanguage === 'en') {
@@ -167,6 +168,16 @@ function app() {
                         } else {
                             this.errorMessageProduct = "Выберите 3 товара из мясного раздела"
                         }
+                    }else if(this.selectedMeatItems.length < 3){
+                        if (this.currentLanguage === 'en') {
+                            this.errorMessageProduct = "PLease select 3 items from meat section"
+                        } else if (this.currentLanguage === 'ro') {
+                            this.errorMessageProduct = "Poți alege doar 3 produse din secțiunea legume"
+                        } else {
+                            this.errorMessageProduct = "Выберите 3 товара из овощи раздела"
+                        }
+                    }else{
+                        this.errorMessageProduct = ''
                     }
                 } else {
                     const index = this.selectedMeatItems.indexOf(elem);
@@ -181,17 +192,25 @@ function app() {
                 if (event.target.checked) {
                     if (this.selectedMeatItems.length < 6) {
                         this.selectedMeatItems.push(elem);
-                        console.log(this.selectedMeatItems)
                     }
                     if (this.selectedMeatItems.length > 5) {
-                        console.log(this.selectedMeatItems.length)
                         if (this.currentLanguage === 'en') {
                             this.errorMessageProduct = "Please choose five elements from veggies select section"
                         } else if (this.currentLanguage === 'ro') {
-                            this.errorMessageProduct = "Alege 5 produse din sectiunea legume"
+                            this.errorMessageProduct = "Poți alege doar 5 produse din secțiunea legume"
                         } else {
                             this.errorMessageProduct = "Выберите 5 товара из овощи раздела"
                         }
+                    }else if(this.selectedMeatItems.length < 5){
+                        if (this.currentLanguage === 'en') {
+                            this.errorMessageProduct = "PLease select 5 items from vegetables section"
+                        } else if (this.currentLanguage === 'ro') {
+                            this.errorMessageProduct = "Alege 5 produse din secțiunea legume"
+                        } else {
+                            this.errorMessageProduct = "Выберите 5 товара из овощи раздела"
+                        }
+                    }else{
+                        this.errorMessageProduct = ''
                     }
                 } else {
                     const index = this.selectedMeatItems.indexOf(elem);
@@ -235,17 +254,25 @@ function app() {
                 if (event.target.checked) {
                     if (this.selectedVeggieItems.length < 3) {
                         this.selectedVeggieItems.push(elem);
-                        console.log(this.selectedVeggieItems)
                     }
                     if (this.selectedVeggieItems.length > 2) {
-                        console.log(this.selectedVeggieItems.length)
                         if (this.currentLanguage === 'en') {
-                            this.errorMessageProduct = "Please choose two elements from veggies select section"
+                            this.errorMessageProduct = "Please choose two elements from sauces select section"
                         } else if (this.currentLanguage === 'ro') {
-                            this.errorMessageProduct = "Alege 2 produse din sectiunea legume"
+                            this.errorMessageProduct = "Alege 2 produse din sectiunea sosuri"
                         } else {
-                            this.errorMessageProduct = "Выберите 2 товара из овощи раздела"
+                            this.errorMessageProduct = "Выберите 2 товара из соус раздела"
                         }
+                    }else if(this.selectedVeggieItems.length < 2){
+                        if (this.currentLanguage === 'en') {
+                            this.errorMessageProduct = "PLease select 2 items from sauces section"
+                        } else if (this.currentLanguage === 'ro') {
+                            this.errorMessageProduct = "Alege 2 produse din secțiunea sosuri"
+                        } else {
+                            this.errorMessageProduct = "Выберите 2 товара из соус раздела"
+                        }
+                    }else{
+                        this.errorMessageProduct = ''
                     }
                 } else {
                     const index = this.selectedVeggieItems.indexOf(elem);
@@ -291,7 +318,6 @@ function app() {
                     this.selectedSauceItems += elem;
                 }
                 this.counterSingleSauceError ++;
-                console.log(this.counterSingleSauceError)
                 if (this.counterSingleSauceError > 1){
                     if (this.currentLanguage === 'en'){
                         this.errorMessageProductBelow = "Please choose only one element from sauce select section"

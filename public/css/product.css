@@ -71,6 +71,7 @@
     width: 100%;
     display: flex;
     column-gap: 200px;
+    margin-top: 30px;
 }
 .multipleChoice{
     display: flex;
@@ -241,6 +242,8 @@
     font-size: 20px;
     display: flex;
     column-gap: 5px;
+    width: 95%;
+    justify-content: end;
 }
 .inputCheck{
     display: flex;
@@ -250,6 +253,10 @@
     display: flex;
     margin-top: 50px;
     column-gap: 200px;
+}
+.productBigText{
+    font-size: 24px;
+    font-weight: 600;
 }
 @media only screen and (max-width: 1200px){
     .productSingleImg{
@@ -270,7 +277,11 @@
         padding: 40px 0px;
     }
     .deliverySingleInfo{
+        display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
     }
     .deliverySingleText{
         width: 90%;
@@ -311,5 +322,11 @@
     }
     .productInner{
         border-radius: 0px;
+    }
+    .secondLinemultiple{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
     }
 }

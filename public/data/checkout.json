@@ -9,6 +9,7 @@
         "remove": "remove",
         "quantity": "Quantity:",
         "price": "Price:",
+        "phone": "Phone Number",
         "pay": "Pay"
     },
 
@@ -22,6 +23,7 @@
         "quantity": "Kоличество:",
         "remove": "удалить",
         "price": "цена:",
+        "phone": "Номер телефона",
         "pay": "Оплатить"
     },
 
@@ -35,6 +37,7 @@
         "remove": "ștergere",
         "quantity": "Cantitate:",
         "price": "Preț:",
+        "phone": "Număr Telefon",
         "pay": "Plătește"
     }
 }

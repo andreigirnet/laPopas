@@ -31,4 +31,5 @@
             </tbody>
         </table>
     </div>
+    {{ $orders->links('paginator') }}
 @endsection

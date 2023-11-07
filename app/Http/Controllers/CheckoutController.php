@@ -76,11 +76,11 @@ class CheckoutController extends Controller
     public function generateResponse($intent, Request $request) {
         # Note that if your API version is before 2019-02-11, 'requires_action'
         # appears as 'requires_source_action'.
-        if ($intent->status == 'requires_confirmation' &&
+        if ($intent->status == 'requires_action' &&
             $intent->next_action->type == 'use_stripe_sdk') {
             # Tell the client to handle the action
             echo json_encode([
-                'requires_confirmation' => true,
+                'requires_action' => true,
                 'payment_intent_client_secret' => $intent->client_secret
             ]);
         } else if ($intent->status == 'succeeded') {
@@ -105,6 +105,13 @@ class CheckoutController extends Controller
                 'deliveryMethod'=>'Delivery',
                 'comments'=> $request->comments
             ]);
+
+            if($request->phone != ''){
+                $currentUser = auth()->user();
+                $currentUser->phone = $request->phone;
+                $currentUser->save();
+            }
+
             Cart::destroy();
             $request->session()->flash('success', 'Payment has been received successfully');
             echo json_encode([

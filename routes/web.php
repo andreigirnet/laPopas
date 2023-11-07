@@ -54,23 +54,25 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    Route::get('/admin', function(){
-        return view('admin.main');
-    })->name('admin.index');
+    Route::group(['middleware' => 'App\Http\Middleware\IsAdminMiddleware'], function () {
+        Route::get('/admin', function(){
+            return view('admin.main');
+        })->name('admin.index');
 
-    Route::get('/users', [App\Http\Controllers\UsersController::class,'index'])->name('users.index');
-    Route::get('/create', [App\Http\Controllers\UsersController::class,'create'])->name('user.create');
-    Route::get('/edit/{id}', [App\Http\Controllers\UsersController::class,'edit'])->name('user.edit');
-    Route::put('/update/{id}', [App\Http\Controllers\UsersController::class,'update'])->name('user.update');
-    Route::delete('/delete/{id}', [App\Http\Controllers\UsersController::class,'destroy'])->name('user.destroy');
-    Route::get('/users/search', [App\Http\Controllers\UsersController::class,'search'])->name('user.search');
+        Route::get('/users', [App\Http\Controllers\UsersController::class,'index'])->name('users.index');
+        Route::get('/create', [App\Http\Controllers\UsersController::class,'create'])->name('user.create');
+        Route::get('/edit/{id}', [App\Http\Controllers\UsersController::class,'edit'])->name('user.edit');
+        Route::put('/update/{id}', [App\Http\Controllers\UsersController::class,'update'])->name('user.update');
+        Route::delete('/delete/{id}', [App\Http\Controllers\UsersController::class,'destroy'])->name('user.destroy');
+        Route::get('/users/search', [App\Http\Controllers\UsersController::class,'search'])->name('user.search');
 
-    Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
-    Route::get('/orders/create', [OrderController::class, 'create'])->name('orders.create');
-    Route::get('/orders/edit/{id}', [OrderController::class, 'edit'])->name('orders.edit');
-    Route::put('/orders/update/{id}', [OrderController::class, 'update'])->name('orders.update');
-    Route::delete('/orders/delete/{id}', [OrderController::class, 'destroy'])->name('orders.destroy');
-    Route::get('/orders/search', [OrderController::class, 'search'])->name('orders.search');
+        Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
+        Route::get('/orders/create', [OrderController::class, 'create'])->name('orders.create');
+        Route::get('/orders/edit/{id}', [OrderController::class, 'edit'])->name('orders.edit');
+        Route::put('/orders/update/{id}', [OrderController::class, 'update'])->name('orders.update');
+        Route::delete('/orders/delete/{id}', [OrderController::class, 'destroy'])->name('orders.destroy');
+        Route::get('/orders/search', [OrderController::class, 'search'])->name('orders.search');
+    });
 
     Route::get('/dashboard/', [DashboardController::class, 'ordersIndex'])->name('dash.orders.index');
     Route::get('/dashboard/profile', [DashboardController::class, 'profileIndex'])->name('dash.profile.index');
