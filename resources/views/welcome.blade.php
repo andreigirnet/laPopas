@@ -6,6 +6,7 @@
         <meta content="authenticity_token" name="csrf-param" />
         <meta content="{{@csrf_token()}}=" name="csrf-token" />
         <title>La Popas</title>
+        <link rel="icon" type="image/x-icon" href="{{asset('images/icons/catalogIcon.png')}}">
         <link rel="stylesheet" href="{{asset('css/frontMain.css')}}">
         <link rel="stylesheet" href="{{asset('css/cart.css')}}">
         <link href="https://fonts.cdnfonts.com/css/museo-sans-rounded" rel="stylesheet">

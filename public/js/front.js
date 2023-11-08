@@ -40,39 +40,45 @@ function app() {
         async fetchData() {
             try {
                 let lang = localStorage.getItem('lang');
-                this.currentLanguage = lang
+                console.log("The value of lang is" + lang)
+                if(!lang){
+                    this.currentLanguage = 'en'
+                }else{
+                    this.currentLanguage = lang
+                }
+                console.log(this.currentLanguage)
                 if (window.location.pathname === '/cart') {
                     let cartDataResponse;
                     cartDataResponse = await axios.get('/data/cart.json');
-                    this.cartData = cartDataResponse.data[lang]
+                    this.cartData = cartDataResponse.data[this.currentLanguage]
                 }
                 if (window.location.pathname === '/service') {
                     let serviceResponse;
                     serviceResponse = await axios.get('/data/service.json');
-                    this.serviceData = serviceResponse.data[lang];
+                    this.serviceData = serviceResponse.data[this.currentLanguage];
                 }
                 if (window.location.pathname === '/contact') {
                     let contactResponse;
                     contactResponse = await axios.get('/data/contacts.json');
-                    this.contactData = contactResponse.data[lang];
+                    this.contactData = contactResponse.data[this.currentLanguage];
                 }
                 if (window.location.pathname === '/delivery') {
                     let deliveryResponse;
                     deliveryResponse = await axios.get('/data/delivery.json');
-                    this.deliveryData = deliveryResponse.data[lang];
+                    this.deliveryData = deliveryResponse.data[this.currentLanguage];
                 }
                 if (window.location.pathname === '/checkout') {
                     let checkoutResponse;
                     checkoutResponse = await axios.get('/data/checkout.json');
-                    this.checkoutData = checkoutResponse.data[lang];
+                    this.checkoutData = checkoutResponse.data[this.currentLanguage];
                     console.log(this.checkoutData);
                 }
                 let singlePageResponse = await axios.get('/data/single.json');
-                this.singlePageData = singlePageResponse.data[lang]
+                this.singlePageData = singlePageResponse.data[this.currentLanguage]
 
                 const response = await axios.get('/data/data.json');
                 this.allLangData = response.data
-                this.data = response.data[lang];
+                this.data = response.data[this.currentLanguage];
 
                 let currentPath = window.location.pathname;
                 this.singleItem(currentPath)
