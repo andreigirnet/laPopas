@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Order;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use stdClass;
 use Stripe\Stripe;
+
 
 class CheckoutController extends Controller
 {
@@ -92,7 +96,7 @@ class CheckoutController extends Controller
                 array_push($productsArray, $value);
             }
             $productsString = implode(' ',$productsArray);
-            Order::create([
+            $order = Order::create([
                 'user_id' => auth()->user()->id,
                 'products' => $productsString,
                 'totalQty' => Cart::count(),
@@ -111,6 +115,12 @@ class CheckoutController extends Controller
                 $currentUser->phone = $request->phone;
                 $currentUser->save();
             }
+            $productName = str_replace(["<br>", "\n"], ' ', $order->products);
+
+            $pdf = PDF::loadView('invoice.invoice', ['order' => $order, "productName"=>$productName]);
+            $pdfPath = public_path('invoices/invoice_' . $order->id . '.pdf');
+            $pdf->save($pdfPath);
+            Mail::to(auth()->user()->email)->send(new \App\Mail\Order($pdfPath, $order,$productName));
 
             Cart::destroy();
             $request->session()->flash('success', 'Payment has been received successfully');

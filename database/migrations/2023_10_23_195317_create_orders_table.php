@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('totalQty');
             $table->text('comments')->nullable();
             $table->text('deliveryMethod')->nullable();
+            $table->integer('invoiceId')->nullable();
             $table->text('invoice')->nullable();
             $table->timestamps();
 
