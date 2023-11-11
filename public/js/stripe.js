@@ -65,7 +65,8 @@ const stripePaymentMethodHandler = async (result) => {
                 country: document.getElementById('country').value,
                 cartTotal: document.getElementById('cartTotal').value,
                 comments: document.getElementById('comments').value,
-                phone: document.getElementById('phone').value
+                phone: document.getElementById('phone').value,
+                delivery_status: document.getElementById('delivery-status').value
             }),
         })
         const paymentResponse = await res.json();

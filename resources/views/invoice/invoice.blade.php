@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>Invoice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: DejaVu Sans, sans-serif;
             background-color: #f2f2f2;
         }
 

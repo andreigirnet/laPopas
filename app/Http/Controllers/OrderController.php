@@ -16,7 +16,7 @@ class OrderController extends Controller
     public function index()
     {
         // Retrieve a list of orders
-        $orders = Order::paginate(8);
+        $orders = Order::latest()->paginate(8);
         // Display the orders in a view
         return view('admin.orders.index', compact('orders'));
     }
@@ -68,10 +68,10 @@ class OrderController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Order $order)
+    public function show($id)
     {
-        // Display the details of a specific order
-//        return view('orders.show', compact('order'));
+        $order = Order::find($id);
+        return view('admin.orders.show', compact('order'));
     }
 
     /**

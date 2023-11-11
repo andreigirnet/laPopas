@@ -41,7 +41,6 @@
                 @method('DELETE')
                 <button type="submit" class="delete-button">Delete</button>
             </form>
-            <button class="delete-button">History</button>
         </td>
     </tr>
     @endforeach

@@ -22,6 +22,23 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     </head>
     <body x-data="app()">
+    <a href="/cart">
+        <div class="mobileCartContainer">
+        <div class="mobileCartCounter">
+        @if(Cart::count())
+        <div class="mobileCartItemCounter">{{Cart::count()}}</div>
+        @endif
+        </div>
+        <img src="{{asset('images/icons/cartSingle.png')}}" alt="">
+    </div>
+    </a>
+    @if(session('success'))
+        <div id="success-popup" class="popup">
+            <div class="popup-content">
+                <p id="success-message">{{ session('success') }}</p>
+            </div>
+        </div>
+    @endif
        <div id="loading-overlay" class="loading-overlay">
            <div class="loader"></div>
        </div>
@@ -55,28 +72,14 @@
         <section class="footerSection">
             <div class="footerContainer">
                 <img src="{{asset('images/icons/catalogIcon.png')}}" alt="" class="footerIcon">
-                <div class="footerSlogan" x-text="data.footer.footerSlogan">Deliver fast and convenient</div>
-                <div class="footerMenu">
-                    <div class="footerMenuRow">
-                        <div class="footerMenuElement" x-text="data.navMenu.items[0]"></div>
-                        <div class="footerMenuElement" x-text="data.navMenu.aboutUs[0]">Contacts</div>
-                        <div class="footerMenuElement" x-text="data.navMenu.aboutUs[1]">Delivery</div>
-                    </div>
-                    <div class="footerMenuRow">
-                        <div class="footerMenuElement">Corporative</div>
-                        <div class="footerMenuElement">Contacts</div>
-                    </div>
-                    <div class="footerMenuRow">
-                        <div class="footerMenuElement">Rules</div>
-                    </div>
-                    <div class="footerMenuRow">
-                        <div class="footerMenuElement">Politics and Confidentiality</div>
-                    </div>
-                </div>
+                <div class="footerSlogan"  x-text="data.footer.text">Deliver fast and convenient</div>
+{{--                <div class="footerMenu">--}}
+{{--                    <div class="footerMenuElement" x-text="data.footer.text"></div>--}}
+{{--                </div>--}}
                 <div class="footerSocial">
-                    <img src="{{asset('images/social/fb-w.png')}}" alt="">
-                    <img src="{{asset('images/social/inst-w.png')}}" alt="">
-                    <img src="{{asset('images/social/tik-w.png')}}" alt="">
+                    <a href="http://www.instagram.com/la_popas/"><img src="{{asset('images/social/inst.png')}}" alt=""></a>
+                    <a href="https://www.facebook.com/lapopas.ie"><img src="{{asset('images/social/fb.png')}}" alt=""></a>
+                    <a href="https://www.tiktok.com/@lapopas"><img src="{{asset('images/social/tik.png')}}" alt=""></a>
                 </div>
             </div>
         </section>
@@ -111,5 +114,11 @@
                // },
            });
        </script>
+    <script>
+        var successPopup = document.getElementById('success-popup');
+        setTimeout(function() {
+            successPopup.style.display = 'none';
+        }, 2000);
+    </script>
     </body>
 </html>

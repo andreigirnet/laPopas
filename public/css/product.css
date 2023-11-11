@@ -82,7 +82,8 @@
 .errorsProductMessageMeat{
     display: flex;
     justify-content: center;
-    height: 50px;
+    align-items: center;
+    height: 62px;
     color: red;
 }
 .deliverySingleText{
@@ -244,6 +245,7 @@
     column-gap: 5px;
     width: 95%;
     justify-content: end;
+    margin-top: 15px;
 }
 .inputCheck{
     display: flex;

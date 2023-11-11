@@ -8,6 +8,7 @@ use Barryvdh\DomPDF\Facade\Pdf;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Response;
 use stdClass;
 use Stripe\Stripe;
 
@@ -106,17 +107,15 @@ class CheckoutController extends Controller
                 'county' => $request->county,
                 'country' => $request->country,
                 'status' => 'paid',
-                'deliveryMethod'=>'Delivery',
+                'deliveryMethod'=> $request->delivery_status,
                 'comments'=> $request->comments
             ]);
-
             if($request->phone != ''){
                 $currentUser = auth()->user();
                 $currentUser->phone = $request->phone;
                 $currentUser->save();
             }
             $productName = str_replace(["<br>", "\n"], ' ', $order->products);
-
             $pdf = PDF::loadView('invoice.invoice', ['order' => $order, "productName"=>$productName]);
             $pdfPath = public_path('invoices/invoice_' . $order->id . '.pdf');
             $pdf->save($pdfPath);
@@ -132,6 +131,13 @@ class CheckoutController extends Controller
             http_response_code(500);
             echo json_encode(['error' => 'Invalid PaymentIntent status']);
         }
+    }
+
+    public function pdfDownload($id)
+    {
+        $filePath = public_path('/invoices/invoice_'. $id . '.pdf'); // Replace 'your-pdf-file.pdf' with the actual filename
+
+        return Response::download($filePath);
     }
 
     /**

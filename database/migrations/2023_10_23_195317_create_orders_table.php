@@ -21,7 +21,6 @@ return new class extends Migration
             $table->text('comments')->nullable();
             $table->text('deliveryMethod')->nullable();
             $table->integer('invoiceId')->nullable();
-            $table->text('invoice')->nullable();
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');

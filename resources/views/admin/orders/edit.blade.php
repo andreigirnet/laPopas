@@ -12,7 +12,7 @@
                     <option value="paid">Paid</option>
                     <option value="in-progress">In Progress</option>
                     <option value="delivery">Delivery</option>
-                    <option value="delivered">Delivered</option>
+                    <option value="done">Done</option>
                 </select>
             </div>
 

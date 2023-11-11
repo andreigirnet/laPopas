@@ -17,6 +17,7 @@
             <li><a href="#">Dashboard</a></li>
             <li><a href="{{route('users.index')}}">Users</a></li>
             <li><a href="{{route('orders.index')}}">Orders</a></li>
+            <li><form action="/logout" style="margin-left: 5px; margin-top: 15px" method="POST">@csrf<button type="submit" class="logOutButton" style="background: none; border: none; color: white; cursor: pointer; font-size: 16px">Logout</button></form></li>
         </ul>
     </div>
     <div class="content">

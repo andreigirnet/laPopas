@@ -47,13 +47,11 @@ class BasketController extends Controller
     private function discount() {
         $total = Cart::total();
         $totalBefore = Cart::total();
-
         if ($total >= 200) {
             $total = $total * 0.9;
         } else if ($total >= 100) {
             $total = $total * 0.95;
         }
-
         $result = [
             'total' => number_format($total, 2),
             'totalBefore' => number_format($totalBefore, 2)
@@ -83,8 +81,11 @@ class BasketController extends Controller
     {
         $productName = $request->name;
         Cart::add($request->id, $productName, 1, $request->price, ['image' => $request->image, 'key'=>$request->key]);
-        return redirect(route('cart.index'))->with('success',"The course has been added to the cart");
-
+        if($request->page){
+            return redirect(route('main'))->with('success', "Added to cart/Adăugat în coș");
+        }else{
+            return back()->with('success', "Added to cart/Adăugat în coș");
+        }
     }
 
     /**

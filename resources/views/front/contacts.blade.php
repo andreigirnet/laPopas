@@ -1,7 +1,7 @@
 @extends('welcome')
 @section('content')
     <div class="serviceContainer">
-        <div class="serviceTitle">Contacts</div>
+        <div class="serviceTitle" x-text="contactData.contacts">Contacts</div>
         <div class="contactsInner">
             <div class="contactsLeft">
                 <div class="deliveryContacts">
@@ -25,7 +25,7 @@
             </div>
             <div class="contactsRight">
                 <div class="contactsRightUpper">
-                    <div class="contactsRightTitle">Main Office</div>
+                    <div class="contactsRightTitle"  x-text="contactData.office">Main Office</div>
                     <div class="contactsRightUpperFirstRow">
                         <div class="contactsContent" x-text="contactData.weekDays">Luni-Duminica</div>
                         <div class="contactsContent">9:00am-9:00pm </div>

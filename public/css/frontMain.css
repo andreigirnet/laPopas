@@ -130,6 +130,38 @@ body{
     margin-top: 20px;
     position: relative;
 }
+.mobileCartContainer{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffd200;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobileCartCounter{
+    position: relative;
+}
+.mobileCartItemCounter{
+    position: absolute;
+    top: -39px;
+    right: -50px;
+    background: red;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.mobileCartContainer img{
+    width: 30px;
+}
 .centerMainMenu{
     display: flex;
     justify-content: center;
@@ -271,7 +303,7 @@ body{
 }
 .homeCategoriesMenuTitle{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     height: 50px;
     cursor: pointer;
@@ -288,7 +320,7 @@ body{
 }
 .homeCategory{
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     display: flex;
     align-items: center;
 }
@@ -297,6 +329,25 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+.popup {
+    display: flex;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; /* Green color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border: 1px solid #ddd;
+    z-index: 100;
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 4s ease-in-out;
 }
 .fixedMenu{
     background: #6d574d;
@@ -327,7 +378,7 @@ body{
     justify-content: space-between;
     opacity: 0.8;
     cursor: pointer;
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .fixedMenuItem:hover{
@@ -457,7 +508,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 335px;
     background: white;
     margin-top: 100px;
 }
@@ -471,6 +522,11 @@ body{
 .footerSection{
     height: 200px;
     background: #584137;
+}
+.footerMenuElement{
+    width: 200px;
+    color: white;
+    font-size: 18px;
 }
 .infoTitle{
     font-size: 24px;
@@ -523,6 +579,8 @@ body{
 .footerSlogan{
     font-size: 24px;
     color: #ffd200;
+    width: 40%;
+    text-align: center;
 }
 .footerMenuElement{
     opacity: 0.7;
@@ -637,8 +695,23 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-
+.loginButtonMain{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.logOutButton{
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #533e34;
+    cursor: pointer;
+}
+.custom-select{
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 @media (max-width: 1200px) {
     .infoSection{
         height: auto;
@@ -697,6 +770,26 @@ body{
 
     .mobile-menu.active {
         right: 0;
+    }
+    .logOutButton{
+        border: none;
+        background: none;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+    }
+    .loginButtonMain{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .mobile-menu li{
+        margin: 5px 0;
     }
     /* Add more responsive styles here as needed */
 }

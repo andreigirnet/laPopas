@@ -8,7 +8,9 @@
         "paymentContent": "Cash on delivery. Credit card: Visa, Master Card, Maestro (any bank card from any country, including Revolut cards, is accepted).",
         "speedDeliveryTitle": "Delivery Time:",
         "speedDeliveryContent": "Orders placed by 8:00 PM will be delivered the next day at your desired time between 12:00 PM - 8:00 PM.",
-        "weekDays": "Monday-Sunday"
+        "weekDays": "Monday-Sunday",
+        "office": "Main Office",
+        "contacts": "Contacts"
     },
     "ru": {
         "delivery": "Доставка",
@@ -19,7 +21,9 @@
         "paymentContent": "Наличными при доставке. Кредитная карта: Visa, Master Card, Maestro (принимаются любые банковские карты из любой страны, включая карты Revolut).",
         "speedDeliveryTitle": "Время доставки:",
         "speedDeliveryContent": "Заказы, размещенные до 20:00, будут доставлены на следующий день в желаемое вами время с 12:00 до 20:00.",
-        "weekDays": "Понедельник-воскресенье"
+        "weekDays": "Понедельник-воскресенье",
+        "office": "Главный офис",
+        "contacts": "Контакты"
     },
     "ro": {
         "delivery": "Livrare",
@@ -30,6 +34,8 @@
         "paymentContent": "Plată în numerar la livrare. Card de credit: Visa, Master Card, Maestro (sunt acceptate orice card bancar emis de orice țară, inclusiv cardurile Revolut).",
         "speedDeliveryTitle": "Timp Livrare:",
         "speedDeliveryContent": "Comenzile înregistrate până la ora 20:00 vor fi livrate a doua zi la ora dorită de dvs., între orele 12:00 - 20:00.",
-        "weekDays": "Luni-Duminică"
+        "weekDays": "Luni-Duminică",
+        "office": "Oficiul Central",
+        "contacts": "Contacte"
     }
 }

@@ -76,6 +76,13 @@
                     <input type="text" id="phone" name="phone" value="{{auth()->user()->phone}}" required>
                 </div>
                 <div class="form-group">
+                    <label for="email">Delivery Method:</label>
+                    <select class="custom-select" id="delivery-status" name="deliveryStatus">
+                        <option value="Local">Local</option>
+                        <option value="Delivery">Delivery</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="address" x-text="checkoutData.comments">Comments</label>
                     <textarea type="text" id="comments" name="comments" rows="4"></textarea>
                 </div>

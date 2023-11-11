@@ -11,7 +11,6 @@
         <tr>
             <th>ID</th>
             <th>User Name</th>
-{{--            <th>User Email</th>--}}
             <th>User Phone</th>
             <th>Status</th>
             <th>Products</th>
@@ -32,7 +31,7 @@
 {{--                <td>{{$order->user->email}}</td>--}}
                 <td>{{$order->user->phone}}</td>
                 <td>{{$order->status}}</td>
-                <td>{!! nl2br($order->products) !!}</td>
+                <td>{!! strlen($order->products) > 60 ? substr($order->products, 0, 50) . '...' : $order->products !!}</td>
                 <td>{{$order->totalPaid}}€</td>
                 <td>{{$order->totalQty}}</td>
                 @if($order->deliveryMethod === 'Delivery')
@@ -40,13 +39,11 @@
                 @else
                     <td class="iconRow"><img src="{{asset('images/icons/local.png')}}" id="local" class="tableIcon" alt=""></td>
                 @endif
-                @if($order->invoice)
-                    <td class="iconRow"><img src="{{asset('images/icons/pdf.png')}}" class="tableIcon" alt=""></td>
-                @else
-                    <td class="iconRow"><img src="{{asset('images/icons/pdf.png')}}" id="local" class="tableIcon" alt=""></td>
-                @endif
+
+                <td class="iconRow"><a href="{{route('download.invoice', $order->id)}}"><img src="{{asset('images/icons/pdf.png')}}" class="tableIcon" alt=""></a></td>
+
                 <td>{{$order->created_at}}</td>
-                <td>{{$order->comments}}</td>
+                <td>{{ strlen($order->comments) > 60 ? substr($order->comments, 0, 50) . '...' : $order->comments }}</td>
                 <td class="lastColumnTable">
                     <a href="{{route('orders.edit', $order->id)}}"><button class="edit-button">Edit</button></a>
                     <form action="{{ route('orders.destroy', $order->id) }}" method="POST">
@@ -54,7 +51,7 @@
                         @method('DELETE')
                         <button type="submit" class="delete-button">Delete</button>
                     </form>
-{{--                    <button class="delete-button">Details</button>--}}
+                    <a href="{{route('orders.show', $order->id)}}"><button class="edit-button">Content</button></a>
                 </td>
             </tr>
         @endforeach

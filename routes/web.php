@@ -22,6 +22,10 @@ Route::get('/', function () {
     return view('front.main');
 })->name('main');
 
+Route::get('/news', function () {
+    return view('front.news');
+})->name('news');
+
 Route::get('/service', function(){
     return view('front.service');
 })->name('service.index');
@@ -50,13 +54,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/checkout', [CheckoutController::class,'index'])->name('checkout.index');
     Route::post('/payment', [CheckoutController::class,'setPayment']);
 
+    Route::get('/download-pdf/{id}', [CheckoutController::class,'pdfDownload'])->name('download.invoice');
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::group(['middleware' => 'App\Http\Middleware\IsAdminMiddleware'], function () {
         Route::get('/admin', function(){
-            return view('admin.main');
+            return redirect(route('orders.index'));
         })->name('admin.index');
 
         Route::get('/users', [App\Http\Controllers\UsersController::class,'index'])->name('users.index');
@@ -67,6 +73,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/users/search', [App\Http\Controllers\UsersController::class,'search'])->name('user.search');
 
         Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
+        Route::get('/show/{id}', [OrderController::class, 'show'])->name('orders.show');
         Route::get('/orders/create', [OrderController::class, 'create'])->name('orders.create');
         Route::get('/orders/edit/{id}', [OrderController::class, 'edit'])->name('orders.edit');
         Route::put('/orders/update/{id}', [OrderController::class, 'update'])->name('orders.update');
