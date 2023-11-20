@@ -5,7 +5,7 @@
         <div class="homeProductsWrapper">
             <div class="homeCategoriesMenu">
                 <div class="fixedMenu" id="fixedMenu">
-                    <div class="homeCategoriesMenuTitle">Categories</div>
+                    <div class="homeCategoriesMenuTitle" x-text="data.navMenu.category"></div>
                     <div class="listCategories">
                         <template x-for="(item, key) in data.products">
                             <div>
@@ -31,7 +31,7 @@
                             <div class="products">
                                 <template x-for="(product, productKey) in item" x-bind:key="productKey">
                                     <!-- Display product information here -->
-                                    <a :href="'/product/' + key + '/' + productKey" class="clearLink">
+                                    <a :href="'/product/' + findIndexByKey(data.products, key) + '/' + findIndexByKey(data.products[key], productKey)" class="clearLink">
                                     <div class="productCard">
                                             <div class="productStateHeader">
                                                 <div x-text="product.state" class="productState"></div>
@@ -40,10 +40,10 @@
                                             </div>
                                             <img :src="product.images[0]" class="productImg" alt="">
                                             <div x-text="productKey" class="productTitle"></div>
-                                            <div class="lineContainer">
+                                            <div class="lineContainer" x-show="product.id !== 118">
                                                 <div class="productLine"></div>
                                             </div>
-                                            <div class="priceContainer">
+                                            <div class="priceContainer" x-show="product.id !== 118">
                                                 <template x-if="!product.bulkPrice">
                                                 <div class="priceFull">
                                                     <div class="price" x-text="product.price"></div>
@@ -65,7 +65,7 @@
                                                         </button>
                                                     </template>
                                                     <template x-if="product.bulkPrice">
-                                                        <p class="detailsButton">Press for details</p>
+                                                        <p class="detailsButton" x-text="data.body.details"></p>
                                                     </template>
                                                 </form>
                                             </div>

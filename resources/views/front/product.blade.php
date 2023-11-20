@@ -6,18 +6,18 @@
             <div class="productSingleHeader">
                 <div>
                  <div class="productSingleTitle" x-text="singleProduct['name']"></div>
-                    <div style="display: flex; column-gap: 3px">
+                    <div class="gramsInfo">
                         <div x-text="singleProduct.weight"></div>
-                        <div x-show="singleProduct.weight">grams</div>
+                        <div x-show="singleProduct.weight" x-text="singlePageData.grams"></div>
                     </div>
                     <div style="display: flex; column-gap: 3px">
                         <div x-text="singleProduct.pieces"></div>
-                        <div x-show="singleProduct.pieces">pieces</div>
+                        <div x-show="singleProduct.pieces" x-text="singlePageData.pieces"></div>
                     </div>
                 </div>
-                <div class="priceActionBox">
+                <div class="priceActionBox" x-show="singleProduct.id !== 118">
                     <div class="priceSingleItem">
-                        <div style="font-weight: 600">Price: </div>
+                        <div style="font-weight: 600" x-text="singlePageData.price">Price: </div>
                         <template x-if="platouCheck(singleProduct.id)">
                             <div>
                                 <div class="singlePriceDigit" x-text="singleProduct.price"></div>
@@ -49,7 +49,7 @@
                         <template x-if="platouCheckShow(singleProduct.id)">
                             <div class="custom-select" style="border: none">
                                 <div class="select-label">
-                                    <label for="sizeSelect">Mărime (grame):</label>
+                                    <label for="sizeSelect"><span x-text="singlePageData.size"></span> (<span x-text="singlePageData.grams"></span>):</label>
                                     <select id="sizeSelect" class="custom-select-dropdown" x-on:change="updatePrice($event.target.selectedIndex)">
                                         <option :value="singleProduct.size[0]" x-text="singleProduct.size[0]"></option>
                                         <option :value="singleProduct.size[1]" x-text="singleProduct.size[1]"></option>
@@ -59,15 +59,16 @@
                         </template>
                         <button class="addToCartSingleButton" id="submitFormProduct">
                             <img src="{{asset('images/icons/cartSingle.png')}}" alt="">
-                            <div>To Cart</div>
+                            <div x-text="singlePageData.action">To Cart</div>
                         </button>
                     </form>
                 </div>
             </div>
+            <div class="messageAdditional" x-show="singleProduct.specialMessage"><div x-text="singleProduct.specialMessage"></div></div>
             <div class="errorsProductMessageMeat" x-text="errorMessageProduct" x-show="errorMessageProduct"></div>
             <div class="errorsProductMessageMeat" x-text="finalSubmitError" x-show="finalSubmitError"></div>
-            <template x-if="platouCheckShow(singleProduct.id)">
-                <div class="personNumber">
+            <template x-if="platouCheckShow(singleProduct.id) && singleProduct.id !== 71" >
+                <div class="personNumber" x-show="singleProduct.id !== 118">
                     <div>For</div>
                     <div x-text="platouSize"></div>
                     <div>Persons</div>
@@ -80,13 +81,13 @@
                     </div>
                 </template>
                 <template x-if="platouCheckShow(singleProduct.id)">
-                    <div class="multipleChoice" x-bind:id="singleProduct.id === 77 ? 'meat' : (singleProduct.id === 78 ? 'vegetables' : '')">
-                        <div x-show="singleProduct.id === 77" class="productBigText" x-text="singlePageData.selectThreeItems">You can select 3 elements from below:</div>
-                        <div x-show="singleProduct.id === 78" class="productBigText" x-text="singlePageData.selectFiveItems">You can select only 5 elements from below:</div>
+                    <div class="multipleChoice" x-bind:id="singleProduct.id === 41 ? 'meat' : (singleProduct.id === 42 ? 'vegetables' : '')">
+                        <div x-show="singleProduct.id === 41" class="productBigText" x-text="singlePageData.selectThreeItems">You can select 3 elements from below:</div>
+                        <div x-show="singleProduct.id === 42" class="productBigText" x-text="singlePageData.selectFiveItems">You can select only 5 elements from below:</div>
                         <div class="listContentPlatou">
                             <template x-for="item in singleProduct.content">
                                 <div class="inputCheck">
-                                    <input type="checkbox" :value="item" x-on:change="updateSelectedItems(item, event, singleProduct.id === 77 ? 'meat' : 'vegetables')" x-show="singleProduct.id === 77 || singleProduct.id === 78">
+                                    <input type="checkbox" :value="item" x-on:change="updateSelectedItems(item, event, singleProduct.id === 41 ? 'meat' : 'vegetables')" x-show="singleProduct.id === 41 || singleProduct.id === 42">
                                     <div x-text="item"></div>
                                 </div>
                             </template>
@@ -95,13 +96,13 @@
                 </template>
 
                 <template x-if="platouCheckShow(singleProduct.id)">
-                    <div class="multipleChoice" :id="singleProduct.id === 77 ? 'muraturi' : (singleProduct.id === 78 ? 'veggieSauce' : '')">
-                        <div x-show="singleProduct.id === 77" class="productBigText" x-text="singlePageData.selectOneItem">You can Select only one item from below:</div>
-                        <div x-show="singleProduct.id === 78" class="productBigText" x-text="singlePageData.selectTwoItems">You can Select only two item from below:</div>
+                    <div class="multipleChoice" :id="singleProduct.id === 41 ? 'muraturi' : (singleProduct.id === 42 ? 'veggieSauce' : '')">
+                        <div x-show="singleProduct.id === 41" class="productBigText" x-text="singlePageData.selectOneItem">You can Select only one item from below:</div>
+                        <div x-show="singleProduct.id === 42" class="productBigText" x-text="singlePageData.selectTwoItems">You can Select only two item from below:</div>
                         <div class="listContentPlatou">
                             <template x-for="item in singleProduct.muraturi">
                                 <div class="inputCheck">
-                                    <input type="checkbox" :value="item" x-on:change="updateSelectedItems(item, event, singleProduct.id === 77 ? 'muraturi' : 'veggieSauce')">
+                                    <input type="checkbox" :value="item" x-on:change="updateSelectedItems(item, event, singleProduct.id === 41 ? 'muraturi' : 'veggieSauce')">
                                     <div x-text="item"></div>
                                 </div>
                             </template>
@@ -112,7 +113,7 @@
             </div>
             <div class="errorsProductMessageMeat" x-text="errorMessageProductBelow" x-show="errorMessageProductBelow"></div>
             <template x-if="platouCheckShow(singleProduct.id)">
-                <div class="secondLinemultiple"  x-show="singleProduct.id === 77">
+                <div class="secondLinemultiple"  x-show="singleProduct.id === 41">
                     <div class="multipleChoice" id="salat">
                         <div class="productBigText" x-text="singlePageData.selectOneItem">You can Select only one item from below:</div>
                         <div class="listContentPlatou">
@@ -124,7 +125,7 @@
                             </template>
                         </div>
                     </div>
-                    <div class="multipleChoice"  x-show="singleProduct.id === 77" id="sauce">
+                    <div class="multipleChoice"  x-show="singleProduct.id === 41" id="sauce">
                         <div class="productBigText" x-text="singlePageData.sauce">You can Select only one item from below:</div>
                         <div class="listContentPlatou">
                             <template x-for="item in singleProduct.sous">

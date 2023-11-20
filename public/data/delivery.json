@@ -13,7 +13,8 @@
             "- If you wish to place an order with special requirements beyond the standard menu, please send us a request by email to info@lapopas.com or call us at 0892333268 at least 12 hours before the delivery time or before placing the order online.",
             "- Specify your convenient delivery time in your order.",
             "- In case of delays, our operator will contact you to announce and arrange another delivery time."
-        ]
+        ],
+        "delivery": "Delivery"
     },
     "ru": {
         "mainTitle": "Рабочее время службы доставки:",
@@ -29,7 +30,8 @@
             "- Если вы хотите разместить заказ с особыми требованиями, выходящими за рамки стандартного меню, отправьте нам запрос по электронной почте на адрес info@lapopas.com или позвоните нам по номеру 0892333268 за 12 часов до времени доставки или перед размещением заказа онлайн.",
             "- Укажите удобное для вас время доставки в вашем заказе.",
             "- В случае задержек, наш оператор свяжется с вами, чтобы уведомить и договориться о другом времени доставки."
-        ]
+        ],
+        "delivery": "Доставка"
     },
     "ro": {
         "mainTitle": "Programul de lucru pentru serviciul de livrare:",
@@ -45,6 +47,7 @@
             "- Dacă doriți să plasați comanda cu unele cerințe aparte de meniul standard, vă rugăm să ne expediați o solicitare prin email la info@lapopas.com sau să apelați telefonic la 0892333268 cu 12 ore înainte de ora livrării sau înainte de a plasa comanda online.",
             "- În comanda specificați timpul convenabil pentru livrare.",
             "- În cazul unor întârzieri, operatorul vă va contacta pentru a anunța și concretiza o altă oră de livrare."
-        ]
+        ],
+        "delivery": "Livrare"
     }
 }

@@ -59,7 +59,7 @@
                 </div>
             </div>
             @else
-                <a href="/" class="menuItem clearLink" style="color: white">Menu</a>
+                <a href="/" class="menuItem clearLink" style="color: white"  x-text="data.navMenu.items[0]">Menu</a>
             @endif
             <a href="/service" class="clearLink" style="color: white"><div x-text="data.navMenu.items[1]" class="menuItem"></div></a>
             <div class="subCategoryMenu" id="menuDrop">

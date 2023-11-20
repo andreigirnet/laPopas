@@ -33,7 +33,7 @@
                     <div class="total">Total</div>
                     <div class="amountWrap">
                         <p x-text="cartTotal" class="amount"></p>
-                        <p>euro</p>
+                        <p>€</p>
                     </div>
                 </div>
             </div>
@@ -78,8 +78,8 @@
                 <div class="form-group">
                     <label for="email">Delivery Method:</label>
                     <select class="custom-select" id="delivery-status" name="deliveryStatus">
-                        <option value="Local">Local</option>
                         <option value="Delivery">Delivery</option>
+                        <option value="Local">Local</option>
                     </select>
                 </div>
                 <div class="form-group">

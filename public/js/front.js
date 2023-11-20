@@ -3,6 +3,7 @@ function app() {
         data: null,
         finalName: "",
         finalSubmitError: "",
+        keyIndex: null,
         counterSingleError: 0,
         counterSingleSalatError: 0,
         counterSingleSauceError:0,
@@ -76,35 +77,30 @@ function app() {
 
                 let currentPath = window.location.pathname;
                 this.singleItem(currentPath)
-                if(this.singleProduct === null){
-                    let singleLang = this.currentLanguage
-
-                }
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
+        },
+        findIndexByKey(array, key) {
+            let keysArray = Object.keys(array);
+            return keysArray.indexOf(key)
         },
         singleItem(path){
             let newPath = this.decodePath(path)
             let keys = newPath.split("/")
             let slicedArray = keys.slice(2)
-            if (this.categoryIndex === null && this.productIndex === null) {
-                let categoryKeys = Object.keys(this.data.products)
-                let productsKeys = Object.keys(this.data.products[slicedArray[0]])
-                this.categoryIndex = categoryKeys.indexOf(slicedArray[0])
-                this.productIndex = productsKeys.indexOf(slicedArray[1])
-            }
-            const productsKeys = Object.keys(this.data.products);
-            let keyToDisplay = productsKeys[this.categoryIndex]
-            const productsItems = Object.keys(this.data.products[keyToDisplay]);
-            let itemToDisplay = productsItems[this.productIndex]
-            this.singleProduct = this.data.products[keyToDisplay][itemToDisplay]
-            this.singleProduct['name'] = itemToDisplay
-            let idsToCheck = [77,78,79,80,81,82,83,84,107]
+
+            let categoryKey = Object.keys(this.data.products)[slicedArray[0]];
+            let productKey = Object.keys(this.data.products[categoryKey])[slicedArray[1]]
+
+
+            this.singleProduct = this.data.products[categoryKey][productKey]
+            this.singleProduct['name'] = productKey
+            let idsToCheck = [41,42,43,44,45,46,47,48,71,118]
             if (idsToCheck.includes( this.singleProduct.id)){
                 this.bulkPrice = this.singleProduct.bulkPrice[0]
             }
-
+            console.log(this.singleProduct)
         },
         updatePrice(value){
             this.bulkPrice = this.singleProduct.bulkPrice[value]
@@ -190,6 +186,9 @@ function app() {
             }else if(selectId === 'veggieSauce'){
                 return 2;
             }
+            else if(selectId === 'sauce'){
+                return 2;
+            }
             else{
                 return 1;
             }
@@ -209,11 +208,11 @@ function app() {
         },
 
         platouCheck(itemId){
-            let idsToCheck = [77,78,79,80,81,82,83,84,107]
+            let idsToCheck = [41,42,43,44,45,46,47,48,71,118]
             return !idsToCheck.includes(itemId);
         },
         platouCheckShow(itemId){
-            let idsToCheck = [77,78,79,80,81,82,83,84,107]
+            let idsToCheck = [41,42,43,44,45,46,47,48,71,118]
             return idsToCheck.includes(itemId);
         },
         decodePath(encodedPath) {

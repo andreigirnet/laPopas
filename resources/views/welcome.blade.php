@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta content="authenticity_token" name="csrf-param" />
         <meta content="{{@csrf_token()}}=" name="csrf-token" />
+        <meta property="og:image" content="{{asset('images/icons/MetaPhoto.png')}}">
         <title>La Popas</title>
         <link rel="icon" type="image/x-icon" href="{{asset('images/icons/catalogIcon.png')}}">
         <link rel="stylesheet" href="{{asset('css/frontMain.css')}}">
@@ -48,23 +49,23 @@
         <section class="infoSection">
             <div class="infoContainer">
                 <div class="info">
-                    <div class="infoTitle">Delivery</div>
+                    <div class="infoTitle" x-text="data.footer.delivery">Delivery</div>
                     <a class="infoContent clearLink" x-text="data.footer.deliveryText" href="/delivery">In town 3 euro</a>
                     <img src="{{asset('images/icons/domik-delivery.png')}}" class="domik" alt="">
                 </div>
                 <div class="hrDiv"></div>
                 <div class="info">
-                    <div class="infoTitle">How you Order?</div>
+                    <div class="infoTitle"  x-text="data.footer.order">How you Order?</div>
                     <div class="infoContent" x-text="data.footer.howOrder">079776698</div>
                 </div>
                 <div class="hrDiv"></div>
                 <div class="info">
-                    <div class="infoTitle">Payment Methods</div>
+                    <div class="infoTitle"  x-text="data.footer.payment">Payment Methods</div>
                     <div class="infoContent" x-text="data.footer.paymentFooter">Cash when you reveice the order</div>
                 </div>
                 <div class="hrDiv"></div>
                 <div class="info">
-                    <div class="infoTitle">Time Of Delivery</div>
+                    <div class="infoTitle" x-text="data.footer.time">Time Of Delivery</div>
                     <div class="infoContent"  x-text="data.footer.deliveryTime">In aceeasi zi</div>
                 </div>
             </div>
